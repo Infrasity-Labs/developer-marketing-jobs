@@ -2,7 +2,7 @@ import re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
-from fetchers import remoteok, remotive, adzuna, arbeitnow, greenhouse
+from fetchers import remoteok, remotive, adzuna, arbeitnow, greenhouse,lever, ashby, workable, recruitee, himalayas, wellfound,yc_ats,google_cse
 
 # --- CONFIG ---
 CATEGORIES = [
@@ -22,10 +22,10 @@ CATEGORIES = [
         "keywords": [
             "technical writer",
             "documentation",
-            "docs engineer",
+            
             "content engineer",
             "technical author",
-            "writer",
+            
         ],
     },
     {
@@ -67,18 +67,10 @@ CATEGORIES = [
             "cmo",
         ],
     },
-    {
-        "label": "👥 Community",
-        "keywords": [
-            "community manager",
-            "community lead",
-            "community advocate",
-            "community director",
-        ],
-    },
+   
 ]
-MAX_AGE_DAYS = 30
-MAX_JOBS_PER_CATEGORY = 8
+MAX_AGE_DAYS = 90
+MAX_JOBS_PER_CATEGORY = 500
 README_PATH = Path("README.md")
 # --------------
 
@@ -187,7 +179,7 @@ def update_readme(content_md):
 
 def main():
     all_jobs = []
-    fetchers = [remoteok, remotive, adzuna, arbeitnow,greenhouse]
+    fetchers = [remoteok, remotive, adzuna, arbeitnow,greenhouse,lever, ashby, workable, recruitee, himalayas, wellfound,yc_ats,google_cse]
     
     for fetcher in fetchers:
         try:

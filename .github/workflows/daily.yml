@@ -21,8 +21,13 @@ jobs:
       - run: pip install -r requirements.txt
 
       - run: python main.py
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
+          GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update jobs"
-          file_pattern: README.md 
+          file_pattern: README.md
