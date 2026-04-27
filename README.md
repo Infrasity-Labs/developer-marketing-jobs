@@ -41,7 +41,7 @@ _No matching jobs found this cycle._
 | Sr. Event Content Manager | Databricks | USCA | Greenhouse | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=8382689002) |
 | Creative Strategist | Maneuver Marketing | Remote | RemoteOK | [Apply](https://remoteOK.com/remote-jobs/remote-creative-strategist-maneuver-marketing-1131221) |
 
-_Last updated: 2026-04-27 06:20 UTC • Total: 19 jobs_
+_Last updated: 2026-04-27 06:52 UTC • Total: 19 jobs_
 <!-- JOBS:END -->
 
 More stuff here if you want.
