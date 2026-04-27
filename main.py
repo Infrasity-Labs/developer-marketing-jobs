@@ -5,28 +5,52 @@ from pathlib import Path
 from fetchers import remoteok, remotive, greenhouse
 
 # --- CONFIG ---
-ROLE_KEYWORDS = [
-    "developer advocate",
-    "developer relations",
-    "devrel",
-    "technical writer",
-    "content marketing",
-    "documentation",
-    "content manager",
+# Each category has a label (shown as heading) and keywords (any match = belongs there).
+# Order matters: a job goes into the FIRST category it matches.
+CATEGORIES = [
+    {
+        "label": "👑 DevRel Leadership",
+        "keywords": [
+            "head of developer",
+            "head of devrel",
+            "vp of devrel",
+            "vp developer relations",
+            "director of developer",
+            "director of devrel",
+            "chief developer advocate",
+        ],
+    },
+    {
+        "label": "🎤 Developer Advocate / DevRel",
+        "keywords": ["developer advocate", "developer relations", "devrel", "community manager"],
+    },
+    {
+        "label": "✍️ Technical Writing & Documentation",
+        "keywords": ["technical writer", "documentation", "docs engineer", "content engineer"],
+    },
+    {
+        "label": "📣 Content Marketing",
+        "keywords": ["content marketing", "content manager", "content strategist", "content lead"],
+    },
 ]
+
 MAX_AGE_DAYS = 30
-MAX_JOBS_IN_README = 20
+MAX_JOBS_PER_CATEGORY = 10
 README_PATH = Path("README.md")
 # --------------
 
-def matches_role(job):
+def categorize(job):
+    """Return the first category label this job matches, or None."""
     text = (job["title"] + " " + " ".join(job["tags"])).lower()
-    return any(kw in text for kw in ROLE_KEYWORDS)
+    for cat in CATEGORIES:
+        if any(kw in text for kw in cat["keywords"]):
+            return cat["label"]
+    return None
 
 def is_recent(job):
     posted = job.get("posted", "")
     if not posted:
-        return True  # keep if unknown
+        return True
     try:
         dt = datetime.fromisoformat(posted.replace("Z", "+00:00"))
     except ValueError:
@@ -48,8 +72,7 @@ def dedupe(jobs):
     return out
 
 def format_table(jobs):
-    if not jobs:
-        return "_No matching jobs found today._"
+    """Format a list of jobs as a markdown table."""
     lines = ["| Role | Company | Location | Source | Link |",
              "|------|---------|----------|--------|------|"]
     for j in jobs:
@@ -57,14 +80,40 @@ def format_table(jobs):
         company = j["company"].replace("|", "/")
         location = j["location"].replace("|", "/")
         lines.append(f"| {title} | {company} | {location} | {j['source']} | [Apply]({j['url']}) |")
-    stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    lines.append(f"\n_Last updated: {stamp}_")
     return "\n".join(lines)
 
-def update_readme(table_md):
+def build_sections(jobs):
+    """Group jobs by category and build markdown for each section."""
+    # Bucket jobs by category
+    buckets = {cat["label"]: [] for cat in CATEGORIES}
+    for j in jobs:
+        label = categorize(j)
+        if label:
+            buckets[label].append(j)
+
+    # Build markdown
+    sections = []
+    total = 0
+    for cat in CATEGORIES:
+        label = cat["label"]
+        cat_jobs = buckets[label][:MAX_JOBS_PER_CATEGORY]
+        sections.append(f"### {label}")
+        sections.append("")
+        if cat_jobs:
+            sections.append(format_table(cat_jobs))
+            total += len(cat_jobs)
+        else:
+            sections.append("_No matching jobs found this cycle._")
+        sections.append("")  # blank line between sections
+
+    stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    sections.append(f"_Last updated: {stamp} • Total: {total} jobs_")
+    return "\n".join(sections)
+
+def update_readme(content_md):
     content = README_PATH.read_text(encoding="utf-8")
     pattern = re.compile(r"<!-- JOBS:START -->.*?<!-- JOBS:END -->", re.DOTALL)
-    replacement = f"<!-- JOBS:START -->\n{table_md}\n<!-- JOBS:END -->"
+    replacement = f"<!-- JOBS:START -->\n{content_md}\n<!-- JOBS:END -->"
     new_content = pattern.sub(replacement, content)
     README_PATH.write_text(new_content, encoding="utf-8")
 
@@ -77,13 +126,13 @@ def main():
         except Exception as e:
             print(f"Failed {fetcher.__name__}: {e}")
 
-    filtered = [j for j in all_jobs if matches_role(j) and is_recent(j)]
+    # Filter: must match a category AND be recent
+    filtered = [j for j in all_jobs if categorize(j) and is_recent(j)]
     deduped = dedupe(filtered)
-    deduped.sort(key=lambda j: j.get("posted", ""), reverse=True)  # newest first
-    final = deduped[:MAX_JOBS_IN_README]
+    deduped.sort(key=lambda j: j.get("posted", ""), reverse=True)
 
-    print(f"Total: {len(all_jobs)} → filtered: {len(filtered)} → final: {len(final)}")
-    update_readme(format_table(final))
+    print(f"Total: {len(all_jobs)} → categorized: {len(filtered)} → after dedupe: {len(deduped)}")
+    update_readme(build_sections(deduped))
 
 if __name__ == "__main__":
     main()
