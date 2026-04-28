@@ -24,6 +24,7 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
+| Senior Software Engineer - Developer Experience - Search | Elastic | United Kingdom | [→](https://jobs.elastic.co/jobs?gh_jid=7808662&gh_jid=7808662) |
 | Staff Backend Engineer, Developer Experience | Gitlab | Remote, Canada; Remote, United | [→](https://job-boards.greenhouse.io/gitlab/jobs/8490477002) |
 | Backend Engineer, Developer Experience & Product Platform  | Stripe | SEA, SF | [→](https://stripe.com/jobs/search?gh_jid=7476555) |
 | Full Stack Engineer, Developer Experience & Product Platform | Stripe | N/A | [→](https://stripe.com/jobs/search?gh_jid=6567104) |
@@ -33,11 +34,11 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Staff Developer Advocate | Mongodb | New York | [→](https://www.mongodb.com/careers/job/?gh_jid=7831638) |
 | Developer Advocacy Intern | Twilio | Remote - US | [→](https://job-boards.greenhouse.io/twilio/jobs/7728956) |
 | Engineering Director, Developer Experience | Adyen | San Francisco | [→](https://job-boards.greenhouse.io/adyen/jobs/7419377) |
-| Senior Developer Advocate | Mongodb | Austin | [→](https://www.mongodb.com/careers/job/?gh_jid=7571308) |
 | AI Staff Developer Advocate | Mongodb | California; San Francisco | [→](https://www.mongodb.com/careers/job/?gh_jid=7673691) |
 | Director of Product Management, Developer Experience, Tools and Client Libraries | Mongodb | Dublin | [→](https://www.mongodb.com/careers/job/?gh_jid=7658187) |
 | Product Manager, Developer Experience | Mongodb | New York City | [→](https://www.mongodb.com/careers/job/?gh_jid=7793281) |
-| Senior Product Manager, Python Developer Experience | Mongodb | Dublin | [→](https://www.mongodb.com/careers/job/?gh_jid=7378931) |
+| Senior Developer Advocate | Mongodb | Dublin | [→](https://www.mongodb.com/careers/job/?gh_jid=7495485) |
+| Senior Product Manager, Python Developer Experience | Mongodb | Ireland | [→](https://www.mongodb.com/careers/job/?gh_jid=7388900) |
 | Customer Advocacy Intern (Summer 2026) | Cloudflare | In-Office | [→](https://boards.greenhouse.io/cloudflare/jobs/7749122?gh_jid=7749122) |
 | Head of Product, Developer Experience | Adyen | San Francisco | [→](https://job-boards.greenhouse.io/adyen/jobs/7522608) |
 | Staff Developer Relations Advocate | Webflow | CA Remote (BC & ON only); U.S. | [→](https://job-boards.greenhouse.io/webflow/jobs/7681033) |
@@ -57,9 +58,9 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
-| Staff Technical Writer | Fivetran | Bengaluru, Karnataka, India, A | [→](https://www.fivetran.com/careers/job?gh_jid=7498409003) |
-| Senior Technical Writer | Launchdarkly | Remote - US | [→](https://job-boards.greenhouse.io/launchdarkly/jobs/7666736003) |
 | Senior Product Manager - SDK's, Developer Platform & Documentation | Marqeta | Toronto, Canada | [→](https://job-boards.greenhouse.io/marqeta/jobs/7743045) |
+| Staff Technical Writer | Fivetran | Novi Sad, South Bačka, Serbia, | [→](https://www.fivetran.com/careers/job?gh_jid=7617264003) |
+| Senior Technical Writer | Launchdarkly | Remote - US | [→](https://job-boards.greenhouse.io/launchdarkly/jobs/7666736003) |
 | Content Engineer | Vercel | Hybrid - San Francisco, New Yo | [→](https://job-boards.greenhouse.io/vercel/jobs/5820658004) |
 | Content Engineer | Sendbird | San Mateo, California, United  | [→](https://sendbird.com/careers?gh_jid=8500668002) |
 | Technical Writer | Mongodb | Dublin | [→](https://www.mongodb.com/careers/job/?gh_jid=7743754) |
@@ -72,8 +73,8 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
+| Community & Content Manager | UMENCO | The Rocks, Sydney | [→](https://www.adzuna.com.au/details/5712356136?utm_medium=api&utm_source=1aa7baa7) |
 | Senior Developer Content Manager, Connector SDK | Fivetran | Bengaluru, Karnataka, India, A | [→](https://www.fivetran.com/careers/job?gh_jid=7687227003) |
-| Marketing Content Operations Associate | Stripe | Bangalore | [→](https://stripe.com/jobs/search?gh_jid=7584867) |
 | Writer, Content Marketing | Stripe | Remote US | [→](https://stripe.com/jobs/search?gh_jid=7587814) |
 | Content Marketing Manager | Launchdarkly | Remote - US | [→](https://job-boards.greenhouse.io/launchdarkly/jobs/7701298003) |
 | Senior Content Manager, APAC | Adyen | Singapore | [→](https://job-boards.greenhouse.io/adyen/jobs/7681261) |
@@ -85,17 +86,22 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Content Manager | Adyen | Tokyo | [→](https://job-boards.greenhouse.io/adyen/jobs/7410341) |
 | Marketing Events Content Manager | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5100613008) |
 | Principal Product Marketing Manager - Developer Marketing (JinaAI) | Elastic | United States | [→](https://jobs.elastic.co/jobs?gh_jid=7589895&gh_jid=7589895) |
-| Content Lead (m/w/d) | Finseo GmbH |  | [→](https://www.arbeitnow.com/jobs/companies/finseo-gmbh/content-lead-freiburg-im-breisgau-327308) |
+| Werkstudent:in AI Content Manager / LLM Content Specialist (B2B Software) | KontextWork |  | [→](https://www.arbeitnow.com/jobs/companies/kontextwork/werkstudentin-ai-content-manager-llm-content-specialist-b2b-software-hanover-288765) |
 
 ## 📦 Product Marketing
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
-| Lead Product Marketing Manager, AI  | Gitlab | Remote, Canada; Remote, US | [→](https://job-boards.greenhouse.io/gitlab/jobs/8472475002) |
-| Lead Product Marketing Manager, Pricing and Packaging  | Gitlab | Remote, Canada; Remote, US | [→](https://job-boards.greenhouse.io/gitlab/jobs/8414661002) |
 | Staff Product Marketing Manager | Mongodb | New York City | [→](https://www.mongodb.com/careers/job/?gh_jid=7526003) |
+| Lead Product Marketing Manager, Pricing and Packaging  | Gitlab | Remote, Canada; Remote, US | [→](https://job-boards.greenhouse.io/gitlab/jobs/8414661002) |
+| GTM Product Marketing Manager, Money as a Service (MaaS) | Stripe | United States | [→](https://stripe.com/jobs/search?gh_jid=7809072) |
+| Principal Product Marketing Manager, Agents | Amplitude | San Francisco, CA | [→](https://job-boards.greenhouse.io/amplitude/jobs/8525067002) |
+| Lead Product Marketing Manager, AI  | Gitlab | Remote, Canada; Remote, US | [→](https://job-boards.greenhouse.io/gitlab/jobs/8472475002) |
 | Product Marketing Lead, Claude Platform - Cloud | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5198991008) |
-| Senior Technical Product Marketing Manager | Fivetran | Oakland, California, United St | [→](https://www.fivetran.com/careers/job?gh_jid=7649908003) |
+| Product Marketing Manager | FJWilson Talent Services | UK | [→](https://www.adzuna.co.uk/jobs/details/5711117423?utm_medium=api&utm_source=1aa7baa7) |
+| Sr PMM Tech, Supply Chain, AWS Business User Productivity Team | Amazon | SoMa, San Francisco | [→](https://www.adzuna.com/land/ad/5711232273?se=nvbUvc9C8RGUJvt2BbOskg&utm_medium=api&utm_source=1aa7baa7&v=41471F16FBA9BAE631F36877CB94D394A8D8F059) |
+| Product Marketing Manager | F.J. WILSON | Wiltshire, South West England | [→](https://www.adzuna.co.uk/jobs/land/ad/5710922800?se=4JtewM9C8RGX_vcCtxzO5A&utm_medium=api&utm_source=1aa7baa7&v=8DCD28759FD5F9EDAC83864F50814109A947219A) |
+| Senior Technical Product Marketing Manager | Fivetran | Denver, Colorado, United State | [→](https://www.fivetran.com/careers/job?gh_jid=7661577003) |
 | Product Marketing Director, Lakewatch | Databricks | United States | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8493857002) |
 | Product Marketing Manager, Pricing | Stripe | SF, NYC, Seattle, US Remote | [→](https://stripe.com/jobs/search?gh_jid=7812965) |
 | Product Marketing Lead, Fraud and Risk | Stripe | US / Canada | [→](https://stripe.com/jobs/search?gh_jid=7773463) |
@@ -125,6 +131,7 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Product Marketing Engineer Intern (AI & Automation) - Intern (Summer/Spring/Fall | Cloudflare | In-Office | [→](https://boards.greenhouse.io/cloudflare/jobs/7781953?gh_jid=7781953) |
 | Senior Director, Product Marketing - Application Security and Performance | Cloudflare | Hybrid | [→](https://boards.greenhouse.io/cloudflare/jobs/7290854?gh_jid=7290854) |
 | Senior Product Marketing Manager, Cybersecurity | Cloudflare | Hybrid | [→](https://boards.greenhouse.io/cloudflare/jobs/7006419?gh_jid=7006419) |
+| Product Marketing Manager | Overwatch Imaging | Hood River, Hood River County | [→](https://www.adzuna.com/details/5704335465?utm_medium=api&utm_source=1aa7baa7) |
 | Staff Product Marketing Manager, Nitro | Discord | San Francisco Bay Area or Remo | [→](https://job-boards.greenhouse.io/discord/jobs/8323992002) |
 | Sr. Product Marketing Manager, AI | Databricks | United States | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8493724002) |
 | Product Marketing Manager (AI-First, Full-Stack) | Sendbird | San Mateo, California, United  | [→](https://sendbird.com/careers?gh_jid=8445772002) |
@@ -134,6 +141,9 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Senior Product Marketing Manager, Data | Twilio | Remote - US | [→](https://job-boards.greenhouse.io/twilio/jobs/7664688) |
 | Product Marketing Director, AI | Databricks | United States | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8487145002) |
 | Sr. Product Marketing Manager, Lakebase | Databricks | United States | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8407915002) |
+| Product Marketing Manager, Consumer | Thumbtack | US | [→](https://www.adzuna.com/details/5693928655?utm_medium=api&utm_source=1aa7baa7) |
+| Sr. Product Marketing Manager, Core Consumer | Realtor.com Careers | Austin, Travis County | [→](https://www.adzuna.com/details/5687115973?utm_medium=api&utm_source=1aa7baa7) |
+| Senior Product Marketing Manager | Airlock Digital | Colorado County, Texas | [→](https://www.adzuna.com/details/5686946519?utm_medium=api&utm_source=1aa7baa7) |
 | Principal Product Marketing Manager - Platform | Elastic | United States | [→](https://jobs.elastic.co/jobs?gh_jid=7742834&gh_jid=7742834) |
 | Sr. Product Marketing Manager | Checkr | Denver, Colorado, United State | [→](https://job-boards.greenhouse.io/checkr/jobs/7445428) |
 | Principal Competitive Intelligence - Search - Product Marketing | Elastic | United States | [→](https://jobs.elastic.co/jobs?gh_jid=7590696&gh_jid=7590696) |
@@ -144,10 +154,14 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
 | Director of Growth Programs | Cloudflare | Hybrid | [→](https://boards.greenhouse.io/cloudflare/jobs/7579330?gh_jid=7579330) |
+| Head of Growth | Medical Symbiosis | Bondi Beach, Eastern Suburbs | [→](https://www.adzuna.com.au/details/5702228136?utm_medium=api&utm_source=1aa7baa7) |
 
 ## 👔 VP Marketing
 
-_No open roles in the last 30 days._
+| Role | Company | Location | Apply |
+|------|---------|----------|-------|
+| Chief Marketing Officer | Mini Masterminds | Australia | [→](https://www.adzuna.com.au/land/ad/5711392701?se=fpm-xM9C8RGOrv_MvtufcA&utm_medium=api&utm_source=1aa7baa7&v=7AD577204E34D09167915833E9F59CF63D6F909B) |
+| Director of Marketing / VP of Marketing | Indica Labs | Albuquerque, Bernalillo County | [→](https://www.adzuna.com/details/5710000809?utm_medium=api&utm_source=1aa7baa7) |
 
 <!-- JOBS:END -->
 
