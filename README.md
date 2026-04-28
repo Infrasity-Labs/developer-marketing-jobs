@@ -56,7 +56,7 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Product Manager, Developer Experience | Mongodb | New York City | [→](https://www.mongodb.com/careers/job/?gh_jid=7793281) |
 | Senior Developer Advocate | Mongodb | Dublin | [→](https://www.mongodb.com/careers/job/?gh_jid=7495485) |
 | Senior Product Manager, Python Developer Experience | Mongodb | Dublin | [→](https://www.mongodb.com/careers/job/?gh_jid=7378931) |
-| Customer Advocacy Intern (Summer 2026) | Cloudflare | In-Office | [→](https://boards.greenhouse.io/cloudflare/jobs/7749122?gh_jid=7749122) |
+| Customer Advocacy Intern (Summer 2026) | Cloudflare | In-Office | [→](https://boards.greenhouse.io/cloudflare/jobs/7743202?gh_jid=7743202) |
 | Staff Software Engineer – Core Developer Experience (DevEx) | Alphasense | Helsinki, Uusimaa, Finland | [→](https://job-boards.greenhouse.io/alphasense/jobs/8510800002) |
 | Head of Product, Developer Experience | Adyen | San Francisco | [→](https://job-boards.greenhouse.io/adyen/jobs/7522608) |
 | Director, Developer Relations | Coreweave | Livingston, NJ / New York, NY  | [→](https://coreweave.com/careers/job?4656231006&board=coreweave&gh_jid=4656231006) |
@@ -81,8 +81,6 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Developer Relations Engineer | Boxinc | Redwood City, California | [→](https://job-boards.greenhouse.io/boxinc/jobs/7583033) |
 | Senior Software Engineer, Backend (Merchant Advocacy) | Affirm | Remote Canada | [→](https://job-boards.greenhouse.io/affirm/jobs/7636416003) |
 | Principal Product Marketing Manager - Developer Marketing (JinaAI) | Elastic | United States | [→](https://jobs.elastic.co/jobs?gh_jid=7589895&gh_jid=7589895) |
-| Developer Relations Engineer | Canonical | Home Based - APAC; Home based  | [→](https://job-boards.greenhouse.io/canonical/jobs/5143011) |
-| UX Designer - Developer experience | Canonical | Home based - EMEA | [→](https://job-boards.greenhouse.io/canonical/jobs/7043026) |
 | Developer Relations Engineer | Arizeai | Remote (San Francisco) | [→](https://job-boards.greenhouse.io/arizeai/jobs/5704428004) |
 | Senior Developer Relations Engineer | Boxinc | Redwood City, CA | [→](https://job-boards.greenhouse.io/boxinc/jobs/7721528) |
 | Senior Developer Relations Advocate - EMEA | Clickhouse | London | [→](https://job-boards.greenhouse.io/clickhouse/jobs/5777589004) |
@@ -101,7 +99,6 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | AVP, Cyber Underwriter (Wholesale) | Atbayjobs | Atlanta, Georgia, United State | [→](https://job-boards.greenhouse.io/atbayjobs/jobs/7712025003) |
 | Senior Cyber Underwriter (Wholesale) | Atbayjobs | Atlanta, Georgia, United State | [→](https://job-boards.greenhouse.io/atbayjobs/jobs/7712024003) |
 | Senior Product Manager - SDK's, Developer Platform & Documentation | Marqeta | Toronto, Canada | [→](https://job-boards.greenhouse.io/marqeta/jobs/7743045) |
-| Technical Author (multiple roles and seniority levels) | Canonical | Home based - Worldwide | [→](https://job-boards.greenhouse.io/canonical/jobs/3798310) |
 | Staff Technical Writer | Fivetran | Novi Sad, South Bačka, Serbia, | [→](https://www.fivetran.com/careers/job?gh_jid=7617264003) |
 | Data Writer and Editor  | Stripe | London | [→](https://stripe.com/jobs/search?gh_jid=7743311) |
 | Writer, Content Marketing | Stripe | Remote US | [→](https://stripe.com/jobs/search?gh_jid=7587814) |
@@ -201,7 +198,6 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Digital Marketing Manager, Paid Search (Google Ads) | Connectwise | US-Remote | [→](https://job-boards.greenhouse.io/connectwise/jobs/4666648005) |
 | Engineering Editorial Lead | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5138099008) |
 | Marketing Events Content Manager | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5100613008) |
-| Content marketing lead | Canonical | Home based - EMEA | [→](https://job-boards.greenhouse.io/canonical/jobs/6943565) |
 | Digital Content Manager | Arcinstitute | Palo Alto, CA | [→](https://job-boards.greenhouse.io/arcinstitute/jobs/5829790004) |
 | Social Media & Content Manager | Clutch | Toronto, Ontario, Canada | [→](https://job-boards.greenhouse.io/clutch/jobs/5832789004) |
 | Lead - Paid Performance Marketing (Digital Marketing) | Acommerce | Bangkok, Thailand | [→](https://job-boards.greenhouse.io/acommerce/jobs/6480264) |
@@ -305,7 +301,7 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Developer GTM Intern – Enterprise Sales & AI Automation (Summer 2026) | Cloudflare | In-Office | [→](https://boards.greenhouse.io/cloudflare/jobs/7789256?gh_jid=7789256) |
 | MBA Product Marketing Intern (Summer 2026) | Cloudflare | In-Office | [→](https://boards.greenhouse.io/cloudflare/jobs/7712472?gh_jid=7712472) |
 | Product Marketing Engineer Intern (AI & Automation) - Intern (Summer/Spring/Fall | Cloudflare | In-Office | [→](https://boards.greenhouse.io/cloudflare/jobs/7781953?gh_jid=7781953) |
-| Senior Cloudflare One GTM Specialist | Cloudflare | Distributed | [→](https://boards.greenhouse.io/cloudflare/jobs/7534033?gh_jid=7534033) |
+| Senior Cloudflare One GTM Specialist | Cloudflare | In-Office | [→](https://boards.greenhouse.io/cloudflare/jobs/7547985?gh_jid=7547985) |
 | Senior Cloudflare One GTM Specialist, India | Cloudflare | Hybrid | [→](https://boards.greenhouse.io/cloudflare/jobs/7518811?gh_jid=7518811) |
 | Senior Developer GTM | Cloudflare | Hybrid | [→](https://boards.greenhouse.io/cloudflare/jobs/7422358?gh_jid=7422358) |
 | Senior Director, Product Marketing - Application Security and Performance | Cloudflare | Hybrid | [→](https://boards.greenhouse.io/cloudflare/jobs/7290854?gh_jid=7290854) |
@@ -356,10 +352,6 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Senior Technical Product Marketing Manager | Commercetools | Valencia, Spain (Hybrid) | [→](https://job-boards.greenhouse.io/commercetools/jobs/7609864003) |
 | Senior Manager GTM Strategy & Operations (Partners) | Databricks | USCA | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8450207002) |
 | Sr. Product Marketing Manager | Amwell | Remote US | [→](https://job-boards.greenhouse.io/amwell/jobs/4193506009) |
-| Graduate Product Marketing Manager  | Canonical | Home based - EMEA | [→](https://job-boards.greenhouse.io/canonical/jobs/4981245) |
-| Product Marketing Manager – IoT & Embedded Systems | Canonical | Home based - EMEA | [→](https://job-boards.greenhouse.io/canonical/jobs/5326649) |
-| Senior Product Marketing Manager  | Canonical | Home based - EMEA | [→](https://job-boards.greenhouse.io/canonical/jobs/3109976) |
-| Technical Product Marketing Manager - Cybersecurity | Canonical | Home based - EMEA | [→](https://job-boards.greenhouse.io/canonical/jobs/6793868) |
 | GTM Enablement Leader, EMEA | Newrelic | Dublin, Ireland; London, Unite | [→](https://job-boards.greenhouse.io/newrelic/jobs/5157197008) |
 | Senior Product Marketing Manager, Data | Twilio | Remote - US | [→](https://job-boards.greenhouse.io/twilio/jobs/7664688) |
 | GTM Strategy and Planning - EMEA | Anaplan | London, United Kingdom | [→](https://job-boards.greenhouse.io/anaplan/jobs/8305535002) |
