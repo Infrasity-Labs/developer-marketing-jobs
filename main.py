@@ -2,75 +2,115 @@ import re
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
-from fetchers import remoteok, remotive, adzuna, arbeitnow, greenhouse,lever, ashby, workable, recruitee, himalayas, wellfound,yc_ats,google_cse
+from fetchers import (
+    remoteok, 
+    remotive, 
+    adzuna,  # Make sure fetchers/adzuna.py exists!
+    arbeitnow, 
+    greenhouse,
+    ashby, 
+    yc_ats,
+    greenhouse_commoncrawl
+)
+
+# Remove these broken fetchers:
+# lever, workable, recruitee, himalayas, wellfound, remoteok_extended, greenhouse_autodiscovery,
 
 # --- CONFIG ---
 CATEGORIES = [
     {
         "label": "🎤 Developer Advocate / DevRel",
         "keywords": [
-            "developer advocate",
-            "developer relations",
-            "devrel",
-            "developer evangelist",
-            "developer experience",
-            "advocacy",
+            "developer advocate", "developer relations", "devrel",
+            "developer evangelist", "developer experience", "advocacy",
+            "technical evangelist", "community evangelist", "dx engineer",
+            "developer marketing", "technical advocate", "field cto",
+            "customer engineer", "developer success",
         ],
     },
     {
         "label": "✍️ Technical Writing & Documentation",
         "keywords": [
-            "technical writer",
-            "documentation",
-            
-            "content engineer",
-            "technical author",
-            
+            "technical writer", "documentation", "docs engineer",
+            "content engineer", "technical author", "writer",
+            "information developer", "api writer", "docs",
+            "technical communication", "documentation manager",
+            "technical content", "knowledge management", "content designer",
         ],
     },
     {
         "label": "📣 Developer Marketing",
         "keywords": [
-            "developer marketing",
-            "content marketing",
-            "content manager",
-            "content strategist",
-            "marketing content",
-            "content lead",
+            "developer marketing", "content marketing", "content manager",
+            "content strategist", "marketing content", "content lead",
+            "technical content", "blog", "editorial", "content director",
+            "digital marketing", "inbound marketing", "brand marketing",
         ],
     },
     {
         "label": "📦 Product Marketing",
         "keywords": [
-            "product marketing",
-            "product marketer",
-            "pmm",
+            "product marketing", "product marketer", "pmm",
+            "solutions marketing", "technical marketing", "go to market",
+            "gtm", "positioning", "messaging",
         ],
     },
     {
         "label": "📈 Head of Growth",
         "keywords": [
-            "head of growth",
-            "growth lead",
-            "director of growth",
-            "vp growth",
-            "vp of growth",
+            "head of growth", "growth lead", "director of growth",
+            "vp growth", "growth marketing", "demand generation",
+            "performance marketing", "growth manager", "user acquisition",
+            "lifecycle marketing", "retention marketing",
         ],
     },
     {
         "label": "👔 VP Marketing",
         "keywords": [
-            "vp marketing",
-            "vp of marketing",
-            "vice president marketing",
-            "chief marketing",
-            "cmo",
+            "vp marketing", "vice president marketing", "chief marketing",
+            "cmo", "head of marketing", "director of marketing",
+            "marketing director", "marketing leadership",
         ],
     },
-   
+    {
+        "label": "👥 Community",
+        "keywords": [
+            "community manager", "community lead", "community advocate",
+            "community director", "community builder", "community growth",
+            "community operations", "community engagement",
+        ],
+    },
+    {
+        "label": "🚀 Head of Growth Marketing",
+        "keywords": [
+            "head of growth marketing",
+            "vp growth marketing",
+            "director growth marketing",
+            "chief growth marketing",
+        ],
+    },
+    {
+        "label": "📊 Growth Marketing Manager",
+        "keywords": [
+            "growth marketing manager",
+            "senior growth marketing",
+            "growth manager",
+            "acquisition marketing manager",
+        ],
+    },
+    {
+        "label": "🎯 Product Led Growth",
+        "keywords": [
+            "product led growth",
+            "plg",
+            "product growth",
+            "self serve growth",
+            "product adoption",
+        ],
+    },
 ]
 MAX_AGE_DAYS = 90
-MAX_JOBS_PER_CATEGORY = 500
+MAX_JOBS_PER_CATEGORY = 1000
 README_PATH = Path("README.md")
 # --------------
 
@@ -83,17 +123,41 @@ def categorize(job):
     return None
 
 def is_recent(job):
+    """Check if job was posted within MAX_AGE_DAYS."""
     posted = job.get("posted", "")
+    
+    # Handle empty/missing dates
     if not posted:
         return True
-    try:
-        dt = datetime.fromisoformat(posted.replace("Z", "+00:00"))
-    except ValueError:
+    
+    # Handle integer timestamps (Unix epoch)
+    if isinstance(posted, int):
+        try:
+            dt = datetime.fromtimestamp(posted, tz=timezone.utc)
+        except:
+            return True
+    
+    # Handle string dates
+    elif isinstance(posted, str):
+        try:
+            # Remove 'Z' and replace with '+00:00' for ISO format
+            posted_cleaned = posted.replace("Z", "+00:00")
+            dt = datetime.fromisoformat(posted_cleaned)
+        except:
+            # Try parsing as timestamp string
+            try:
+                dt = datetime.fromtimestamp(int(posted), tz=timezone.utc)
+            except:
+                return True
+    else:
         return True
+    
+    # Ensure timezone-aware
     if dt.tzinfo is None:
         dt = dt.replace(tzinfo=timezone.utc)
-    age = datetime.now(timezone.utc) - dt
-    return age <= timedelta(days=MAX_AGE_DAYS)
+    
+    age = (datetime.now(timezone.utc) - dt).days
+    return age <= MAX_AGE_DAYS
 
 def dedupe(jobs):
     seen = set()
@@ -109,7 +173,7 @@ def dedupe(jobs):
 def format_table(jobs):
     """Format a list of jobs as a markdown table."""
     if not jobs:
-        return "_No open roles in the last 30 days._\n"
+        return "_No open roles in the last 90 days._\n"
     
     lines = [
         "| Role | Company | Location | Apply |",
@@ -177,9 +241,39 @@ def update_readme(content_md):
     size_kb = len(new_content) / 1024
     print(f"✅ Updated README.md ({size_kb:.1f} KB)")
 
+def sort_key(job):
+    """Convert posted date to comparable format for sorting."""
+    posted = job.get("posted", "")
+    
+    # Handle integer timestamps
+    if isinstance(posted, int):
+        return posted
+    
+    # Handle string dates
+    if isinstance(posted, str) and posted:
+        try:
+            dt = datetime.fromisoformat(posted.replace("Z", "+00:00"))
+            return int(dt.timestamp())
+        except:
+            return 0
+    
+    # Default for missing dates
+    return 0
+
 def main():
     all_jobs = []
-    fetchers = [remoteok, remotive, adzuna, arbeitnow,greenhouse,lever, ashby, workable, recruitee, himalayas, wellfound,yc_ats,google_cse]
+    
+    # Only include working fetchers
+    fetchers = [
+        remoteok, 
+        remotive, 
+        adzuna, 
+        arbeitnow,
+        greenhouse,
+        ashby, 
+        yc_ats,
+        greenhouse_commoncrawl
+    ]
     
     for fetcher in fetchers:
         try:
@@ -192,7 +286,7 @@ def main():
     # Filter: must match a category AND be recent
     filtered = [j for j in all_jobs if categorize(j) and is_recent(j)]
     deduped = dedupe(filtered)
-    deduped.sort(key=lambda j: j.get("posted", ""), reverse=True)
+    deduped.sort(key=sort_key, reverse=True)
 
     print(f"\nTotal fetched: {len(all_jobs)}")
     print(f"Categorized: {len(filtered)}")
