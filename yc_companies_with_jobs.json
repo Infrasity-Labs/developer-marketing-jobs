@@ -1,0 +1,205 @@
+{
+  "updated_at": "2026-04-28T16:54:45.771971",
+  "companies": [
+    {
+      "slug": "airbnb",
+      "name": "AirbnbSan Francisco, CA, USA\nBook accommodations around the world.\nWINTER 2009\nCONSUMER\nTRAVEL, LEISURE AND TOURISM",
+      "job_count": 1
+    },
+    {
+      "slug": "doordash",
+      "name": "DoorDashSan Francisco, CA, USA\nRestaurant delivery.\nSUMMER 2013\nCONSUMER\nFOOD AND BEVERAGE",
+      "job_count": 1
+    },
+    {
+      "slug": "coinbase",
+      "name": "CoinbaseSan Francisco, CA, USA\nBuy, sell, and manage cryptocurrencies.\nSUMMER 2012\nFINTECH\nBANKING AND EXCHANGE",
+      "job_count": 1
+    },
+    {
+      "slug": "groww",
+      "name": "GrowwBengaluru, KA, India\nMaking financial services simple, transparent and delightful.\nWINTER 2018\nFINTECH\nASSET MANAGEMENT",
+      "job_count": 1
+    },
+    {
+      "slug": "oklo",
+      "name": "OkloSanta Clara, CA, USA\nEmission free, always on power from advanced fission power plants.\nSUMMER 2014\nINDUSTRIALS\nENERGY",
+      "job_count": 1
+    },
+    {
+      "slug": "instacart",
+      "name": "InstacartSan Francisco, CA, USA\nMarketplace for grocery delivery and pickup\nSUMMER 2012\nCONSUMER\nFOOD AND BEVERAGE",
+      "job_count": 1
+    },
+    {
+      "slug": "meesho",
+      "name": "MeeshoBengaluru, KA, India\nDemocratizing internet commerce for everyone in India\nSUMMER 2016\nB2B\nRETAIL",
+      "job_count": 1
+    },
+    {
+      "slug": "equipmentshare",
+      "name": "EquipmentShareColumbia, MO, USA\nCloud solutions for the construction industry.\nWINTER 2015\nREAL ESTATE AND CONSTRUCTION\nCONSTRUCTION",
+      "job_count": 1
+    },
+    {
+      "slug": "dropbox",
+      "name": "DropboxSan Francisco, CA, USA\nBackup and share files in the cloud.\nSUMMER 2007\nB2B\nPRODUCTIVITY",
+      "job_count": 1
+    },
+    {
+      "slug": "rigetti-computing",
+      "name": "Rigetti ComputingBerkeley, CA, USA\nQuantum coherent supercomputing.\nSUMMER 2014\nINDUSTRIALS\nMANUFACTURING AND ROBOTICS",
+      "job_count": 1
+    },
+    {
+      "slug": "billiontoone",
+      "name": "BillionToOneMenlo Park, CA, USA\nThe genetic testing platform detecting and measuring disease.\nSUMMER 2017\nHEALTHCARE\nDIAGNOSTICS",
+      "job_count": 1
+    },
+    {
+      "slug": "gitlab",
+      "name": "GitLabSan Francisco, CA, USA\nA complete DevOps platform delivered as a single application.\nWINTER 2015\nB2B\nENGINEERING, PRODUCT AND DESIGN",
+      "job_count": 1
+    },
+    {
+      "slug": "matterport",
+      "name": "MatterportSunnyvale, CA, USA\nTurn physical objects and environments into 3D models in seconds.\nWINTER 2012\nCONSUMER\nVIRTUAL AND AUGMENTED REALITY",
+      "job_count": 1
+    },
+    {
+      "slug": "amplitude",
+      "name": "AmplitudeSan Francisco, CA, USA\nDigital Analytics Platform\nWINTER 2012\nB2B\nANALYTICS",
+      "job_count": 1
+    },
+    {
+      "slug": "pagerduty",
+      "name": "PagerDutySan Francisco, CA, USA\nReal-time visibility into critical apps and services all in one place.\nSUMMER 2010\nB2B\nENGINEERING, PRODUCT AND DESIGN",
+      "job_count": 1
+    },
+    {
+      "slug": "ginkgo-bioworks",
+      "name": "Ginkgo BioworksBoston, MA, USA\nOur mission is to make biology easier to engineer.\nSUMMER 2014\nHEALTHCARE\nINDUSTRIAL BIO",
+      "job_count": 1
+    },
+    {
+      "slug": "weave",
+      "name": "WeaveLehi, UT, USA\nCustomer communication and payments platform.\nWINTER 2014\nB2B\nOFFICE MANAGEMENT",
+      "job_count": 1
+    },
+    {
+      "slug": "pardes-bio",
+      "name": "Pardes BiosciencesSan Francisco, CA, USA\nWe break viruses\nSUMMER 2020\nHEALTHCARE\nDRUG DISCOVERY AND DELIVERY",
+      "job_count": 1
+    },
+    {
+      "slug": "embark-trucks",
+      "name": "Embark TrucksSan Francisco, CA, USA\nSelf-driving semi trucks.\nWINTER 2016\nINDUSTRIALS\nAUTOMOTIVE",
+      "job_count": 1
+    },
+    {
+      "slug": "momentus",
+      "name": "MomentusSanta Clara, CA, USA\nThe space infrastructure services company\nSUMMER 2018\nINDUSTRIALS\nAVIATION AND SPACE",
+      "job_count": 1
+    },
+    {
+      "slug": "lucira-health",
+      "name": "Lucira HealthEmeryville, CA, USA\nNext generation infectious disease test kits\nWINTER 2015\nHEALTHCARE\nDIAGNOSTICS",
+      "job_count": 1
+    },
+    {
+      "slug": "segment",
+      "name": "SegmentSan Francisco, CA, USA\nSoftware and APIs to collect, clean, and control customer data.\nSUMMER 2011\nB2B\nANALYTICS",
+      "job_count": 1
+    },
+    {
+      "slug": "algolia",
+      "name": "AlgoliaSan Francisco, CA, USA\nA developer-friendly and enterprise-grade search API.\nWINTER 2014\nB2B\nENGINEERING, PRODUCT AND DESIGN",
+      "job_count": 1
+    },
+    {
+      "slug": "truebill",
+      "name": "TruebillSilver Spring, MD, USA\nLive your best financial life\nWINTER 2016\nFINTECH\nCONSUMER FINANCE",
+      "job_count": 1
+    },
+    {
+      "slug": "twitch",
+      "name": "TwitchSan Francisco, CA, USA\nA global community creating the future of live entertainment.\nWINTER 2007\nCONSUMER\nCONTENT",
+      "job_count": 1
+    },
+    {
+      "slug": "plangrid",
+      "name": "PlanGridSan Francisco, CA, USA\nMobile applications for the construction industry.\nWINTER 2012\nREAL ESTATE AND CONSTRUCTION\nCONSTRUCTION",
+      "job_count": 1
+    },
+    {
+      "slug": "bellabeat",
+      "name": "BellabeatSan Francisco, CA, USA\nTech-powered women's wellness.\nWINTER 2014\nCONSUMER\nCONSUMER ELECTRONICS",
+      "job_count": 1
+    },
+    {
+      "slug": "cruise",
+      "name": "CruiseSan Francisco, CA, USA\nSelf-driving cars.\nWINTER 2014\nINDUSTRIALS\nAUTOMOTIVE",
+      "job_count": 1
+    },
+    {
+      "slug": "benchling",
+      "name": "BenchlingSan Francisco, CA, USA\nUnlocking the power of biotech with modern software for modern science\nSUMMER 2012\nB2B",
+      "job_count": 1
+    },
+    {
+      "slug": "casetext",
+      "name": "CasetextSan Francisco, CA, USA\nWe make the world's laws free and understandable.\nSUMMER 2013\nB2B\nLEGAL",
+      "job_count": 1
+    },
+    {
+      "slug": "bird",
+      "name": "BirdAmsterdam, NH, Netherlands\nThe world\u2019s largest omnichannel communications platform\nSUMMER 2016\nB2B\nENGINEERING, PRODUCT AND DESIGN",
+      "job_count": 1
+    },
+    {
+      "slug": "brex",
+      "name": "BrexSan Francisco, CA, USA\nBusiness accounts, corporate cards, and spend management software.\nWINTER 2017\nFINTECH\nBANKING AND EXCHANGE",
+      "job_count": 1
+    },
+    {
+      "slug": "the-athletic",
+      "name": "The AthleticSan Francisco, CA, USA\nSubscription sports media.\nSUMMER 2016\nCONSUMER\nCONTENT",
+      "job_count": 1
+    },
+    {
+      "slug": "codecademy",
+      "name": "CodecademyNew York, NY, USA\nThe leading online learning platform for technical skills.\nSUMMER 2011\nEDUCATION",
+      "job_count": 1
+    },
+    {
+      "slug": "checkr",
+      "name": "CheckrSan Francisco, CA, USA\nPeople infrastructure for the future of work\nSUMMER 2014\nB2B\nHUMAN RESOURCES",
+      "job_count": 1
+    },
+    {
+      "slug": "lever",
+      "name": "LeverSan Francisco, CA, USA\nTalent Acquisition Suite that combines ATS + Talent CRM\nSUMMER 2012\nB2B\nRECRUITING AND TALENT",
+      "job_count": 1
+    },
+    {
+      "slug": "clipboard",
+      "name": "ClipboardSan Francisco, CA, USA\nConnects workplaces with professionals nearby.\nWINTER 2017\nCONSUMER",
+      "job_count": 1
+    },
+    {
+      "slug": "heap",
+      "name": "HeapSan Francisco, CA, USA\nCaptures user interactions with no code to generate analytics.\nWINTER 2013\nB2B\nANALYTICS",
+      "job_count": 1
+    },
+    {
+      "slug": "sendwave",
+      "name": "SendwaveBoston, MA, USA\nInstant, no fee international remittances.\nWINTER 2012\nFINTECH\nPAYMENTS",
+      "job_count": 1
+    },
+    {
+      "slug": "deel",
+      "name": "DeelSan Francisco, CA, USA\nThe all-in-one HR and payroll platform for global teams\nWINTER 2019\nB2B\nFINANCE AND ACCOUNTING",
+      "job_count": 1
+    }
+  ]
+}

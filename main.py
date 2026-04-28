@@ -22,20 +22,18 @@ CATEGORIES = [
         "label": "🎤 Developer Advocate / DevRel",
         "keywords": [
             "developer advocate", "developer relations", "devrel",
-            "developer evangelist", "developer experience", "advocacy",
-            "technical evangelist", "community evangelist", "dx engineer",
-            "developer marketing", "technical advocate", "field cto",
-            "customer engineer", "developer success",
+            "developer evangelist", "developer experience",
+            "technical evangelist", "community evangelist",
+            "developer marketing", "technical advocate", "developer success"
         ],
     },
     {
         "label": "✍️ Technical Writing & Documentation",
         "keywords": [
-            "technical writer", "documentation", "docs engineer",
-            "content engineer", "technical author", "writer",
-            "information developer", "api writer", "docs",
+            "technical writer", "developer documentation", "docs engineer",
+            "content engineer", "technical author", "api writer",
             "technical communication", "documentation manager",
-            "technical content", "knowledge management", "content designer",
+            "technical content"
         ],
     },
     {
@@ -43,8 +41,7 @@ CATEGORIES = [
         "keywords": [
             "developer marketing", "content marketing", "content manager",
             "content strategist", "marketing content", "content lead",
-            "technical content", "blog", "editorial", "content director",
-            "digital marketing", "inbound marketing", "brand marketing",
+            "technical content", "content director","head of content ", "github marketing","github led growth", "inbound marketing", "brand marketing",
         ],
     },
     {
@@ -52,16 +49,17 @@ CATEGORIES = [
         "keywords": [
             "product marketing", "product marketer", "pmm",
             "solutions marketing", "technical marketing", "go to market",
-            "gtm", "positioning", "messaging",
+            "gtm", "product launch", "product messaging", "product positioning",
+             "product marketing manager","product marketing director", "head of product marketing", "vp product marketing", "director of product marketing", "product marketing leadership","product marketing manager", "senior product marketing"
         ],
     },
     {
         "label": "📈 Head of Growth",
         "keywords": [
             "head of growth", "growth lead", "director of growth",
-            "vp growth", "growth marketing", "demand generation",
-            "performance marketing", "growth manager", "user acquisition",
-            "lifecycle marketing", "retention marketing",
+            "vp growth", "growth marketing",
+            "performance marketing", "growth manager", 
+            "lifecycle marketing", "growth hacker", "growth strategist", "growth operations", "growth marketing manager", "senior growth marketing", "head of growth marketing", "vp growth marketing", "director growth marketing", "chief growth marketing"
         ],
     },
     {
@@ -69,7 +67,7 @@ CATEGORIES = [
         "keywords": [
             "vp marketing", "vice president marketing", "chief marketing",
             "cmo", "head of marketing", "director of marketing",
-            "marketing director", "marketing leadership",
+            "marketing director", "marketing leadership","fractional cmo", "part time cmo", "interim cmo"
         ],
     },
     {
@@ -80,24 +78,7 @@ CATEGORIES = [
             "community operations", "community engagement",
         ],
     },
-    {
-        "label": "🚀 Head of Growth Marketing",
-        "keywords": [
-            "head of growth marketing",
-            "vp growth marketing",
-            "director growth marketing",
-            "chief growth marketing",
-        ],
-    },
-    {
-        "label": "📊 Growth Marketing Manager",
-        "keywords": [
-            "growth marketing manager",
-            "senior growth marketing",
-            "growth manager",
-            "acquisition marketing manager",
-        ],
-    },
+    
     {
         "label": "🎯 Product Led Growth",
         "keywords": [
@@ -106,6 +87,7 @@ CATEGORIES = [
             "product growth",
             "self serve growth",
             "product adoption",
+            
         ],
     },
 ]
