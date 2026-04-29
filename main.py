@@ -170,20 +170,27 @@ def format_table(jobs):
         lines.append(f"| {title} | {company} | {location} | [→]({url}) |")
     
     return "\n".join(lines) + "\n"
-
-def build_sections(jobs):
+def build_sections(jobs, yc_jobs):
     """Group jobs by category and build markdown for each section."""
-    # Bucket jobs by category
+    # Bucket NON-YC jobs by category
     buckets = {cat["label"]: [] for cat in CATEGORIES}
     for j in jobs:
         label = categorize(j)
         if label:
             buckets[label].append(j)
+    
+    # Bucket YC jobs by category - ONLY if they match a category
+    yc_buckets = {cat["label"]: [] for cat in CATEGORIES}
+    for j in yc_jobs:
+        label = categorize(j)
+        if label:  # Only add if it matches a category
+            yc_buckets[label].append(j)
 
     # Build markdown sections
     sections = []
     total = 0
     
+    # Regular categorized jobs
     for cat in CATEGORIES:
         label = cat["label"]
         cat_jobs = buckets[label]
@@ -193,6 +200,24 @@ def build_sections(jobs):
         
         if cat_jobs:
             total += len(cat_jobs[:MAX_JOBS_PER_CATEGORY])
+    
+    # Add YC jobs section with categories
+    sections.append(f"## 🚀 Y Combinator Jobs\n")
+    
+    yc_total = 0
+    for cat in CATEGORIES:
+        label = cat["label"]
+        yc_cat_jobs = yc_buckets[label]
+        
+        if yc_cat_jobs:
+            sections.append(f"### {label}\n")
+            sections.append(format_table(yc_cat_jobs))
+            yc_total += len(yc_cat_jobs[:MAX_JOBS_PER_CATEGORY])
+    
+    if yc_total == 0:
+        sections.append("_No categorized YC jobs found in the last 90 days._\n")
+    
+    total += yc_total
     
     return "\n".join(sections), total
 
@@ -244,6 +269,7 @@ def sort_key(job):
 
 def main():
     all_jobs = []
+    yc_jobs = []
     
     # Only include working fetchers
     fetchers = [
@@ -260,21 +286,33 @@ def main():
     for fetcher in fetchers:
         try:
             jobs = fetcher.fetch()
-            all_jobs.extend(jobs)
+            
+            # Separate YC jobs
+            for job in jobs:
+                if job.get("source") == "YC":
+                    yc_jobs.append(job)
+                else:
+                    all_jobs.append(job)
+            
             print(f"✓ Fetched from {fetcher.__name__}: {len(jobs)} jobs")
         except Exception as e:
             print(f"✗ Failed {fetcher.__name__}: {e}")
 
-    # Filter: must match a category AND be recent
+    # Filter: must match a category AND be recent (non-YC jobs)
     filtered = [j for j in all_jobs if categorize(j) and is_recent(j)]
     deduped = dedupe(filtered)
     deduped.sort(key=sort_key, reverse=True)
+    
+    # Dedupe YC jobs separately
+    yc_deduped = dedupe(yc_jobs)
+    yc_deduped.sort(key=sort_key, reverse=True)
 
-    print(f"\nTotal fetched: {len(all_jobs)}")
+    print(f"\nTotal fetched: {len(all_jobs) + len(yc_jobs)}")
     print(f"Categorized: {len(filtered)}")
     print(f"After dedup: {len(deduped)}")
+    print(f"YC jobs: {len(yc_deduped)}")
     
-    content_md, total = build_sections(deduped)
+    content_md, total = build_sections(deduped, yc_deduped)
     
     update_readme(content_md)
     print(f"📊 Total jobs in README: {total}")

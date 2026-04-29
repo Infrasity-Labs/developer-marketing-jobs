@@ -3,177 +3,131 @@ import json
 from pathlib import Path
 from datetime import datetime, timedelta
 import time
+from bs4 import BeautifulSoup
 
-CACHE_FILE = Path("yc_companies_with_jobs.json")
+CACHE_FILE = Path("yc_all_companies.json")
 CACHE_DAYS = 7
 
-def scrape_yc_companies_with_playwright():
-    """Use Playwright to scrape YC company directory."""
-    companies = []
+def get_all_yc_companies():
+    """Get all YC companies from the YC directory."""
+    companies = set()
     
     try:
-        print("    🔍 Launching browser to scrape YC directory...")
+        print("    🔍 Fetching all YC companies from directory...")
         
         with sync_playwright() as p:
-            # Set headless=False if you need to debug Cloudflare blocks
             browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
             
-            # Use a real user-agent to avoid immediate bot detection
-            context = browser.new_context(
-                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                viewport={'width': 1920, 'height': 1080}
-            )
-            page = context.new_page()
+            page.goto("https://www.ycombinator.com/companies", wait_until="domcontentloaded", timeout=30000)
+            page.wait_for_timeout(5000)
             
-            page.goto("https://www.ycombinator.com/companies", wait_until="networkidle")
-            print("    ✓ Page loaded, extracting company data...")
-            page.wait_for_timeout(3000) 
+            # Scroll to load ALL companies (increased from 10 to 50 scrolls)
+            previous_count = 0
+            scroll_attempts = 0
+            max_no_change = 5  # Stop if no new companies after 5 scrolls
+            no_change_count = 0
             
-            # Extract __NEXT_DATA__
-            next_data = page.evaluate("""
-                () => {
-                    const scriptTag = document.getElementById('__NEXT_DATA__');
-                    return scriptTag ? scriptTag.textContent : null;
-                }
-            """)
-            
-            if next_data:
-                data = json.loads(next_data)
-                props = data.get('props', {})
-                page_props = props.get('pageProps', {})
-                companies_data = page_props.get('companies', []) or page_props.get('initialCompanies', []) or []
+            while scroll_attempts < 100:  # Max 100 scrolls
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                page.wait_for_timeout(1500)
                 
-                print(f"    📍 Found {len(companies_data)} companies in JSON data")
+                # Check how many companies we have now
+                html = page.content()
+                soup = BeautifulSoup(html, 'html.parser')
+                links = soup.find_all('a', href=True)
                 
-                for company in companies_data:
-                    if isinstance(company, dict):
-                        slug = company.get('slug', '')
-                        name = company.get('name', '')
-                        job_count = company.get('num_jobs', 0)
-                        
-                        if slug and name:
-                            companies.append({
-                                'slug': slug,
-                                'name': name,
-                                'job_count': job_count,
-                            })
-                print(f"    ✓ Extracted {len(companies)} companies")
-            
-            else:
-                print("    ⚠️  Could not find __NEXT_DATA__, using DOM fallback...")
-                
-                # DOM Fallback: scrape visible company links
-                company_links = page.query_selector_all('a[href^="/companies/"]')
-                
-                seen_slugs = set()
-                for link in company_links:
-                    href = link.get_attribute('href')
-                    text = link.inner_text().strip()
-                    
-                    if href and href.startswith('/companies/'):
+                current_companies = set()
+                for link in links:
+                    href = link['href']
+                    if href.startswith('/companies/') and '/jobs' not in href:
                         slug = href.replace('/companies/', '').strip('/')
-                        
-                        if slug and slug not in ['', 'top-companies', 'jobs', 'apply'] and slug not in seen_slugs:
-                            seen_slugs.add(slug)
-                            companies.append({
-                                'slug': slug,
-                                'name': text or slug.replace('-', ' ').title(),
-                                'job_count': 1, # Defaulting to 1 to ensure it gets checked later
-                            })
+                        if slug and slug != 'companies':
+                            current_companies.add(slug)
                 
-                print(f"    📍 Scraped {len(companies)} company links from DOM")
+                current_count = len(current_companies)
+                
+                if current_count == previous_count:
+                    no_change_count += 1
+                    if no_change_count >= max_no_change:
+                        print(f"    📍 No new companies found after {max_no_change} scrolls, stopping...")
+                        break
+                else:
+                    no_change_count = 0
+                    companies = current_companies
+                
+                print(f"    📊 Scroll {scroll_attempts + 1}: Found {current_count} companies...")
+                
+                previous_count = current_count
+                scroll_attempts += 1
             
             browser.close()
-    
+        
+        print(f"    📍 Found {len(companies)} YC companies from directory")
+        
     except Exception as e:
-        print(f"  Playwright scraping failed: {e}")
+        print(f"  Error: {e}")
+        import traceback
+        traceback.print_exc()
     
-    return companies
+    return list(companies)
 
-def scrape_company_jobs_with_playwright(slug, company_name):
-    """Scrape jobs from a single company using Playwright."""
-    jobs = []
+def scrape_all_jobs(company_slugs):
+    """Scrape jobs from all companies using a single browser instance."""
+    all_jobs = []
+    companies_with_jobs = 0
     
-    try:
-        with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
-            context = browser.new_context(
-                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-            )
-            page = context.new_page()
-            
-            url = f"https://www.ycombinator.com/companies/{slug}/jobs"
-            response = page.goto(url, wait_until="domcontentloaded")
-            
-            if response.status == 404:
-                browser.close()
-                return []
-            
-            page.wait_for_timeout(2000)
-            
-            next_data = page.evaluate("""
-                () => {
-                    const scriptTag = document.getElementById('__NEXT_DATA__');
-                    return scriptTag ? scriptTag.textContent : null;
-                }
-            """)
-            
-            # Strategy 1: JSON Data
-            if next_data:
-                data = json.loads(next_data)
-                props = data.get('props', {})
-                page_props = props.get('pageProps', {})
-                jobs_data = page_props.get('jobs', []) or page_props.get('company', {}).get('jobs', []) or []
-                page_company_name = page_props.get('company', {}).get('name', company_name)
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+        
+        for i, slug in enumerate(company_slugs):
+            try:
+                url = f"https://www.ycombinator.com/companies/{slug}/jobs"
                 
-                for job in jobs_data:
-                    if isinstance(job, dict):
-                        job_id = job.get('id', '')
-                        job_url = job.get('url', '')
-                        if not job_url and job_id:
-                            job_url = f"https://www.ycombinator.com/companies/{slug}/jobs/{job_id}"
-                        
-                        location = job.get('location', 'Remote')
-                        if isinstance(location, list):
-                            location = ', '.join(str(loc) for loc in location if loc)
-                        elif isinstance(location, dict):
-                            location = location.get('name', 'Remote')
-                            
-                        jobs.append({
-                            'title': job.get('title', ''),
-                            'url': job_url,
-                            'location': location or 'Remote',
-                            'company': page_company_name,
-                            'posted': job.get('created_at', job.get('postedAt', '')),
-                        })
-            
-            # Strategy 2: DOM Fallback
-            if not jobs:
-                job_links = page.query_selector_all(f'a[href^="/companies/{slug}/jobs/"]')
-                seen_urls = set()
+                response = page.goto(url, wait_until="domcontentloaded", timeout=10000)
                 
-                for link in job_links:
-                    href = link.get_attribute('href')
+                if response and response.status == 404:
+                    continue
+                
+                page.wait_for_timeout(1000)  # Reduced wait time
+                
+                html = page.content()
+                soup = BeautifulSoup(html, 'html.parser')
+                
+                data_div = soup.find('div', {'data-page': True})
+                
+                if data_div:
+                    data_page_json = data_div['data-page']
+                    data = json.loads(data_page_json)
                     
-                    if href and href not in seen_urls and href != f"/companies/{slug}/jobs/":
-                        seen_urls.add(href)
-                        title = link.inner_text().strip()
+                    props = data.get('props', {})
+                    job_postings = props.get('jobPostings', [])
+                    
+                    if job_postings:
+                        companies_with_jobs += 1
+                        company_name = props.get('company', {}).get('name', slug.capitalize())
                         
-                        if title and title.lower() not in ['apply', 'view', 'jobs']:
-                            jobs.append({
-                                'title': title.split('\n')[0],
-                                'url': f"https://www.ycombinator.com{href}",
-                                'location': 'Unspecified/Remote', 
+                        for job in job_postings:
+                            all_jobs.append({
+                                'title': job.get('title', ''),
+                                'url': f"https://www.ycombinator.com{job.get('url', '')}",
+                                'location': job.get('location', 'Remote'),
                                 'company': company_name,
-                                'posted': '',
+                                'posted': job.get('createdAt', ''),
                             })
-
-            browser.close()
+                
+                if (i + 1) % 50 == 0:
+                    print(f"      Progress: {i + 1}/{len(company_slugs)}, {companies_with_jobs} with jobs, {len(all_jobs)} jobs")
+                
+                time.sleep(0.1)  # Small delay to avoid rate limiting
+                
+            except Exception as e:
+                continue
+        
+        browser.close()
     
-    except Exception as e:
-        pass 
-    
-    return jobs
+    return all_jobs, companies_with_jobs
 
 def load_cache():
     if not CACHE_FILE.exists():
@@ -198,61 +152,35 @@ def save_cache(companies):
     CACHE_FILE.write_text(json.dumps(data, indent=2))
 
 def fetch():
-    jobs = []
-    
-    # Try cache first
     cached_companies = load_cache()
     
     if cached_companies:
         print(f"    ✓ Using cached {len(cached_companies)} YC companies")
-        companies = cached_companies
+        company_slugs = cached_companies
     else:
-        companies = scrape_yc_companies_with_playwright()
+        company_slugs = get_all_yc_companies()
         
-        if not companies:
-            print("  YC: Failed to scrape companies")
+        if not company_slugs:
+            print("  YC: No companies found")
             return []
         
-        # Filter to only companies with jobs
-        companies_with_jobs = [c for c in companies if c.get('job_count', 0) > 0]
-        
-        if not companies_with_jobs:
-            # If no job counts available (due to fallback), take all companies
-            companies_with_jobs = companies
-        
-        print(f"    📊 {len(companies_with_jobs)} companies have jobs (out of {len(companies)} total)")
-        
-        save_cache(companies_with_jobs)
-        companies = companies_with_jobs
+        save_cache(company_slugs)
     
-    # Fetch jobs from each company
-    print(f"    🔍 Fetching jobs from {len(companies)} YC companies...")
+    print(f"    🔍 Fetching jobs from {len(company_slugs)} YC companies...")
     
-    companies_fetched = 0
-    test_limit = min(50, len(companies)) # Test with first 50 companies
+    all_jobs, companies_with_jobs = scrape_all_jobs(company_slugs)
     
-    for i, company in enumerate(companies[:test_limit]):
-        slug = company['slug']
-        name = company['name']
-        
-        company_jobs = scrape_company_jobs_with_playwright(slug, name)
-        
-        if company_jobs:
-            companies_fetched += 1
-            jobs.extend([{
-                "title": job['title'],
-                "company": job['company'],
-                "location": job['location'],
-                "url": job['url'],
-                "posted": job.get('posted', ''),
-                "tags": [],
-                "source": "YC",
-            } for job in company_jobs])
-        
-        if (i + 1) % 10 == 0:
-            print(f"      Progress: {i + 1}/{test_limit}, {companies_fetched} with jobs, {len(jobs)} total jobs")
-        
-        time.sleep(0.5)  # Slower to avoid detection
+    jobs = []
+    for job in all_jobs:
+        jobs.append({
+            "title": job['title'],
+            "company": job['company'],
+            "location": job['location'],
+            "url": job['url'],
+            "posted": job.get('posted', ''),
+            "tags": [],
+            "source": "YC",
+        })
     
-    print(f"    ✓ YC: {len(jobs)} jobs from {companies_fetched}/{test_limit} companies")
+    print(f"    ✓ YC: {len(jobs)} jobs from {companies_with_jobs}/{len(company_slugs)} companies")
     return jobs
