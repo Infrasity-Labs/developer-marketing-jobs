@@ -1,6 +1,6 @@
 ﻿# Developer Marketing Jobs
 
-**Every open DevRel, technical writing, developer marketing, community, and docs role at devtool companies — in one place.**
+**Every open Developer Advocate DevRel, technical writing, developer marketing, community, and docs role at devtool companies — in one place.**
 
 Curated nightly. Pulled directly from company ATS feeds. No reposts, no aggregator noise.
 
