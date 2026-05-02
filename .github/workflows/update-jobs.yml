@@ -1,0 +1,166 @@
+name: Update Jobs
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-api-sources:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        source: [remoteok, remotive, adzuna, arbeitnow]
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - run: pip install -r requirements.txt
+      
+      - name: Fetch ${{ matrix.source }}
+        run: python -c "from fetchers import ${{ matrix.source }}; import json; jobs = ${{ matrix.source }}.fetch(); json.dump(jobs, open('${{ matrix.source }}_jobs.json', 'w'))"
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+      
+      - name: Upload jobs
+        uses: actions/upload-artifact@v4
+        with:
+          name: jobs-${{ matrix.source }}
+          path: ${{ matrix.source }}_jobs.json
+
+  fetch-greenhouse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - run: pip install -r requirements.txt
+      
+      - name: Fetch Greenhouse
+        run: python -c "from fetchers import greenhouse; import json; jobs = greenhouse.fetch(); json.dump(jobs, open('greenhouse_jobs.json', 'w'))"
+      
+      - name: Upload jobs
+        uses: actions/upload-artifact@v4
+        with:
+          name: jobs-greenhouse
+          path: greenhouse_jobs.json
+
+  fetch-greenhouse-commoncrawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - run: pip install -r requirements.txt
+      
+      - name: Fetch Greenhouse Common Crawl
+        run: python -c "from fetchers import greenhouse_commoncrawl; import json; jobs = greenhouse_commoncrawl.fetch(); json.dump(jobs, open('greenhouse_commoncrawl_jobs.json', 'w'))"
+      
+      - name: Upload jobs
+        uses: actions/upload-artifact@v4
+        with:
+          name: jobs-greenhouse-commoncrawl
+          path: greenhouse_commoncrawl_jobs.json
+
+  fetch-ashby:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - run: pip install -r requirements.txt
+      
+      - name: Fetch Ashby
+        run: python -c "from fetchers import ashby; import json; jobs = ashby.fetch(); json.dump(jobs, open('ashby_jobs.json', 'w'))"
+      
+      - name: Upload jobs
+        uses: actions/upload-artifact@v4
+        with:
+          name: jobs-ashby
+          path: ashby_jobs.json
+
+  fetch-yc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Restore YC cache
+        uses: actions/cache@v4
+        with:
+          path: yc_all_companies.json
+          key: yc-companies-${{ github.run_id }}
+          restore-keys: |
+            yc-companies-
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - run: pip install -r requirements.txt
+      
+      - name: Install Playwright
+        run: |
+          pip install playwright beautifulsoup4
+          playwright install chromium
+          playwright install-deps chromium
+      
+      - name: Fetch YC
+        run: python -c "from fetchers import yc_ats; import json; jobs = yc_ats.fetch(); json.dump(jobs, open('yc_jobs.json', 'w'))"
+      
+      - name: Upload jobs
+        uses: actions/upload-artifact@v4
+        with:
+          name: jobs-yc
+          path: yc_jobs.json
+      
+      - name: Save YC cache
+        uses: actions/upload-artifact@v4
+        with:
+          name: yc-cache
+          path: yc_all_companies.json
+        if: always()
+
+  build-readme:
+    needs: [fetch-api-sources, fetch-greenhouse, fetch-greenhouse-commoncrawl, fetch-ashby, fetch-yc]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - run: pip install -r requirements.txt
+      
+      - name: Download all job artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts/
+      
+      - name: Build README from artifacts
+        run: python build_readme.py
+      
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update jobs"
+          file_pattern: README.md
