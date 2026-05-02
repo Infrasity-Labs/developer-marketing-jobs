@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://www.workatastartup.com/jobs",
+    "method": "GET",
+    "post_data": null
+  },
+  {
+    "url": "https://bookface-static.ycombinator.com/vite/assets/algoliasearch-05kyX2Mw.js",
+    "method": "GET",
+    "post_data": null
+  },
+  {
+    "url": "https://bookface-static.ycombinator.com/vite/assets/useObservableJob-NhJs8APt.js",
+    "method": "GET",
+    "post_data": null
+  },
+  {
+    "url": "https://bookface-static.ycombinator.com/vite/assets/api-C6Xmb-P2.js",
+    "method": "GET",
+    "post_data": null
+  },
+  {
+    "url": "https://bookface-static.ycombinator.com/vite/assets/home-api-4fJaT0pt.js",
+    "method": "GET",
+    "post_data": null
+  },
+  {
+    "url": "https://o4506690008121344.ingest.us.sentry.io/api/4508366065238016/envelope/?sentry_version=7&sentry_key=788c28f2d583d3ada82afc01f294c559&sentry_client=sentry.javascript.react%2F10.5.0",
+    "method": "POST",
+    "post_data": "{\"sent_at\":\"2026-04-30T08:18:19.510Z\",\"sdk\":{\"name\":\"sentry.javascript.react\",\"version\":\"10.5.0\"}}\n{\"type\":\"session\"}\n{\"sid\":\"f09a6abd4a514d86bde4e3b1a835279f\",\"init\":true,\"started\":\"2026-04-30T08:18:19.510Z\",\"timestamp\":\"2026-04-30T08:18:19.510Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"a6ed2c0e7cf79fd20f57c7fd58e3eefd97b956cf\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36\"}}"
+  },
+  {
+    "url": "https://bookface-static.ycombinator.com/vite/assets/JobsPage-Bt8tCtmh.js",
+    "method": "GET",
+    "post_data": null
+  },
+  {
+    "url": "https://bookface-static.ycombinator.com/vite/assets/JobCard-BUhgX7u2.js",
+    "method": "GET",
+    "post_data": null
+  }
+]

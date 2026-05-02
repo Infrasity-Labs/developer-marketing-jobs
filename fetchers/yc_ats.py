@@ -22,44 +22,40 @@ def get_all_yc_companies():
             page.goto("https://www.ycombinator.com/companies", wait_until="domcontentloaded", timeout=30000)
             page.wait_for_timeout(5000)
             
-            # Scroll to load ALL companies (increased from 10 to 50 scrolls)
+            # Aggressive scrolling to load ALL companies
             previous_count = 0
-            scroll_attempts = 0
-            max_no_change = 5  # Stop if no new companies after 5 scrolls
             no_change_count = 0
             
-            while scroll_attempts < 100:  # Max 100 scrolls
+            for scroll_num in range(500):  # Up to 200 scrolls
                 page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                page.wait_for_timeout(1500)
+                page.wait_for_timeout(2000)  # Wait longer for content to load
                 
-                # Check how many companies we have now
-                html = page.content()
-                soup = BeautifulSoup(html, 'html.parser')
-                links = soup.find_all('a', href=True)
-                
-                current_companies = set()
-                for link in links:
-                    href = link['href']
-                    if href.startswith('/companies/') and '/jobs' not in href:
-                        slug = href.replace('/companies/', '').strip('/')
-                        if slug and slug != 'companies':
-                            current_companies.add(slug)
-                
-                current_count = len(current_companies)
-                
-                if current_count == previous_count:
-                    no_change_count += 1
-                    if no_change_count >= max_no_change:
-                        print(f"    📍 No new companies found after {max_no_change} scrolls, stopping...")
-                        break
-                else:
-                    no_change_count = 0
-                    companies = current_companies
-                
-                print(f"    📊 Scroll {scroll_attempts + 1}: Found {current_count} companies...")
-                
-                previous_count = current_count
-                scroll_attempts += 1
+                # Check current count every 10 scrolls
+                if scroll_num % 10 == 0:
+                    html = page.content()
+                    soup = BeautifulSoup(html, 'html.parser')
+                    
+                    current_companies = set()
+                    for link in soup.find_all('a', href=True):
+                        href = link['href']
+                        if href.startswith('/companies/') and '/jobs' not in href:
+                            slug = href.replace('/companies/', '').strip('/')
+                            if slug and slug != 'companies':
+                                current_companies.add(slug)
+                    
+                    current_count = len(current_companies)
+                    print(f"      Scroll {scroll_num + 1}: {current_count} companies loaded...")
+                    
+                    if current_count == previous_count:
+                        no_change_count += 1
+                        if no_change_count >= 3:
+                            print(f"      ✓ Stopped at {current_count} companies (no new ones)")
+                            companies = current_companies
+                            break
+                    else:
+                        no_change_count = 0
+                        companies = current_companies
+                        previous_count = current_count
             
             browser.close()
         
@@ -71,6 +67,7 @@ def get_all_yc_companies():
         traceback.print_exc()
     
     return list(companies)
+
 
 def scrape_all_jobs(company_slugs):
     """Scrape jobs from all companies using a single browser instance."""

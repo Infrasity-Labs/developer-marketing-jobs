@@ -10,7 +10,8 @@ from fetchers import (
     greenhouse,
     ashby, 
     yc_ats,
-    greenhouse_commoncrawl
+    greenhouse_commoncrawl,
+    yc_workatastartup
 )
 
 # Remove these broken fetchers:
@@ -280,7 +281,8 @@ def main():
         greenhouse,
         ashby, 
         yc_ats,
-        greenhouse_commoncrawl
+        greenhouse_commoncrawl,
+        yc_workatastartup
     ]
     
     for fetcher in fetchers:
