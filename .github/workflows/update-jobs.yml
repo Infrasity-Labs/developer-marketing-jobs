@@ -145,6 +145,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       
       - uses: actions/setup-python@v5
         with:
@@ -160,7 +163,13 @@ jobs:
       - name: Build README from artifacts
         run: python build_readme.py
       
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update jobs"
-          file_pattern: README.md
+      - name: Commit and push with rebase
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || (
+            git commit -m "chore: update jobs" &&
+            git pull --rebase origin main &&
+            git push origin main
+          )
