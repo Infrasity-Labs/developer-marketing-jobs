@@ -271,15 +271,15 @@ def main():
     
     # Only include working fetchers
     fetchers = [
-        # remoteok, 
-        # remotive, 
-        # adzuna, 
-        # arbeitnow,
-        # greenhouse,
-        # ashby, 
-        # yc_ats,
-        # greenhouse_commoncrawl,
-        # yc_workatastartup,
+        remoteok, 
+        remotive, 
+        adzuna, 
+        arbeitnow,
+        greenhouse,
+        ashby, 
+        yc_ats,
+        greenhouse_commoncrawl,
+        yc_workatastartup,
         lever,          # NEW
         workable,       # NEW
         remotefront, 
