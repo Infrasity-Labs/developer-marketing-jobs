@@ -1,0 +1,76 @@
+name: 🧳 Submit a Job
+description: Add a job opening that's not currently listed
+title: "[JOB] Company Name - Job Title"
+labels: ["job-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a job! Fill in the details below and we'll add it to the board.
+
+  - type: input
+    id: company
+    attributes:
+      label: Company Name
+      placeholder: e.g. Stripe
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Job Title
+      placeholder: e.g. Developer Advocate
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Application URL
+      placeholder: https://jobs.lever.co/stripe/...
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      placeholder: e.g. Remote, San Francisco CA, New York NY
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - 🎤 Developer Advocate / DevRel
+        - ✍️ Technical Writing & Documentation
+        - 📣 Developer Marketing
+        - 📦 Product Marketing
+        - 📈 Head of Growth
+        - 👔 VP Marketing
+        - 👥 Community
+        - 🎯 Product Led Growth
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ats
+    attributes:
+      label: ATS Platform
+      description: Which ATS does this company use?
+      options:
+        - Greenhouse
+        - Lever
+        - Ashby
+        - Workable
+        - Other (specify in notes)
+        - Unknown
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      placeholder: Any other context about this role or company

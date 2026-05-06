@@ -11,7 +11,14 @@ from fetchers import (
     ashby, 
     yc_ats,
     greenhouse_commoncrawl,
-    yc_workatastartup
+    yc_workatastartup,
+    lever,          # NEW
+    workable,       # NEW
+    remotefront, 
+    jobicy,           # NEW
+    himalayas,        # NEW
+    weworkremotely,   # NEW
+    
 )
 
 # Remove these broken fetchers:
@@ -80,17 +87,7 @@ CATEGORIES = [
         ],
     },
     
-    {
-        "label": "🎯 Product Led Growth",
-        "keywords": [
-            "product led growth",
-            "plg",
-            "product growth",
-            "self serve growth",
-            "product adoption",
-            
-        ],
-    },
+
 ]
 MAX_AGE_DAYS = 90
 MAX_JOBS_PER_CATEGORY = 1000
@@ -274,18 +271,25 @@ def main():
     
     # Only include working fetchers
     fetchers = [
-        remoteok, 
-        remotive, 
-        adzuna, 
-        arbeitnow,
-        greenhouse,
-        ashby, 
-        yc_ats,
-        greenhouse_commoncrawl,
-        yc_workatastartup
+        # remoteok, 
+        # remotive, 
+        # adzuna, 
+        # arbeitnow,
+        # greenhouse,
+        # ashby, 
+        # yc_ats,
+        # greenhouse_commoncrawl,
+        # yc_workatastartup,
+        lever,          # NEW
+        workable,       # NEW
+        remotefront, 
+        jobicy,           # NEW
+        himalayas,        # NEW
+        weworkremotely,   # NEW
+        
     ]
     
-    for fetcher in fetchers:
+    for fetcher in fetchers:    
         try:
             jobs = fetcher.fetch()
             

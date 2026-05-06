@@ -1,99 +1,182 @@
 import requests
 import re
+import json
 import os
+from pathlib import Path
+from datetime import datetime, timedelta
 
-def fetch():
-    # Get credentials from environment variables
-    api_key = os.getenv("GOOGLE_CSE_API_KEY")
-    search_engine_id = os.getenv("GOOGLE_CSE_ID", "c2baa0cc4fc164553")
-    
-    if not api_key:
-        print("  Google CSE: API key not configured, skipping")
-        return []
-    
-    print(f"    🔑 Using API key: {api_key[:10]}... and CSE ID: {search_engine_id}")
-    
-    jobs = []
-    
-    # Start with just ONE query for debugging
-    queries = [
-        'site:boards.greenhouse.io "developer advocate"',
-    ]
-    
-    discovered_companies = {
-        "greenhouse": set(),
-        "lever": set(),
-        "ashby": set(),
-    }
-    
-    print(f"    🔍 Running Google CSE to discover companies...")
-    
-    for query in queries:
-        try:
-            url = "https://www.googleapis.com/customsearch/v1"
-            params = {
-                "key": api_key,
-                "cx": search_engine_id,
-                "q": query,
-                "num": 10,
-            }
-            
-            print(f"      Searching: {query}")
-            r = requests.get(url, params=params, timeout=15)
-            
-            # Show the actual response
-            print(f"      Status: {r.status_code}")
-            
-            if r.status_code != 200:
-                print(f"      Error response: {r.text[:200]}")
+CACHE_FILE = Path("dataforseo_discovered.json")
+CACHE_DAYS = 30
+
+# ATS site patterns
+ATS_CONFIG = {
+    "lever": {
+        "site": "site:jobs.lever.co",
+        "pattern": r'jobs\.lever\.co/([a-zA-Z0-9][a-zA-Z0-9\-]+)',
+    },
+    "workable": {
+        "site": "site:apply.workable.com",
+        "pattern": r'apply\.workable\.com/([a-zA-Z0-9][a-zA-Z0-9\-]+)',
+    },
+    "ashby": {
+        "site": "site:jobs.ashbyhq.com",
+        "pattern": r'jobs\.ashbyhq\.com/([a-zA-Z0-9][a-zA-Z0-9\-]+)',
+    },
+    "greenhouse": {
+        "site": "site:boards.greenhouse.io",
+        "pattern": r'boards\.greenhouse\.io/([a-zA-Z0-9][a-zA-Z0-9\-]+)',
+    },
+}
+
+
+def build_queries_from_categories(ats_type, categories):
+    """
+    Build search queries dynamically from main.py CATEGORIES.
+    Uses actual keywords instead of hardcoded ones.
+    """
+    site = ATS_CONFIG[ats_type]["site"]
+    queries = []
+
+    for cat in categories:
+        # Use first 3 keywords from each category
+        # (too many keywords = too many API calls)
+        keywords = cat.get("keywords", [])[:3]
+
+        for keyword in keywords:
+            # Skip very generic keywords that would return noise
+            if len(keyword) < 6:
                 continue
-            
-            r.raise_for_status()
-            data = r.json()
-            
-            print(f"      Found {len(data.get('items', []))} results")
-            
-            # Extract company slugs from URLs
-            for item in data.get("items", []):
-                link = item.get("link", "")
-                print(f"        - {link}")
-                
-                # Greenhouse: https://boards.greenhouse.io/cloudflare/jobs/123
-                if "boards.greenhouse.io" in link:
-                    match = re.search(r"boards\.greenhouse\.io/([^/]+)", link)
-                    if match:
-                        company = match.group(1)
-                        discovered_companies["greenhouse"].add(company)
-                        print(f"          → Found company: {company}")
-        
+
+            query = f'{site} "{keyword}"'
+            queries.append(query)
+
+    # Deduplicate
+    queries = list(set(queries))
+
+    print(f"      Built {len(queries)} queries from {len(categories)} categories")
+    return queries
+
+
+def discover_companies(ats_type, categories):
+    """
+    Discover companies on any ATS using DataForSEO SERP API.
+    Uses categories from main.py instead of hardcoded keywords.
+    """
+    login = os.getenv("DATAFORSEO_LOGIN")
+    password = os.getenv("DATAFORSEO_PASSWORD")
+
+    if not login or not password:
+        print(f"  DataForSEO: credentials not set, skipping {ats_type} discovery")
+        return set()
+
+    if ats_type not in ATS_CONFIG:
+        print(f"  Unknown ATS type: {ats_type}")
+        return set()
+
+    pattern = ATS_CONFIG[ats_type]["pattern"]
+
+    # Build queries from actual categories
+    queries = build_queries_from_categories(ats_type, categories)
+
+    companies = set()
+    print(f"      Running {len(queries)} DataForSEO queries for {ats_type}...")
+
+    for i, query in enumerate(queries):
+        try:
+            response = requests.post(
+                "https://api.dataforseo.com/v3/serp/google/organic/live/advanced",
+                auth=(login, password),
+                json=[{
+                    "keyword": query,
+                    "location_code": 2840,  # United States
+                    "language_code": "en",
+                    "depth": 100,
+                }],
+                timeout=30,
+            )
+
+            if response.status_code != 200:
+                continue
+
+            data = response.json()
+
+            new_found = 0
+            for task in data.get('tasks', []):
+                for result in task.get('result', []):
+                    for item in result.get('items', []):
+                        url = item.get('url', '')
+                        match = re.search(pattern, url, re.IGNORECASE)
+                        if match:
+                            slug = match.group(1).lower()
+                            if len(slug) > 2:
+                                if slug not in companies:
+                                    companies.add(slug)
+                                    new_found += 1
+
+            if new_found > 0:
+                print(f"      Query {i+1}/{len(queries)}: +{new_found} companies (total: {len(companies)})")
+
         except Exception as e:
-            print(f"      ❌ Query failed: {e}")
+            print(f"      Query failed: {e}")
             continue
-    
-    total_companies = sum(len(c) for c in discovered_companies.values())
-    print(f"    📊 Discovered {total_companies} companies: {len(discovered_companies['greenhouse'])} GH")
-    
-    # Fetch jobs from discovered companies
-    for company in discovered_companies["greenhouse"]:
-        try:
-            url = f"https://boards-api.greenhouse.io/v1/boards/{company}/jobs"
-            r = requests.get(url, timeout=10)
-            if r.status_code != 200:
-                continue
-            
-            for item in r.json().get("jobs", []):
-                location = item.get("location", {}).get("name", "Remote")
-                jobs.append({
-                    "title": item.get("title", ""),
-                    "company": company.capitalize(),
-                    "location": location,
-                    "url": item.get("absolute_url", ""),
-                    "posted": item.get("updated_at", ""),
-                    "tags": [],
-                    "source": "Greenhouse (CSE)",
-                })
-        except:
-            continue
-    
-    print(f"    ✓ Google CSE: {len(jobs)} jobs from {total_companies} companies")
-    return jobs
+
+    print(f"    📍 {ats_type}: {len(companies)} companies discovered")
+    return companies
+
+
+def load_cache():
+    if not CACHE_FILE.exists():
+        return None
+    try:
+        data = json.loads(CACHE_FILE.read_text())
+        cache_date = datetime.fromisoformat(data["updated_at"])
+        if datetime.now() - cache_date > timedelta(days=CACHE_DAYS):
+            return None
+        return data
+    except:
+        return None
+
+
+def save_cache(data):
+    cache_data = {
+        "updated_at": datetime.now().isoformat(),
+        **data
+    }
+    CACHE_FILE.write_text(json.dumps(cache_data, indent=2))
+
+
+def get_discovered_companies(categories):
+    """
+    Returns dict of discovered companies per ATS.
+    Uses cache if available, otherwise runs DataForSEO discovery.
+
+    Args:
+        categories: CATEGORIES list from main.py
+    """
+    cached = load_cache()
+    if cached:
+        print(f"    ✓ Using cached DataForSEO discoveries:")
+        print(f"      Lever:    {len(cached.get('lever', []))} companies")
+        print(f"      Workable: {len(cached.get('workable', []))} companies")
+        print(f"      Ashby:    {len(cached.get('ashby', []))} companies")
+        return cached
+
+    print("    🔍 Running DataForSEO discovery using your categories...")
+
+    lever    = discover_companies("lever", categories)
+    workable = discover_companies("workable", categories)
+    ashby    = discover_companies("ashby", categories)
+
+    print(f"\n    📊 Discovery complete:")
+    print(f"      Lever:    {len(lever)} companies")
+    print(f"      Workable: {len(workable)} companies")
+    print(f"      Ashby:    {len(ashby)} companies")
+
+    result = {
+        "lever":    list(lever),
+        "workable": list(workable),
+        "ashby":    list(ashby),
+    }
+
+    save_cache(result)
+    return result

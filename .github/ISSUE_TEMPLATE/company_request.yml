@@ -1,0 +1,55 @@
+name: 🏢 Request a Company
+description: Add a devtool company we're not currently tracking
+title: "[COMPANY] Company Name"
+labels: ["company-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Know a devtool company we're missing? Submit it here and we'll add them to our sources.
+
+  - type: input
+    id: company
+    attributes:
+      label: Company Name
+      placeholder: e.g. Vercel
+    validations:
+      required: true
+
+  - type: input
+    id: careers_url
+    attributes:
+      label: Careers Page URL
+      placeholder: https://vercel.com/careers
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ats
+    attributes:
+      label: ATS Platform
+      description: Which platform do they use for job postings?
+      options:
+        - Greenhouse
+        - Lever
+        - Ashby
+        - Workable
+        - Other
+        - Unknown
+    validations:
+      required: true
+
+  - type: input
+    id: ats_slug
+    attributes:
+      label: ATS Slug (if known)
+      description: The company identifier in their ATS URL
+      placeholder: e.g. for jobs.lever.co/vercel the slug is "vercel"
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why should we add this company?
+      placeholder: e.g. They frequently hire DevRel and technical writers, great devtool company
+    validations:
+      required: true

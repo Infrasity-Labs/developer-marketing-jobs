@@ -1,0 +1,22 @@
+[
+  "https://bookface-static.ycombinator.com/vite/assets/algoliaClient-DVGUFo_o.js",
+  "https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true",
+  "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap",
+  "https://www.ycombinator.com/companies",
+  "https://bookface-static.ycombinator.com/vite/assets/algoliasearch-helper-CO7nET3F.js",
+  "https://bookface-static.ycombinator.com/vite/assets/home-api-D_v33Ue_.js",
+  "https://45bwzj1sgc-2.algolianet.com/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(3.35.1)%3B%20Browser%3B%20JS%20Helper%20(3.16.1)&x-algolia-application-id=45BWZJ1SGC&x-algolia-api-key=NzllNTY5MzJiZGM2OTY2ZTQwMDEzOTNhYWZiZGRjODlhYzVkNjBmOGRjNzJiMWM4ZTU0ZDlhYTZjOTJiMjlhMWFuYWx5dGljc1RhZ3M9eWNkYyZyZXN0cmljdEluZGljZXM9WUNDb21wYW55X3Byb2R1Y3Rpb24lMkNZQ0NvbXBhbnlfQnlfTGF1bmNoX0RhdGVfcHJvZHVjdGlvbiZ0YWdGaWx0ZXJzPSU1QiUyMnljZGNfcHVibGljJTIyJTVE",
+  "https://45bwzj1sgc-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(3.35.1)%3B%20Browser%3B%20JS%20Helper%20(3.16.1)&x-algolia-application-id=45BWZJ1SGC&x-algolia-api-key=NzllNTY5MzJiZGM2OTY2ZTQwMDEzOTNhYWZiZGRjODlhYzVkNjBmOGRjNzJiMWM4ZTU0ZDlhYTZjOTJiMjlhMWFuYWx5dGljc1RhZ3M9eWNkYyZyZXN0cmljdEluZGljZXM9WUNDb21wYW55X3Byb2R1Y3Rpb24lMkNZQ0NvbXBhbnlfQnlfTGF1bmNoX0RhdGVfcHJvZHVjdGlvbiZ0YWdGaWx0ZXJzPSU1QiUyMnljZGNfcHVibGljJTIyJTVE",
+  "https://bookface-static.ycombinator.com/vite/assets/algoliasearch-05kyX2Mw.js",
+  "https://analytics.google.com/g/collect?v=2&tid=G-CHJJ1RJL5K&gtm=45je64t1v9127153998za20g&_p=1777879696364&_gaz=1&gcd=13l3l3l3l2l1&npa=0&dma=0&_eu=EBAIAGA&_ng=1&are=1&cid=230891667.1777879696&frm=0&ir=1&pscdl=noapi&rcb=15&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B145.0.7632.6%7CNot%253AA-Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=0~115938466~115938468~117884344~118012008~118289195&dl=https%3A%2F%2Fwww.ycombinator.com%2Fcompanies&dt=The%20YC%20Startup%20Directory%20%7C%20Y%20Combinator&sid=1777879696&sct=1&seg=0&_tu=wAQ&en=page_view&_fv=1&_ss=1&_ee=1&tfd=1836",
+  "https://o4506690008121344.ingest.us.sentry.io/api/4508298399711232/envelope/?sentry_version=7&sentry_key=92041c3cec004a2f929f431a92207745&sentry_client=sentry.javascript.react%2F10.5.0",
+  "https://maps.googleapis.com/maps-api-v3/api/js/64/11d/common.js",
+  "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap",
+  "https://bookface-static.ycombinator.com/vite/assets/algoliasearch-lite.umd-BEkB3Xpu.js",
+  "https://bookface-static.ycombinator.com/vite/assets/api-DEhiUNWf.js",
+  "https://maps.googleapis.com/maps/api/js?key=AIzaSyC0BuJ43Ncbmuro17vVxWJWrOzzAPZ0rQE&libraries=places&language=en",
+  "https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap",
+  "https://maps.googleapis.com/maps-api-v3/api/js/64/11d/util.js",
+  "https://www.google-analytics.com/j/collect?v=1&_v=j102&a=1223263221&t=pageview&_s=1&dl=https%3A%2F%2Fwww.ycombinator.com%2Fcompanies&ul=en-us&dt=The%20YC%20Startup%20Directory%20%7C%20Y%20Combinator&sr=1280x720&vp=1280x720&_u=KGBAAEAjAAAAACAAI~&jid=852013441&gjid=328861299&cid=230891667.1777879696&tid=UA-51714649-1&_gid=1505374113.1777879696&_r=1&_slc=1&z=467722629",
+  "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+]

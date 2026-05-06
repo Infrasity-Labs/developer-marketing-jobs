@@ -1,39 +1,76 @@
 import requests
+import time
 
-def fetch():
+def fetch(categories=None):
+    """Fetch jobs from Himalayas public API - no auth needed."""
     jobs = []
-    
+    categories = categories or []
+
+    print(f"    🔍 Fetching from Himalayas...")
+
     try:
-        # Himalayas API endpoint
-        url = "https://himalayas.app/api/jobs"
-        headers = {"User-Agent": "Mozilla/5.0"}
-        
-        r = requests.get(url, headers=headers, timeout=15)
-        r.raise_for_status()
-        
-        data = r.json()
-        
-        # The response structure might be different - handle both possible formats
-        job_list = data.get("data", data.get("jobs", []))
-        
-        for item in job_list:
-            # Handle nested company object
-            company = item.get("company", {})
-            company_name = company.get("name", "") if isinstance(company, dict) else company
-            
-            jobs.append({
-                "title": item.get("title", ""),
-                "company": company_name,
-                "location": item.get("location", "Remote"),
-                "url": item.get("url", item.get("apply_url", "")),
-                "posted": item.get("published_at", item.get("created_at", "")),
-                "tags": item.get("tags", []),
-                "source": "Himalayas",
-            })
-            
+        page = 1
+        max_pages = 20
+
+        while page <= max_pages:
+            url = "https://himalayas.app/jobs/api"
+            params = {
+                "limit": 100,
+                "offset": (page - 1) * 100,
+            }
+
+            response = requests.get(url, params=params, timeout=15)
+
+            if response.status_code != 200:
+                break
+
+            data = response.json()
+            job_list = data.get('jobs', [])
+
+            if not job_list:
+                break
+
+            for item in job_list:
+                # Extract location
+                location = 'Remote'
+                if item.get('locations'):
+                    location = ', '.join(item['locations'][:2])
+                elif item.get('locationRestrictions'):
+                    location = ', '.join(item['locationRestrictions'][:2])
+
+                # Extract tags
+                tags = []
+                if item.get('categories'):
+                    tags.extend(item['categories'][:3])
+                if item.get('jobType'):
+                    tags.append(item['jobType'])
+
+                # Get company name
+                company = ''
+                if item.get('company'):
+                    company = item['company'].get('name', '')
+                company = company or item.get('companyName', '')
+
+                jobs.append({
+                    'title': item.get('title', ''),
+                    'company': company,
+                    'location': location,
+                    'url': item.get('applicationLink', '') or item.get('url', ''),
+                    'posted': item.get('createdAt', '') or item.get('pubDate', ''),
+                    'tags': tags,
+                    'source': 'Himalayas',
+                })
+
+            # Check if more pages
+            total = data.get('total', 0)
+            if page * 100 >= total:
+                break
+
+            page += 1
+            time.sleep(0.2)
+
     except Exception as e:
-        print(f"  Himalayas: {e}")
-        return []
-    
+        print(f"    ✗ Himalayas error: {e}")
+
     print(f"    ✓ Himalayas: {len(jobs)} jobs")
     return jobs
