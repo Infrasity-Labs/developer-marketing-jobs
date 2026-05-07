@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  /* This creates the font-quicksand class */
+  --font-quicksand: "Quicksand", sans-serif;
+  
+  /* This creates the font-inter class */
+  --font-inter: "Inter", sans-serif;
+}
