@@ -190,6 +190,7 @@ export default function HeroSection() {
             href="https://github.com/Infrasity-Labs/developer-marketing-jobs" 
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
+            target="_blank"
             className="flex items-center justify-center gap-2 bg-indigo-600 text-white px-8 py-4 rounded-xl font-semibold transition-colors hover:bg-indigo-500 shadow-[0_0_20px_rgba(99,102,241,0.3)] ring-1 ring-indigo-500/50 w-full sm:w-auto"
           >
             ⭐ Star the Repository
@@ -198,6 +199,7 @@ export default function HeroSection() {
             href="https://github.com/Infrasity-Labs/developer-marketing-jobs#readme" 
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
+            target="_blank"
             className="flex items-center justify-center gap-2 bg-slate-900/80 text-white px-8 py-4 rounded-xl font-semibold transition-colors hover:bg-slate-800 ring-1 ring-slate-700 backdrop-blur-md w-full sm:w-auto"
           >
             View Live Jobs
@@ -213,7 +215,7 @@ export default function HeroSection() {
             { label: "Companies Tracked", value: "6,500+" },
             { label: "Jobs Fetched Daily", value: "30,000" },
             { label: "Active ATS Sources", value: "8" },
-            
+  
           ].map((stat, i) => (
             <motion.div 
               key={i} 
