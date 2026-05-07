@@ -247,16 +247,8 @@ jobs:
           path: discovered_workable_companies.json
         if: always()
 
-  build-readme:
-    needs: [
-      fetch-api-sources,
-      fetch-greenhouse,
-      fetch-greenhouse-commoncrawl,
-      fetch-ashby,
-      fetch-yc,
-      fetch-lever,
-      fetch-workable,
-    ]
+build-readme:
+    needs: [...]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -277,6 +269,8 @@ jobs:
       
       - name: Build README from artifacts
         run: python build_readme.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}  # ← ADD THIS
       
       - name: Commit and push
         run: |

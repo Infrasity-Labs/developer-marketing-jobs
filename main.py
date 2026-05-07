@@ -94,10 +94,13 @@ MAX_JOBS_PER_CATEGORY = 1000
 README_PATH = Path("README.md")
 # --------------
 
-def categorize(job):
+def categorize(job, cats=None):
     """Return the first category label this job matches, or None."""
+    if cats is None:
+        cats = CATEGORIES
+    
     text = (job["title"] + " " + " ".join(job.get("tags", []))).lower()
-    for cat in CATEGORIES:
+    for cat in cats:
         if any(kw in text for kw in cat["keywords"]):
             return cat["label"]
     return None
@@ -168,21 +171,25 @@ def format_table(jobs):
         lines.append(f"| {title} | {company} | {location} | [→]({url}) |")
     
     return "\n".join(lines) + "\n"
-def build_sections(jobs, yc_jobs):
-    """Group jobs by category and build markdown for each section."""
-    # Bucket NON-YC jobs by category
-    buckets = {cat["label"]: [] for cat in CATEGORIES}
+
+def build_sections(jobs, yc_jobs, active_categories=None):
+    if active_categories is None:
+        active_categories = CATEGORIES
+    
+    buckets = {cat["label"]: [] for cat in active_categories}
     for j in jobs:
-        label = categorize(j)
+        label = categorize(j, active_categories)
         if label:
             buckets[label].append(j)
     
-    # Bucket YC jobs by category - ONLY if they match a category
-    yc_buckets = {cat["label"]: [] for cat in CATEGORIES}
+    # YC buckets
+    yc_buckets = {cat["label"]: [] for cat in active_categories}
     for j in yc_jobs:
-        label = categorize(j)
-        if label:  # Only add if it matches a category
+        label = categorize(j, active_categories)
+        if label:
             yc_buckets[label].append(j)
+
+    # ... rest of build_sections stays the same
 
     # Build markdown sections
     sections = []
@@ -288,6 +295,16 @@ def main():
         weworkremotely,   # NEW
         
     ]
+    import os
+    
+    if os.getenv("ANTHROPIC_API_KEY"):
+        print("🤖 Expanding job categories with Claude...")
+        from skills.keyword_expander import get_expanded_categories
+        active_categories = get_expanded_categories(CATEGORIES)
+        print(f"✅ Using expanded categories")
+    else:
+        print("⚡ Using original categories (set ANTHROPIC_API_KEY for smarter matching)")
+        active_categories = CATEGORIES
     
     for fetcher in fetchers:    
         try:
