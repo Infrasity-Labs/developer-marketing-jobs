@@ -6,49 +6,63 @@ COMPANIES = [
     # Developer Tools & Infrastructure
     "vercel", "netlify", "stripe", "mongodb", "twilio", "gitlab", "elastic",
     "cloudflare", "databricks", "temporal", "algolia", "sentry", "figma",
-    
+    "canonical", "devrev", "fellow",
+
     # DevOps & Cloud
     "datadog", "newrelic", "pagerduty", "launchdarkly", "circleci",
     "cockroachdb", "planetscale", "neon", "railway", "fly",
-    
+    "coreweave", "doitintl",
+
     # Security & Auth
     "snyk", "ory", "workos", "stytch", "descope",
-    
+    "beyondtrust", "bigid", "britive", "bugcrowd", "corelight",
+    "cybereason", "cyware", "finitestate",
+
     # AI/ML Platforms
     "huggingface", "replicate", "modal", "weights-and-biases", "cohere",
     "anthropic", "scale", "labelbox",
-    
+    "assemblyai", "clarifai", "dataiku", "deepmind", "descript",
+
     # Analytics & Product
     "segment", "amplitude", "mixpanel", "heap", "fullstory", "logrocket",
     "posthog", "june", "koala",
-    
+    "coefficient", "enterpret",
+
     # Collaboration & Productivity
     "notion", "coda", "airtable", "miro", "loom", "linear", "height",
     "cal", "meetgeek",
-    
+
     # API & Integration
-    "twilio", "plaid", "algolia", "mapbox", "sendgrid", "postman",
-    
+    "plaid", "mapbox", "sendgrid", "postman",
+
     # Payments & Fintech
-    "stripe", "adyen", "square", "checkout", "marqeta",
-    
+    "adyen", "square", "checkout", "marqeta",
+
     # Sales & Marketing Tech
     "hubspot", "intercom", "drift", "clearbit", "apollo", "outreach",
-    
+    "bloomreach", "braze", "commercetools", "customerio", "dialpad",
+
     # No-Code / Low-Code
-    "retool", "bubble", "webflow", "zapier", "make",
-    
+    "retool", "bubble", "webflow", "zapier", "make", "crowdbotics",
+
     # Data & AI Infrastructure
     "airbyte", "fivetran", "dbt-labs", "dagster", "prefect", "astronomer",
-    
+    "aerospike", "clickhouse", "contentful",
+
     # Observability
-    "honeycomb", "lightstep", "chronosphere", "grafana",
-    
+    "honeycomb", "lightstep", "chronosphere", "grafana", "catchpoint",
+
     # Communication
     "slack", "discord", "sendbird", "stream", "daily",
-    
+
     # Design & Creative
-    "figma", "canva", "miro", "whimsical", "pitch",
+    "canva", "whimsical", "pitch",
+
+    # Web3 / Crypto
+    "aptoslabs", "bitgo", "blockchain", "dfinity", "falconx", "figment",
+
+    # Vertical SaaS
+    "datacamp", "ethoslife", "everlaw", "evolutioniq",
 ]
 
 def fetch():
