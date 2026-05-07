@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        source: [remoteok, remotive, adzuna, arbeitnow]
+        source: [remoteok, remotive, adzuna, arbeitnow, jobicy, himalayas, weworkremotely, themuse]
     steps:
       - uses: actions/checkout@v4
       
@@ -24,7 +24,20 @@ jobs:
       - run: pip install -r requirements.txt
       
       - name: Fetch ${{ matrix.source }}
-        run: python -c "from fetchers import ${{ matrix.source }}; import json; jobs = ${{ matrix.source }}.fetch(); json.dump(jobs, open('${{ matrix.source }}_jobs.json', 'w'))"
+        run: |
+          python -c "
+          from fetchers import ${{ matrix.source }}
+          from main import CATEGORIES
+          import json
+          import inspect
+          sig = inspect.signature(${{ matrix.source }}.fetch)
+          if 'categories' in sig.parameters:
+              jobs = ${{ matrix.source }}.fetch(categories=CATEGORIES)
+          else:
+              jobs = ${{ matrix.source }}.fetch()
+          json.dump(jobs, open('${{ matrix.source }}_jobs.json', 'w'))
+          print(f'Done: {len(jobs)} jobs')
+          "
         env:
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
@@ -100,7 +113,7 @@ jobs:
 
   fetch-yc:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       
@@ -140,8 +153,110 @@ jobs:
           path: yc_all_companies.json
         if: always()
 
+  fetch-lever:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Restore Lever cache
+        uses: actions/cache@v4
+        with:
+          path: discovered_lever_companies.json
+          key: lever-companies-${{ github.run_id }}
+          restore-keys: |
+            lever-companies-
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - run: pip install -r requirements.txt
+      
+      - name: Fetch Lever
+        run: |
+          python -c "
+          from fetchers import lever
+          from main import CATEGORIES
+          import json
+          jobs = lever.fetch(categories=CATEGORIES)
+          json.dump(jobs, open('lever_jobs.json', 'w'))
+          print(f'Done: {len(jobs)} jobs')
+          "
+        env:
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+      
+      - name: Upload jobs
+        uses: actions/upload-artifact@v4
+        with:
+          name: jobs-lever
+          path: lever_jobs.json
+      
+      - name: Save Lever cache
+        uses: actions/upload-artifact@v4
+        with:
+          name: lever-cache
+          path: discovered_lever_companies.json
+        if: always()
+
+  fetch-workable:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Restore Workable cache
+        uses: actions/cache@v4
+        with:
+          path: discovered_workable_companies.json
+          key: workable-companies-${{ github.run_id }}
+          restore-keys: |
+            workable-companies-
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - run: pip install -r requirements.txt
+      
+      - name: Fetch Workable
+        run: |
+          python -c "
+          from fetchers import workable
+          from main import CATEGORIES
+          import json
+          jobs = workable.fetch(categories=CATEGORIES)
+          json.dump(jobs, open('workable_jobs.json', 'w'))
+          print(f'Done: {len(jobs)} jobs')
+          "
+        env:
+          DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+          DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+      
+      - name: Upload jobs
+        uses: actions/upload-artifact@v4
+        with:
+          name: jobs-workable
+          path: workable_jobs.json
+      
+      - name: Save Workable cache
+        uses: actions/upload-artifact@v4
+        with:
+          name: workable-cache
+          path: discovered_workable_companies.json
+        if: always()
+
   build-readme:
-    needs: [fetch-api-sources, fetch-greenhouse, fetch-greenhouse-commoncrawl, fetch-ashby, fetch-yc]
+    needs: [
+      fetch-api-sources,
+      fetch-greenhouse,
+      fetch-greenhouse-commoncrawl,
+      fetch-ashby,
+      fetch-yc,
+      fetch-lever,
+      fetch-workable,
+    ]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
