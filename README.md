@@ -3,6 +3,12 @@
 ![Free](https://img.shields.io/badge/💸_Access-100%25_Free-blue?style=for-the-badge)
 ![No Signup](https://img.shields.io/badge/🔓_No_Signup-Required-orange?style=for-the-badge)
 ![Powered By](https://img.shields.io/badge/⚡_Powered_By-GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+<br><br>
+
+<img width="5504" height="3072" alt="Developer Marketing Jobs (4)" src="https://github.com/user-attachments/assets/a0279ee3-0465-4414-9557-a293be71f619" />
+
+
+<br><br>
 ![Banner GIF](https://infrasity-pull-zone.b-cdn.net/ReadmeGif.gif)
 
 **Every open Developer Advocate DevRel, technical writing, developer marketing, community, and docs role at devtool companies — in one place.**
