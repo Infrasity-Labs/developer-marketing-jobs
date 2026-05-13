@@ -5,7 +5,7 @@
 ![Powered By](https://img.shields.io/badge/⚡_Powered_By-GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 <br><br>
 
-<img width="5504" height="3072" alt="Developer Marketing Jobs (4)" src="https://github.com/user-attachments/assets/a0279ee3-0465-4414-9557-a293be71f619" />
+<img width="4404" alt="Developer Marketing Jobs" src="./.github/assets/developer_marketing_jobs.png" />
 
 
 <br><br>
