@@ -22,8 +22,7 @@ def fetch(categories=None):
         req = urllib.request.Request(url, headers=headers)
         
         print(f"Fetching data from: {url}\n")
-        context = ssl._create_unverified_context()
-        with urllib.request.urlopen(req, context=context) as response:
+        with urllib.request.urlopen(req) as response:
             data = response.read()
             text_data = data.decode('utf-8')
             

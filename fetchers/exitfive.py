@@ -16,7 +16,7 @@ def fetch(categories=None):
         })
         
         page.goto(url, wait_until="networkidle")
-        page.wait_for_timeout(3000)
+        page.wait_for_selector('.jobs li', timeout=10000)
         
         # Scroll to bottom to trigger lazy loading
         page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
@@ -41,7 +41,7 @@ def fetch(categories=None):
                 # Get the link
                 a_tag = card.locator('a').first
                 link = ""
-                if a_tag:
+                if a_tag.count() > 0:
                     href = a_tag.get_attribute('href')
                     if href:
                         if href.startswith('/'):
