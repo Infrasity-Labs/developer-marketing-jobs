@@ -18,7 +18,11 @@ from fetchers import (
     jobicy,           # NEW
     himalayas,        # NEW
     weworkremotely,   # NEW
-    
+    devreljobs,
+    devreljob,
+    exitfive,
+    superpath,
+    themincave,
 )
 
 # Remove these broken fetchers:
@@ -488,7 +492,11 @@ def main():
         jobicy,           # NEW
         himalayas,        # NEW
         weworkremotely,   # NEW
-        
+        devreljobs,
+        devreljob,
+        exitfive,
+        superpath,
+        themincave,
     ]
     import os
     
