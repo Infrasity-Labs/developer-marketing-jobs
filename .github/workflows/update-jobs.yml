@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        source: [remoteok, remotive, adzuna, arbeitnow, jobicy, himalayas, weworkremotely, themuse]
+        source: [remoteok, remotive, adzuna, arbeitnow, jobicy, himalayas, weworkremotely, themuse, devreljobs, devreljob, themincave]
     steps:
       - uses: actions/checkout@v4
       
@@ -152,6 +152,60 @@ jobs:
           name: yc-cache
           path: yc_all_companies.json
         if: always()
+
+  fetch-exitfive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - run: pip install -r requirements.txt
+      
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          playwright install chromium
+          playwright install-deps chromium
+      
+      - name: Fetch ExitFive
+        run: python -c "from fetchers import exitfive; import json; jobs = exitfive.fetch(); json.dump(jobs, open('exitfive_jobs.json', 'w'))"
+      
+      - name: Upload jobs
+        uses: actions/upload-artifact@v4
+        with:
+          name: jobs-exitfive
+          path: exitfive_jobs.json
+
+  fetch-superpath:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - run: pip install -r requirements.txt
+      
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          playwright install chromium
+          playwright install-deps chromium
+      
+      - name: Fetch Superpath
+        run: python -c "from fetchers import superpath; import json; jobs = superpath.fetch(); json.dump(jobs, open('superpath_jobs.json', 'w'))"
+      
+      - name: Upload jobs
+        uses: actions/upload-artifact@v4
+        with:
+          name: jobs-superpath
+          path: superpath_jobs.json
 
   fetch-lever:
     runs-on: ubuntu-latest
