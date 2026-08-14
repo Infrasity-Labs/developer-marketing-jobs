@@ -3,3 +3,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Debug output from fetcher development (e.g. Playwright page dumps)
+debug_*.html
+debug_*.png
