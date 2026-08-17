@@ -43,6 +43,7 @@ def discover_via_commoncrawl():
                     "limit": 100000,
                     "fl": "url"
                 },
+                timeout=60,
                 timeout=120
             )
 
@@ -109,7 +110,8 @@ def discover_via_dataforseo(categories):
                     "location_code": 2840,
                     "language_code": "en",
                     "depth": 100,
-                }],
+                },
+                timeout=30],
                 timeout=30,
             )
 

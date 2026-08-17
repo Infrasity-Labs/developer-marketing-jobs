@@ -91,7 +91,8 @@ def discover_companies(ats_type, categories):
                     "location_code": 2840,  # United States
                     "language_code": "en",
                     "depth": 100,
-                }],
+                },
+                timeout=30],
                 timeout=30,
             )
 
