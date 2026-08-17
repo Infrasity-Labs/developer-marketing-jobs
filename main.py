@@ -25,9 +25,6 @@ from fetchers import (
     themincave,
 )
 
-# Remove these broken fetchers:
-# lever, workable, recruitee, himalayas, wellfound, remoteok_extended, greenhouse_autodiscovery,
-
 # --- CONFIG ---
 CATEGORIES = [
     {
@@ -387,8 +384,6 @@ def build_sections(jobs, yc_jobs, active_categories=None):
         label = categorize(j, active_categories)
         if label:
             yc_buckets[label].append(j)
-
-    # ... rest of build_sections stays the same
 
     # Build markdown sections
     sections = []
