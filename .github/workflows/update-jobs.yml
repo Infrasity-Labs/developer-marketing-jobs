@@ -301,38 +301,38 @@ jobs:
           path: discovered_workable_companies.json
         if: always()
 
-build-readme:
-    needs: [...]
+  build-readme:
+    needs: [fetch-api-sources, fetch-greenhouse, fetch-greenhouse-commoncrawl, fetch-ashby, fetch-yc, fetch-exitfive, fetch-superpath, fetch-lever, fetch-workable]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
-      
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      
+
       - run: pip install -r requirements.txt
-      
+
       - name: Download all job artifacts
         uses: actions/download-artifact@v4
         with:
           path: artifacts/
-      
+
       - name: Build README from artifacts
         run: python build_readme.py
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}  # ← ADD THIS
-      
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
           if git diff --staged --quiet; then
-            echo "✅ No changes to commit"
+            echo "No changes to commit"
           else
             git commit -m "chore: update jobs"
             git pull --rebase origin main
