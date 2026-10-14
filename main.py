@@ -316,6 +316,7 @@ CATEGORIES = [
             "community growth manager",
             "community lead",
             "community manager",
+            "community marketing manager",
             "community operations",
             "community operations manager",
             "community partnerships",
