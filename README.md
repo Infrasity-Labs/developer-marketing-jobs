@@ -11,7 +11,7 @@
 
 <!-- STATS:START -->
 <p align="center">
-  <b>428</b> open roles tracked &nbsp;·&nbsp; <b>+20</b> added in the last run &nbsp;·&nbsp; last updated <b>14 Oct 2026, 12:19 UTC</b>
+  <b>428</b> open roles tracked &nbsp;·&nbsp; <b>+7</b> added in the last run &nbsp;·&nbsp; last updated <b>14 Oct 2026, 12:40 UTC</b>
 </p>
 <!-- STATS:END -->
 
@@ -96,7 +96,6 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Technical Writer | Arsiem | Columbia, MD | [→](https://jobs.lever.co/arsiem/d33bd349-4443-4ca3-a45a-6e2b196360a7) |
 | Technical Communications Lead | Arraylabs.Io | Redwood City, CA | [→](https://jobs.lever.co/arraylabs.io/e9aee5bb-b698-4530-980f-a6dda6cbb87e) |
 | Technical Writer & Editor III | Arsiem | Arlington, VA | [→](https://jobs.lever.co/arsiem/475d9308-fcdd-4920-8789-153d148837be) |
-| Technical Writer | Rapid Cycle Solutions, LLC | Chantilly, Fairfax County | [→](https://www.adzuna.com/details/5927464749?utm_medium=api&utm_source=1aa7baa7) |
 | Manager, Technical Writer  | Mongodb | Bengaluru; Gurugram; Mumbai | [→](https://www.mongodb.com/careers/job/?gh_jid=8230883) |
 | Senior Technical Writer | Mongodb | Bengaluru; Gurugram; Mumbai | [→](https://www.mongodb.com/careers/job/?gh_jid=8231370) |
 | Staff Technical Writer | Fivetran | Bengaluru, Karnataka, India, A | [→](https://www.fivetran.com/careers/job?gh_jid=8010276003) |
@@ -225,6 +224,7 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 |  APAC GTM Enablement Lead | Anthropic | Sydney, Australia | [→](https://job-boards.greenhouse.io/anthropic/jobs/5426627008) |
 | Head of GTM, AI Inference | Cloudflare | Hybrid | [→](https://boards.greenhouse.io/cloudflare/jobs/7428796?gh_jid=7428796) |
 | Recruiter II, GTM Ecosystems | Datadog | Dublin, Ireland; London, Unite | [→](https://careers.datadoghq.com/detail/8273664/?gh_jid=8273664) |
+| Strategic Finance Lead - GTM | Perplexity | San Francisco, California | [→](https://www.adzuna.com/details/5927482655?utm_medium=api&utm_source=1aa7baa7) |
 | AMER Energy Industry Go-To-Market (GTM) Leader | Databricks | United States | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8675320002) |
 | Developer GTM Strategy Manager, Technical Programs | Cloudflare | Hybrid | [→](https://boards.greenhouse.io/cloudflare/jobs/8191453?gh_jid=8191453) |
 | Principal Engineer - GTM Data Platform | Cloudflare | Hybrid | [→](https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669) |
@@ -404,16 +404,17 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Growth Manager | Avalerehealth | London | [→](https://jobs.lever.co/avalerehealth/893eff05-151f-4e3b-a80b-3cfaa7f9996a) |
 | Sr Manager, Lifecycle Marketing | Artifactuprising.Com | Denver, CO | [→](https://jobs.lever.co/artifactuprising.com/a8c4eed9-5709-4f75-8783-c303f4ff178d) |
 | Lifecycle Marketing Manager | Airslate | Israel | [→](https://jobs.lever.co/airslate/7328749c-056f-439e-8d17-61ec1a846784) |
-| Performance Marketing Manager | Allegiantair | Las Vegas, NV | [→](https://jobs.lever.co/allegiantair/5004ac81-e0d3-46ce-8eba-6001c1b89770) |
 | Demand Generation Manager | Artera 2 | Santa Barbara, California | [→](https://jobs.lever.co/artera-2/e67156f3-5d47-4470-9040-bc34896f71bd) |
 | Senior Marketing Technology (Customer Data & Marketing Analytics) | Amarbank | Jakarta | [→](https://jobs.lever.co/amarbank/0f2205ff-7f62-4bc9-9152-164f1a77ccb4) |
+| B2B Demand Generation Leader | Airslate | United States | [→](https://jobs.lever.co/airslate/9a4add3b-1bbc-453d-94da-502113da3c53) |
 | Principal Performance Marketing Specialist | Airalo | United Kingdom | [→](https://jobs.lever.co/airalo/ab1c3bca-3745-4646-a9a0-b25b072fb593) |
 | Performance Marketing Manager | Aircall | Seattle Office | [→](https://jobs.lever.co/aircall/5f5e229b-7cfb-4426-9e34-e95988364bc9) |
 | APAC Consumer Growth Leader | Xe.com | The Rocks, Sydney | [→](https://www.adzuna.com.au/details/5927214215?utm_medium=api&utm_source=1aa7baa7) |
 | Strategic Partnerships, Retail & Revenue Growth Leader | Virgin Australia | The Rocks, Sydney | [→](https://www.adzuna.com.au/details/5927213969?utm_medium=api&utm_source=1aa7baa7) |
 | Senior Media Growth Leader – Performance Marketing | Super Retail Group | The Rocks, Sydney | [→](https://www.adzuna.com.au/details/5927213443?utm_medium=api&utm_source=1aa7baa7) |
 | Growth Lead | Immutable | Sydney, Sydney Region | [→](https://www.adzuna.com.au/details/5927165791?utm_medium=api&utm_source=1aa7baa7) |
-| Performance Marketing Manager - Quilter | Quilter | London, UK | [→](https://www.adzuna.co.uk/jobs/land/ad/5927379883?se=mjAwHMnH8RGghcfl051iWw&utm_medium=api&utm_source=1aa7baa7&v=43C67E2E8D02056300C238980148F75C1DC33EFA) |
+| Performance Marketing Manager - Quilter | Quilter | London, UK | [→](https://www.adzuna.co.uk/jobs/land/ad/5927379883?se=guuthcvH8RGgLOK4tK8EzQ&utm_medium=api&utm_source=1aa7baa7&v=43C67E2E8D02056300C238980148F75C1DC33EFA) |
+| Valnet / Director of Performance Marketing | Valnet Inc. | Montréal, Québec | [→](https://www.adzuna.ca/details/5927472933?utm_medium=api&utm_source=1aa7baa7) |
 | Lifecycle Marketing Specialist | Longboard Architectural Products Inc | Abbotsford, Fraser Valley | [→](https://www.adzuna.ca/details/5927411511?utm_medium=api&utm_source=1aa7baa7) |
 | Growth Marketing Manager | Mongodb | United States | [→](https://www.mongodb.com/careers/job/?gh_jid=8265960) |
 | Demand Generation Manager | Commercetools | Boston, Massachusetts, United  | [→](https://job-boards.greenhouse.io/commercetools/jobs/7800075003) |
@@ -452,13 +453,14 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
-| B2B Demand Generation Leader | Airslate | United States | [→](https://jobs.lever.co/airslate/9a4add3b-1bbc-453d-94da-502113da3c53) |
+| SVP, Brand Strategy (DTC) | Avalerehealth | Remote (US) | [→](https://jobs.lever.co/avalerehealth/29d96302-fc54-4d52-aa4c-3ddc0d81d74c) |
 | SVP of Marketing | Airslate | Boston | [→](https://jobs.lever.co/airslate/ab2588f1-794b-4cd8-8827-fe24595b3477) |
+| VP, Brand Strategy (DTC) | Avalerehealth | Remote (US) | [→](https://jobs.lever.co/avalerehealth/b4d2f2d6-025e-477a-80fd-f41c206663e9) |
 | Chief Medical Officer (CMO) | Artera | Remote-US | [→](https://jobs.lever.co/artera/4c3d64fe-c475-41cb-9bf8-6d65666a9ced) |
-| Senior Influencer Marketing Executive (Beauty) | Anotherco | Ciudad de México | [→](https://jobs.lever.co/anotherco/c00dcefb-0998-4ae2-af5e-ffe33ed3d128) |
 | Head of Marketing - Mimco | Country Road | Australia | [→](https://www.adzuna.com.au/details/5927214203?utm_medium=api&utm_source=1aa7baa7) |
 | Marketing Director, ANZ: Growth & AI Strategy Leader | Reuters | The Rocks, Sydney | [→](https://www.adzuna.com.au/details/5927214135?utm_medium=api&utm_source=1aa7baa7) |
 | MARKETING EXECUTIVE | Simon & Schuster | Sydney, Sydney Region | [→](https://www.adzuna.com.au/details/5926855254?utm_medium=api&utm_source=1aa7baa7) |
+| Digital Marketing Executive | Pineapple Contracts | Aylesford, Kent | [→](https://www.adzuna.co.uk/jobs/details/5927483833?utm_medium=api&utm_source=1aa7baa7) |
 | Senior Digital Marketing Executive - SEO | Furniture Village | Cippenham, Slough | [→](https://www.adzuna.co.uk/jobs/details/5927323691?utm_medium=api&utm_source=1aa7baa7) |
 | Partner Marketing Lead, Resellers | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5451134008) |
 | Integrated Marketing Lead, Cross Product | Stripe | Remote US | [→](https://stripe.com/jobs/search?gh_jid=8187572) |
@@ -485,10 +487,8 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
-| Portfolio Community Manager - San Diego | Actionlife | San Diego, CA | [→](https://jobs.lever.co/actionlife/bcd1e7f0-a77d-4c4d-82c2-2cb341399c53) |
-| Join Our Team! HOA Community Manager - Texas | Actionlife | Austin, TX | [→](https://jobs.lever.co/actionlife/d67ef2e5-18ea-4a73-a953-a3724271c2c1) |
-| Community Manager (HOA) / Opportunities Throughout California | Actionlife | Los Angeles, CA | [→](https://jobs.lever.co/actionlife/d2b8fb8a-c25a-4e61-9aae-d904164d151d) |
 | Manual Reddit community engagement assistant |  | UK | [→](https://www.adzuna.co.uk/jobs/details/5927278476?utm_medium=api&utm_source=1aa7baa7) |
+| Assistant Community Manager - Ascend at Old Town | Greystar Management Services | Fort Collins, Larimer County | [→](https://www.adzuna.com/details/5927483684?utm_medium=api&utm_source=1aa7baa7) |
 | Community Operations Specialist | Stripe | Dublin | [→](https://stripe.com/jobs/search?gh_jid=8257185) |
 | Head of Community, Enterprise Marketing | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5388719008) |
 | Community Engagement Manager, Data Centres (Australia) | Anthropic | Sydney, Australia / Remote-Fri | [→](https://job-boards.greenhouse.io/anthropic/jobs/5391999008) |
