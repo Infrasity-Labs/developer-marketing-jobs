@@ -282,6 +282,25 @@ CATEGORIES = [
             "vp community",
         ],
     },
+    {
+        "label": "🧩 Senior Full Stack Marketing Manager",
+        "keywords": [
+            "full stack marketer",
+            "full stack marketing",
+            "full stack marketing lead",
+            "full stack marketing manager",
+            "full-stack marketer",
+            "full-stack marketing",
+            "full-stack marketing lead",
+            "full-stack marketing manager",
+            "fullstack marketer",
+            "fullstack marketing",
+            "fullstack marketing manager",
+            "senior full stack marketing manager",
+            "senior full-stack marketing manager",
+            "senior fullstack marketing manager",
+        ],
+    },
 
 
 ]
