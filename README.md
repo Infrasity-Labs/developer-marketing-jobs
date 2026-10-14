@@ -6,7 +6,7 @@
 <br><br>
 
 <p align="center">
-  <img width="100%" alt="Developer Marketing Jobs" src="./.github/assets/banner.svg" />
+  <img width="100%" alt="Developer Marketing Jobs" src="./.github/assets/banner-1920x1080.svg" />
 </p>
 
 <!-- STATS:START -->
