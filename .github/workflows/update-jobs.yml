@@ -12,8 +12,9 @@ jobs:
   fetch-api-sources:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
-        source: [remoteok, remotive, adzuna, arbeitnow, jobicy, himalayas, weworkremotely, themuse, devreljobs, devreljob, themincave]
+        source: [remoteok, remotive, adzuna, arbeitnow, jobicy, himalayas, weworkremotely, muse, devreljobs, devreljob, themincave]
     steps:
       - uses: actions/checkout@v4
       
@@ -47,6 +48,7 @@ jobs:
         with:
           name: jobs-${{ matrix.source }}
           path: ${{ matrix.source }}_jobs.json
+          if-no-files-found: ignore
 
   fetch-greenhouse:
     runs-on: ubuntu-latest
@@ -302,6 +304,7 @@ jobs:
         if: always()
 
   build-readme:
+    if: ${{ !cancelled() }}
     needs: [fetch-api-sources, fetch-greenhouse, fetch-greenhouse-commoncrawl, fetch-ashby, fetch-yc, fetch-exitfive, fetch-superpath, fetch-lever, fetch-workable]
     runs-on: ubuntu-latest
     steps:
