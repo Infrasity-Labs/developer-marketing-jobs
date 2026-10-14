@@ -326,14 +326,18 @@ MAX_JOBS_PER_CATEGORY = 1000
 README_PATH = Path("README.md")
 # --------------
 
+def _norm(text):
+    """Lowercase and drop commas so "Director, Demand Generation" matches "director demand generation"."""
+    return " ".join(text.lower().replace(",", " ").split())
+
 def categorize(job, cats=None):
     """Return the first category label this job matches, or None."""
     if cats is None:
         cats = CATEGORIES
     
-    text = (job["title"] + " " + " ".join(job.get("tags", []))).lower()
+    text = _norm(job["title"] + " " + " ".join(job.get("tags", [])))
     for cat in cats:
-        if any(kw in text for kw in cat["keywords"]):
+        if any(_norm(kw) in text for kw in cat["keywords"]):
             return cat["label"]
     return None
 
