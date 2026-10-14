@@ -15,10 +15,6 @@
 </p>
 <!-- STATS:END -->
 
-
-<br><br>
-![Banner GIF](https://infrasity-pull-zone.b-cdn.net/ReadmeGif.gif)
-
 **Every open Developer Advocate DevRel, technical writing, developer marketing, community, and docs role at devtool companies — in one place.**
 
 Curated nightly. Pulled directly from company ATS feeds. No reposts, no aggregator noise.
