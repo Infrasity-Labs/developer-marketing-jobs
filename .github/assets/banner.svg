@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="t d">
+  <title id="t">Developer Marketing Jobs</title>
+  <desc id="d">Every open DevRel, technical writing, developer marketing, product marketing, growth and community role at devtool companies, updated daily.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05060f"/>
+      <stop offset="1" stop-color="#0a1040"/>
+    </linearGradient>
+    <linearGradient id="ttl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.5" stop-color="#cdd6ff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+      <animate attributeName="x1" values="-1;0;-1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;1;0" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="55"/></filter>
+    <clipPath id="clip"><rect width="1200" height="320" rx="20"/></clipPath>
+    <style>
+      .title { font: 600 58px Georgia, 'Times New Roman', serif; letter-spacing: -0.5px; }
+      .sub { font: 400 20px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #b9c2ff; letter-spacing: 0.4px; }
+      .role { font: 600 17px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #ffffff; letter-spacing: 1.2px; }
+      .chip { font: 500 13px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #d6dcff; }
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <g filter="url(#blur)">
+      <circle cx="180" cy="300" r="130" fill="#7c5cff" opacity="0.75">
+        <animate attributeName="cx" values="180;420;180" dur="14s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="300;230;300" dur="14s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1020" cy="40" r="150" fill="#1f3bff" opacity="0.8">
+        <animate attributeName="cx" values="1020;780;1020" dur="17s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="40;110;40" dur="17s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="640" cy="330" r="110" fill="#b86bff" opacity="0.55">
+        <animate attributeName="cx" values="640;900;640" dur="19s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="110;150;110" dur="19s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="120" cy="20" r="90" fill="#4fa3ff" opacity="0.45">
+        <animate attributeName="cx" values="120;300;120" dur="21s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <rect width="1200" height="320" fill="#05060f" opacity="0.18"/>
+    <!-- live chip -->
+    <g transform="translate(600 62)">
+      <rect x="-92" y="-15" width="184" height="30" rx="15" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.18"/>
+      <circle cx="-68" cy="0" r="4.5" fill="#3ddc84">
+        <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="4.5;6;4.5" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="-52" y="4.5" class="chip">Updated daily · 06:00 UTC</text>
+    </g>
+    <text x="600" y="150" text-anchor="middle" class="title" fill="url(#ttl)" opacity="0">
+      Developer Marketing Jobs
+      <animate attributeName="opacity" from="0" to="1" dur="1.2s" fill="freeze"/>
+    </text>
+    <text x="600" y="192" text-anchor="middle" class="sub" opacity="0">
+      Your next dev marketing role
+      <animate attributeName="opacity" from="0" to="1" begin="0.5s" dur="1.2s" fill="freeze"/>
+    </text>
+    <!-- rotating roles -->
+    <text x="600" y="245" text-anchor="middle" class="role" opacity="0"><animate attributeName="opacity" dur="18.0s" repeatCount="indefinite" keyTimes="0;0.02;0.1467;0.1667;1" values="1;1;1;0;0"/>Developer Advocate · DevRel</text>
+    <text x="600" y="245" text-anchor="middle" class="role" opacity="0"><animate attributeName="opacity" dur="18.0s" repeatCount="indefinite" keyTimes="0;0.1667;0.1867;0.3133;0.3333;1" values="0.00;0.00;1.00;1.00;0.00;0.00"/>Technical Writing · Docs</text>
+    <text x="600" y="245" text-anchor="middle" class="role" opacity="0"><animate attributeName="opacity" dur="18.0s" repeatCount="indefinite" keyTimes="0;0.3333;0.3533;0.48;0.5;1" values="0.00;0.00;1.00;1.00;0.00;0.00"/>Developer Marketing</text>
+    <text x="600" y="245" text-anchor="middle" class="role" opacity="0"><animate attributeName="opacity" dur="18.0s" repeatCount="indefinite" keyTimes="0;0.5;0.52;0.6467;0.6667;1" values="0.00;0.00;1.00;1.00;0.00;0.00"/>Product Marketing</text>
+    <text x="600" y="245" text-anchor="middle" class="role" opacity="0"><animate attributeName="opacity" dur="18.0s" repeatCount="indefinite" keyTimes="0;0.6667;0.6867;0.8133;0.8333;1" values="0.00;0.00;1.00;1.00;0.00;0.00"/>Head of Growth · VP Marketing</text>
+    <text x="600" y="245" text-anchor="middle" class="role" opacity="0"><animate attributeName="opacity" dur="18.0s" repeatCount="indefinite" keyTimes="0;0.8333;0.8533;0.98;1.0" values="0.00;0.00;1.00;1.00;0.00"/>Community</text>
+    <!-- moving shimmer line -->
+    <rect x="-300" y="296" width="300" height="2" rx="1" fill="#ffffff" opacity="0.5">
+      <animate attributeName="x" values="-300;1200" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
