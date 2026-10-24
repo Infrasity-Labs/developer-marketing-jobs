@@ -11,7 +11,7 @@
 
 <!-- STATS:START -->
 <p align="center">
-  <b>434</b> open roles tracked &nbsp;·&nbsp; <b>+62</b> added in the last run &nbsp;·&nbsp; last updated <b>23 Oct 2026, 10:55 UTC</b>
+  <b>425</b> open roles tracked &nbsp;·&nbsp; <b>+49</b> added in the last run &nbsp;·&nbsp; last updated <b>24 Oct 2026, 10:08 UTC</b>
 </p>
 <!-- STATS:END -->
 
@@ -51,13 +51,13 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Senior Developer Advocate | Gitlab | Remote, Canada; Remote, United | [→](https://job-boards.greenhouse.io/gitlab/jobs/8838202002) |
 | Staff Backend Engineer, Developer Experience | Gitlab | Remote, Canada; Remote, United | [→](https://job-boards.greenhouse.io/gitlab/jobs/8490477002) |
 | Developer Success Engineer | Twilio | Remote - US | [→](https://job-boards.greenhouse.io/twilio/jobs/8266975) |
-| Senior Developer Advocate | Elastic | Portugal | [→](https://jobs.elastic.co/jobs?gh_jid=8283719&gh_jid=8283719) |
+| Senior Developer Advocate | Elastic | Canada | [→](https://jobs.elastic.co/jobs?gh_jid=8053891&gh_jid=8053891) |
 | Developer Relations Manager, Claude Platform | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5367562008) |
 | Director, Developer Relations | Coreweave | Livingston, NJ / New York, NY  | [→](https://coreweave.com/careers/job?4656231006&board=coreweave&gh_jid=4656231006) |
 | Engineering Manager, Developer Experience | Coreweave | New York, NY | [→](https://coreweave.com/careers/job?4708660006&board=coreweave&gh_jid=4708660006) |
 | Senior Software Engineer, Developer Experience | Coreweave | Livingston, NJ / New York, NY  | [→](https://coreweave.com/careers/job?4678602006&board=coreweave&gh_jid=4678602006) |
 | Staff Software Engineer, Developer Experience | Coreweave | Livingston, NJ / New York, NY  | [→](https://coreweave.com/careers/job?4678600006&board=coreweave&gh_jid=4678600006) |
-| Sr. Developer Advocate, AI and Machine Learning | Databricks | San Francisco, California | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8716192002) |
+| Sr. Developer Advocate, AI and Machine Learning | Databricks | Seattle, Washington | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8716720002) |
 | Manager, Developer Relations - Open Source | Databricks | San Francisco, California | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8716189002) |
 | Sr. Developer Advocate, Open Source — Omnigent | Databricks | San Francisco, California | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8716187002) |
 | Sr. Developer Advocate - Neon | Databricks | San Francisco, California | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8428818002) |
@@ -73,8 +73,8 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Developer Relations Engineer | Canonical | Home Based - APAC; Home based  | [→](https://job-boards.greenhouse.io/canonical/jobs/5143011) |
 | UX Designer - Developer experience | Canonical | Home based - EMEA | [→](https://job-boards.greenhouse.io/canonical/jobs/7043026) |
 | Developer Relations Engineer | Adyen | San Francisco | [→](https://job-boards.greenhouse.io/adyen/jobs/8018245) |
-| Developer Advocate, Edge & IoT | Telnyx | 1 day ago | [→](https://www.devreljobs.com/jobs/developer-advocate-edge-iot-telnyx-1137) |
-| Senior Developer Advocate - Volcano | Kong | 2 days ago | [→](https://www.devreljobs.com/jobs/senior-developer-advocate-volcano-kong-1135) |
+| Developer Advocate, Edge & IoT | Telnyx | 2 days ago | [→](https://www.devreljobs.com/jobs/developer-advocate-edge-iot-telnyx-1137) |
+| Senior Developer Advocate - Volcano | Kong | 3 days ago | [→](https://www.devreljobs.com/jobs/senior-developer-advocate-volcano-kong-1135) |
 | Developer Advocate | ElevenLabs | 1 week ago | [→](https://www.devreljobs.com/jobs/developer-advocate-elevenlabs-1134) |
 | Senior Developer Advocate | Neo4j | 3 weeks ago | [→](https://www.devreljobs.com/jobs/senior-developer-advocate-neo4j-1132) |
 | Technical Community Manager | Together AI | 1 month ago | [→](https://www.devreljobs.com/jobs/technical-community-manager-together-ai-1128) |
@@ -97,17 +97,14 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Technical Writer | Arsiem | Columbia, MD | [→](https://jobs.lever.co/arsiem/d33bd349-4443-4ca3-a45a-6e2b196360a7) |
 | Technical Communications Lead | Arraylabs.Io | Redwood City, CA | [→](https://jobs.lever.co/arraylabs.io/e9aee5bb-b698-4530-980f-a6dda6cbb87e) |
 | Technical Writer & Editor III | Arsiem | Arlington, VA | [→](https://jobs.lever.co/arsiem/475d9308-fcdd-4920-8789-153d148837be) |
-| Technical Authority: Governance, Licensing & Compliance | Downer | Geebung, Brisbane | [→](https://www.adzuna.com.au/details/5939006343?utm_medium=api&utm_source=1aa7baa7) |
-| Technical Authority | Downer | Geebung, Brisbane | [→](https://www.adzuna.com.au/details/5938995613?utm_medium=api&utm_source=1aa7baa7) |
-| Technical Writer / Editor | University of Alberta | Edmonton, Edmonton region | [→](https://www.adzuna.ca/details/5939047520?utm_medium=api&utm_source=1aa7baa7) |
-| Technical Editor  | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5443997008) |
+| Technical Author (multiple roles and seniority levels) | Canonical | Anywhere | [→](https://jobicy.com/jobs/149519-technical-author-multiple-roles-and-seniority-levels) |
 | Manager, Technical Writer  | Mongodb | Bengaluru; Gurugram; Mumbai | [→](https://www.mongodb.com/careers/job/?gh_jid=8230883) |
 | Senior Technical Writer | Mongodb | Bengaluru; Gurugram; Mumbai | [→](https://www.mongodb.com/careers/job/?gh_jid=8231370) |
+| Technical Editor  | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5443997008) |
 | Contract Technical Writer | Sendbird | Seoul, South Korea | [→](https://sendbird.com/careers?gh_jid=8497886002) |
 | Staff Technical Writer | Fivetran | Bengaluru, Karnataka, India, A | [→](https://www.fivetran.com/careers/job?gh_jid=8010276003) |
 | Principal Technical Writer - Customer Onboarding | Elastic | United States | [→](https://jobs.elastic.co/jobs?gh_jid=8186927&gh_jid=8186927) |
 | Technical Writer - Docs Excellence | Adyen | Chicago | [→](https://job-boards.greenhouse.io/adyen/jobs/8095966) |
-| Technical Author (multiple roles and seniority levels) | Canonical | Home based - Worldwide | [→](https://job-boards.greenhouse.io/canonical/jobs/3798310) |
 | Senior Content Engineer | Lingo.dev | Worldwide Remote only | [→](https://jobs.exitfive.com/job/2538036-senior-content-engineer-lingodev) |
 | Technical Content Lead·Normal Computing | ✍️ | Unknown | [→](https://jobs.superpath.co) |
 
@@ -121,8 +118,10 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Executive Assistant – Brand Marketing - Temporary | Arcteryx.Com | North Vancouver, BC (Corporate | [→](https://jobs.lever.co/arcteryx.com/4476af23-aef5-4cad-a07e-985e0371909b) |
 | Global VP Marketing | 360Learning | Paris, Remote | [→](https://jobs.lever.co/360learning/110bc5a0-7b18-458c-9249-0b728748002d) |
 | Senior Manager, Retail Brand Marketing | Arcteryx.Com | North Vancouver, BC (Corporate | [→](https://jobs.lever.co/arcteryx.com/047ab83a-24e1-448d-bc81-c3b9fcbb5d62) |
-| Manager, Global Content Strategist | IFM Investors | Melbourne, Melbourne Region | [→](https://www.adzuna.com.au/details/5938962630?utm_medium=api&utm_source=1aa7baa7) |
-| Marketing Content Specialist | Laricy | Schiller Park, Cook County | [→](https://www.adzuna.com/land/ad/5939099816?se=CGCdRc_O8RGuj6BgF4INug&utm_medium=api&utm_source=1aa7baa7&v=AEF6CAE682829882BA78E3883097ABA60C89788F) |
+| Regulatory Content Lead | Financial Education | Sydney, Sydney Region | [→](https://www.adzuna.com.au/details/5940260823?utm_medium=api&utm_source=1aa7baa7) |
+| Marketing & Content Manager | Tapping House | King's Lynn, Norfolk | [→](https://www.adzuna.co.uk/jobs/details/5940285639?utm_medium=api&utm_source=1aa7baa7) |
+| Director of Brand Marketing | Bask & Lather | Yonkers, Westchester County | [→](https://www.adzuna.com/details/5940302478?utm_medium=api&utm_source=1aa7baa7) |
+| Sr. Content Manager & Influencer Partnership | Loblaw Companies | Brampton, Peel region | [→](https://www.adzuna.ca/details/5940276856?utm_medium=api&utm_source=1aa7baa7) |
 | Social & Content Marketing, Stripe Crypto | Stripe | NYC-Privy | [→](https://stripe.com/jobs/search?gh_jid=8246785) |
 | Writer, Content Marketing | Stripe | US Hybrid | [→](https://stripe.com/jobs/search?gh_jid=8265686) |
 | Content Strategist, Product | Figma | San Francisco, CA • New York,  | [→](https://boards.greenhouse.io/figma/jobs/6207950004?gh_jid=6207950004) |
@@ -130,11 +129,18 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Content marketing lead | Canonical | Home based - EMEA | [→](https://job-boards.greenhouse.io/canonical/jobs/6943565) |
 | Content Marketing Manager | Canonical | Home based - EMEA | [→](https://job-boards.greenhouse.io/canonical/jobs/8046372) |
 | Head of Content and Editorial | OnTheGoSystems | Remote | [→](https://weworkremotely.com/remote-jobs/onthegosystems-head-of-content-and-editorial) |
-| Senior Content Marketing Manager | Taboola |  | [→](https://www.arbeitnow.co.uk/jobs/companies/taboola/senior-content-marketing-manager-london-214452) |
+| Senior MarTech Product Manager (d/f/m) | Taxfix |  | [→](https://www.arbeitnow.com/jobs/companies/taxfix/senior-martech-product-manager-berlin-30131) |
 | Stagiair(e) Marketing - Growth e/o Content | 12Build |  | [→](https://www.arbeitnow.nl/jobs/companies/12build/stagiaire-marketing-growth-e-o-content-nijverdal-200169) |
-| Stage Copy & Content Marketing | Sunweb Group |  | [→](https://www.arbeitnow.nl/jobs/companies/sunweb-group/stage-copy-content-marketing-rotterdam-232932) |
 | Head of content | Watershed | Remote | [→](https://jobs.ashbyhq.com/watershed/35d863c4-0173-41da-8f13-a88575ef0c4b) |
 | Content Leader | 📍 | Unknown | [→](https://jobs.superpath.co) |
+| Senior Content Manager·Ecclesiastical Insurance UK | ✍️ | Unknown | [→](https://jobs.superpath.co) |
+| Senior Digital Marketing Content Manager·Pixability | 🏗️ | Unknown | [→](https://jobs.superpath.co) |
+| Content Marketing Manager·Unknown | ✍️ | Unknown | [→](https://jobs.superpath.co) |
+| Content Marketing Manager (m/f/d)·8returns | ✍️ | Unknown | [→](https://jobs.superpath.co) |
+| Content Marketing Manager - Industrial B2B·Siemens Digital Industries Software | ✍️ | Unknown | [→](https://jobs.superpath.co) |
+| Content Marketing Manager·HackerOne | ✍️ | Unknown | [→](https://jobs.superpath.co) |
+| Content Marketing Lead, Insights·TRM Labs | 🔎 | Unknown | [→](https://jobs.superpath.co) |
+| Sr. Content Marketing Manager, B2B SaaS·Gremlin | ✍️ | Unknown | [→](https://jobs.superpath.co) |
 | Content Lead·Whop | 🏗️ | Unknown | [→](https://jobs.superpath.co) |
 | Content Marketing Manager·Column Software | ✍️ | Unknown | [→](https://jobs.superpath.co) |
 | Copywriter and Content Lead·Framna | ✍️ | Unknown | [→](https://jobs.superpath.co) |
@@ -199,20 +205,14 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Content Marketing Manager (all genders) - 1-Year Fixed-Term Contract·Impossible  | ✍️ | Unknown | [→](https://jobs.superpath.co) |
 | Content Marketing Manager·Sortly | 🗣️ | Unknown | [→](https://jobs.superpath.co) |
 | Digital Content Manager·SambaNova | 📣 | Unknown | [→](https://jobs.superpath.co) |
-| Senior Content Marketing Manager·Norm Ai | 🔎 | Unknown | [→](https://jobs.superpath.co) |
-| SEO & Content Manager·Compound Growth Marketing (CGM) | 📣 | Unknown | [→](https://jobs.superpath.co) |
-| Content Lead·Endex | ✍️ | Unknown | [→](https://jobs.superpath.co) |
-| Sr. Manager, Content Marketing·Material Security | ✍️ | Unknown | [→](https://jobs.superpath.co) |
-| Content Lead·Browserbase | 🏗️ | Unknown | [→](https://jobs.superpath.co) |
-| Content Marketing Manager·iChoosr | Unknown | Unknown | [→](https://jobs.superpath.co) |
 
 ## 📦 Product Marketing
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
-| Senior Product Marketing Manager, Stablecoins - Infrastructure | Anchorage | United States | [→](https://jobs.lever.co/anchorage/ffc6ee03-bb50-4f16-a6eb-1b54ef9c436d) |
+| GTM Associate (Product - Watcher) | Apolloresearch | London | [→](https://jobs.lever.co/apolloresearch/df8439d2-b43e-4136-94d9-d9071f9327a2) |
+| Senior Core Product Marketing Manager | Articulate | United States | [→](https://jobs.lever.co/articulate/11293cac-03d3-4495-90ab-0c8d252e6610) |
 | Sr. Product Marketing Manager | Airslate | Poland | [→](https://jobs.lever.co/airslate/77a4539d-285c-4e95-9dd4-dbc87f1eaa87) |
-| Product Launch and Enablement Manager | Agiloft | United States | [→](https://jobs.lever.co/agiloft/c7662b7b-e352-47c1-bbe0-4f82241294d0) |
 | Account Executive (San Francisco) | Appen 2 | San Francisco, California | [→](https://jobs.lever.co/appen-2/1c7d1485-c4be-49ac-8aee-e63744cff0e6) |
 | Technical Marketing Lead | Arraylabs.Io | Redwood City, CA | [→](https://jobs.lever.co/arraylabs.io/52dc21b4-8dd3-4023-b372-04a1a2846eb8) |
 | Director, GTM Strategy, Planning & Analytics | Articulate | United States | [→](https://jobs.lever.co/articulate/81e00b76-9107-4f6c-a0dd-b98d5d410852) |
@@ -222,11 +222,24 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Product Marketing Manager | Angellist | San Francisco, CA | [→](https://jobs.lever.co/angellist/11a148b4-0ec0-41c4-b4b5-5b168f3307b4) |
 | Strategic Finance Lead - GTM & Product | Angellist | San Francisco, CA | [→](https://jobs.lever.co/angellist/7ac9e5b8-45f3-4f73-a3de-8a74034f9bd9) |
 | GTM Enablement Intern | Aircall | Paris Office | [→](https://jobs.lever.co/aircall/daecac18-ae6c-45ea-9e0c-d307d18f1a14) |
-| Senior Product Marketing Manager, Stablecoins - SaaS & Tokenization | Anchorage | United States | [→](https://jobs.lever.co/anchorage/026fb354-1d5f-49dc-9ea8-1602e6ace52e) |
 | Director, Forward Deployed Engineering & AI GTM Lead | Aircall | Seattle Office | [→](https://jobs.lever.co/aircall/13df67eb-2f59-4819-9266-ee35be751769) |
-| Product Marketing Manager - AB Platform | Xero | Melbourne, Melbourne Region | [→](https://www.adzuna.com.au/details/5938962665?utm_medium=api&utm_source=1aa7baa7) |
-| Founding GTM Engineer | ComplyAdvantage | London, UK | [→](https://www.adzuna.co.uk/jobs/details/5939048184?utm_medium=api&utm_source=1aa7baa7) |
-| Product Marketing Manager (12 month contract) | PointClickCare | Mississauga, Peel region | [→](https://www.adzuna.ca/details/5939044738?utm_medium=api&utm_source=1aa7baa7) |
+| Product Marketing Manager | Quantaco | Melbourne, Melbourne Region | [→](https://www.adzuna.com.au/details/5940260273?utm_medium=api&utm_source=1aa7baa7) |
+| Director, Product Marketing | FranklinCovey | Holladay Cottonwood, Salt Lake | [→](https://www.adzuna.com/details/5940305713?utm_medium=api&utm_source=1aa7baa7) |
+| Manager, Product Marketing | Info-Tech Research Group | Canada | [→](https://www.adzuna.ca/details/5940274719?utm_medium=api&utm_source=1aa7baa7) |
+| Senior Technical Product Marketing Manager | Fivetran | Oakland, California, United St | [→](https://www.fivetran.com/careers/job?gh_jid=8002744003) |
+| Solutions Marketing Lead, Public Sector | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5385586008) |
+| Principal Competitive Intelligence Manager - Security | Elastic | United States | [→](https://jobs.elastic.co/jobs?gh_jid=8302154&gh_jid=8302154) |
+| Senior Recruiter, GTM | Adyen | San Francisco | [→](https://job-boards.greenhouse.io/adyen/jobs/7570929) |
+| Principal, GTM Automation, RevOps. | Cloudflare | Distributed | [→](https://boards.greenhouse.io/cloudflare/jobs/8306580?gh_jid=8306580) |
+| Program Lead Strategic CDN Accounts GTM | Cloudflare | Distributed | [→](https://boards.greenhouse.io/cloudflare/jobs/8279302?gh_jid=8279302) |
+| Senior Engineer - GTM Tech | Mongodb | Gurugram | [→](https://www.mongodb.com/careers/job/?gh_jid=8008794) |
+| Senior Manager, GTM Customer Recruiting | Mongodb | New York City | [→](https://www.mongodb.com/careers/job/?gh_jid=8229901) |
+| Staff Technical Program Manager, GTM Tech | Mongodb | Gurugram | [→](https://www.mongodb.com/careers/job/?gh_jid=7493634) |
+| Lead Product Marketing, AI Decisioning Studio | Braze | San Francisco | [→](https://job-boards.greenhouse.io/braze/jobs/8170821) |
+| Senior Director, GTM Product Marketing | Braze | San Francisco | [→](https://job-boards.greenhouse.io/braze/jobs/8089829) |
+| Lead, Technology Partners Product Marketing Manager | Braze | New York City | [→](https://job-boards.greenhouse.io/braze/jobs/8089841) |
+| Technology Partners Product Marketing Manager | Braze | San Francisco | [→](https://job-boards.greenhouse.io/braze/jobs/8089842) |
+| Talent Acquisition Partner (GTM) | Commercetools | Boston, Massachusetts, United  | [→](https://job-boards.greenhouse.io/commercetools/jobs/8042848003) |
 | FP&A Analyst GTM | Datadog | New York, New York, USA | [→](https://careers.datadoghq.com/detail/8312438/?gh_jid=8312438) |
 | GTM Recruiter | Intercom | Chicago, Illinois | [→](https://job-boards.greenhouse.io/intercom/jobs/8280050) |
 | Product Marketing Manager - Figma Weave (Tel Aviv, Israel)  | Figma | Tel Aviv, Israel | [→](https://boards.greenhouse.io/figma/jobs/6105673004?gh_jid=6105673004) |
@@ -261,7 +274,6 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Developer GTM Strategy Manager, Technical Programs | Cloudflare | Hybrid | [→](https://boards.greenhouse.io/cloudflare/jobs/8191453?gh_jid=8191453) |
 | Head of GTM, AI Inference | Cloudflare | Hybrid | [→](https://boards.greenhouse.io/cloudflare/jobs/7428796?gh_jid=7428796) |
 | Principal Engineer - GTM Data Platform | Cloudflare | Hybrid | [→](https://boards.greenhouse.io/cloudflare/jobs/8054669?gh_jid=8054669) |
-| Program Lead Strategic CDN Accounts GTM | Cloudflare | Hybrid | [→](https://boards.greenhouse.io/cloudflare/jobs/8279302?gh_jid=8279302) |
 | Senior Cloudflare One GTM Specialist | Cloudflare | Distributed | [→](https://boards.greenhouse.io/cloudflare/jobs/7534033?gh_jid=7534033) |
 | Senior GTM Analytics Manager | Cloudflare | Distributed; Hybrid | [→](https://boards.greenhouse.io/cloudflare/jobs/8282783?gh_jid=8282783) |
 | Senior Manager - GTM Specialists, AMER | Cloudflare | Hybrid | [→](https://boards.greenhouse.io/cloudflare/jobs/8233538?gh_jid=8233538) |
@@ -272,19 +284,15 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Senior Product Marketing Manager (Logs)  | Newrelic | New York City, New York, USA | [→](https://job-boards.greenhouse.io/newrelic/jobs/5429208008) |
 | Senior Revenue Operations Manager - GTM Business Planning | Newrelic | Atlanta, Georgia, USA; Portlan | [→](https://job-boards.greenhouse.io/newrelic/jobs/5418504008) |
 | Senior Revenue Operations Manager - GTM Systems and Automation | Newrelic | Atlanta, Georgia, USA; Portlan | [→](https://job-boards.greenhouse.io/newrelic/jobs/5418501008) |
-| Head of GTM Programs, EMEA | Anthropic | London, UK | [→](https://job-boards.greenhouse.io/anthropic/jobs/5390992008) |
 | GTM Programs Manager, GTM Initiatives  | Anthropic | Remote-Friendly (Travel-Requir | [→](https://job-boards.greenhouse.io/anthropic/jobs/5454518008) |
 | GTM Strategy & Operations - AMER Enterprise Tech | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5390956008) |
 | Finance & Strategy, GTM - Post Sales  | Anthropic | San Francisco, CA | [→](https://job-boards.greenhouse.io/anthropic/jobs/5163060008) |
 | GTM Engineer | Vercel | Hybrid - San Francisco, New Yo | [→](https://job-boards.greenhouse.io/vercel/jobs/6225825004) |
 | GTM Strategy & Operations Senior Associate | Datadog | New York, New York, USA | [→](https://careers.datadoghq.com/detail/8247250/?gh_jid=8247250) |
 | GTM Recruiter | Assemblyai | Remote | [→](https://job-boards.greenhouse.io/assemblyai/jobs/4743943005) |
-| Senior Manager, GTM Customer Recruiting | Mongodb | New York City | [→](https://www.mongodb.com/careers/job/?gh_jid=8229901) |
 | Key Account Manager Danish Market Native Speaker Copenhagen | Packmatic GmbH | Copenhagen | [→](https://remoteOK.com/remote-jobs/remote-key-account-manager-danish-market-native-speaker-copenhagen-packmatic-gmbh-1137541) |
 | GTM AI Engineer | Customerio | Americas Remote | [→](https://job-boards.greenhouse.io/customerio/jobs/8055540) |
 | Director, GTM Finance | Customerio | Americas Remote | [→](https://job-boards.greenhouse.io/customerio/jobs/8097481) |
-| Senior Engineer - GTM Tech | Mongodb | Gurugram | [→](https://www.mongodb.com/careers/job/?gh_jid=8094387) |
-| Staff Technical Program Manager, GTM Tech | Mongodb | Gurugram | [→](https://www.mongodb.com/careers/job/?gh_jid=7493634) |
 | GTM Systems Manager | Adyen | Amsterdam | [→](https://job-boards.greenhouse.io/adyen/jobs/8281120) |
 | Leader of GTM Technical & Product Execution Excellence | Databricks | USCA | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8486165002) |
 | GTM Strategy & Operations, Frontier | Anthropic | San Francisco, CA | [→](https://job-boards.greenhouse.io/anthropic/jobs/5390952008) |
@@ -305,31 +313,28 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Recruiter, GTM | Anthropic | Dublin, IE | [→](https://job-boards.greenhouse.io/anthropic/jobs/5447973008) |
 | Junior Sales Development Representative IT Industry | Huzzle | Remote | [→](https://remoteOK.com/remote-jobs/remote-junior-sales-development-representative-it-industry-huzzle-1137480) |
 | Product Design Lead | Fuel50 | Remote | [→](https://remoteOK.com/remote-jobs/remote-product-design-lead-fuel50-1137474) |
-| Senior Technical Product Marketing Manager | Fivetran | Denver, Colorado, United State | [→](https://www.fivetran.com/careers/job?gh_jid=7818292003) |
 | Director, Technical Marketing | Databricks | San Francisco, California | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8860667002) |
 | Commercial Counsel, GTM | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5074052008) |
 | Finance & Strategy, GTM - Korea | Anthropic | Seoul, South Korea | [→](https://job-boards.greenhouse.io/anthropic/jobs/5079133008) |
-| Senior Recruiter, GTM | Adyen | San Francisco | [→](https://job-boards.greenhouse.io/adyen/jobs/7570929) |
 | Strategic Finance, GTM | Descript | San Francisco, CA or Remote, U | [→](https://boards.greenhouse.io/descript/jobs/7568783003?gh_jid=7568783003) |
 | GTM Strategy/Operations Associate | Datadog | New York, New York, USA | [→](https://careers.datadoghq.com/detail/8171303/?gh_jid=8171303) |
 | Senior Product Marketing Manager - B2B | Datacamp | United Kingdom | [→](https://job-boards.greenhouse.io/datacamp/jobs/8225995) |
 | GTM Product Enablement Lead | Databricks | United States | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8824179002) |
 | GTM Motions & Skills Enablement Lead | Databricks | United States | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8843892002) |
-| GTM Strategy & Planning Manager | Fivetran | Denver, Colorado, United State | [→](https://www.fivetran.com/careers/job?gh_jid=8014715003) |
+| GTM Strategy & Planning Manager | Fivetran | USA - New York | [→](https://www.fivetran.com/careers/job?gh_jid=8014717003) |
 | Head of EMEA Financial Services GTM | Databricks | London, United Kingdom | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8501026002) |
 | Senior Director, GTM Enablement | Intercom | San Francisco, California | [→](https://job-boards.greenhouse.io/intercom/jobs/8247523) |
 | APJ Manufacturing & Automotive Industry GTM Leader | Databricks | Seoul, South Korea; Singapore; | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8495065002) |
 | Sr. Product Marketing Manager, Lakewatch & Agentic Apps | Databricks | West Coast - United States | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8493857002) |
 | Director, Product Marketing, AI  | Databricks | San Francisco, California | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8487145002) |
 | Senior Staff Systems Engineer, GTM | Fivetran | Denver, Colorado, United State | [→](https://www.fivetran.com/careers/job?gh_jid=7826669003) |
-| Product Marketing Manager | Bitgo | San Francisco, California, Uni | [→](https://job-boards.greenhouse.io/bitgo/jobs/8523899002) |
+| Product Marketing Manager | Bitgo | Palo Alto, California, United  | [→](https://job-boards.greenhouse.io/bitgo/jobs/8523894002) |
 | GTM Strategy & Operations, FDE | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5427938008) |
 | AWS GTM Partnership Lead, Global System Integrators | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5391184008) |
-| Principal Competitive Intelligence - Search - Product Marketing | Elastic | Canada | [→](https://jobs.elastic.co/jobs?gh_jid=7620323&gh_jid=7620323) |
+| Principal Competitive Intelligence - Search - Product Marketing | Elastic | United States | [→](https://jobs.elastic.co/jobs?gh_jid=7590696&gh_jid=7590696) |
 | AWS GTM Partnership Lead, Public Sector & Nonprofits | Anthropic | Washington, DC | [→](https://job-boards.greenhouse.io/anthropic/jobs/5391227008) |
 | Recruiter, GTM | Datadog | Boston, Massachusetts, USA; De | [→](https://careers.datadoghq.com/detail/7927485/?gh_jid=7927485) |
 | GTM Strategy/Operations Associate - New York | Datadog | New York, New York, USA | [→](https://careers.datadoghq.com/detail/8179647/?gh_jid=8179647) |
-| Senior Director, Product Marketing | Datadog | New York, New York, USA; San F | [→](https://careers.datadoghq.com/detail/8196718/?gh_jid=8196718) |
 | Senior Product Marketing Manager | Datadog | New York, New York, USA | [→](https://careers.datadoghq.com/detail/8113654/?gh_jid=8113654) |
 | Senior Product Marketing Manager - Incident Response | Datadog | New York, New York, USA; San F | [→](https://careers.datadoghq.com/detail/8121553/?gh_jid=8121553) |
 | Business Systems Analyst, GTM Systems | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5436196008) |
@@ -351,34 +356,33 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Sr. Recruiter, GTM – Field Engineering (Contract) | Databricks | Bengaluru, India | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8587088002) |
 | Director of Solutions Marketing | Intercom | San Francisco, California | [→](https://job-boards.greenhouse.io/intercom/jobs/8172406) |
 | Staff Software Engineer, GTM AI Engineering  | Anthropic | Remote-Friendly (Travel-Requir | [→](https://job-boards.greenhouse.io/anthropic/jobs/5390966008) |
-| Lead Product Marketing, AI Decisioning Studio | Braze | Austin | [→](https://job-boards.greenhouse.io/braze/jobs/8170850) |
-| Lead, Technology Partners Product Marketing Manager | Braze | Austin | [→](https://job-boards.greenhouse.io/braze/jobs/8089838) |
-| Senior Director, GTM Product Marketing | Braze | Austin | [→](https://job-boards.greenhouse.io/braze/jobs/8089827) |
-| Technology Partners Product Marketing Manager | Braze | San Francisco | [→](https://job-boards.greenhouse.io/braze/jobs/8089842) |
 | Product Marketing Manager, Platform | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5424078008) |
 | Product Marketing Lead | Canonical | Home based - EMEA | [→](https://job-boards.greenhouse.io/canonical/jobs/8200686) |
-| Senior Internal Communications Manager - Go To Market (GTM)  | Pagerduty | San Francisco | [→](https://job-boards.greenhouse.io/pagerduty/jobs/6179667004) |
-| Solutions Marketing Lead, Public Sector | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5385586008) |
 | Senior GTM Strategy & Operations Manager | Circleci | San Francisco | [→](http://www.circleci.com/careers/jobs/8770550002/?gh_jid=8770550002) |
 | Data Engineer, GTM | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5418610008) |
 | Senior Recruitment Business Partner, Commercial & GTM | Adyen | San Francisco | [→](https://job-boards.greenhouse.io/adyen/jobs/8167431) |
 | Technical Program Manager, GTM Systems | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5368023008) |
 | Data Scientist, GTM | Anthropic | New York City, NY; San Francis | [→](https://job-boards.greenhouse.io/anthropic/jobs/5196852008) |
 | Solutions Delivery Manager | Benchling | Boston | [→](https://remoteOK.com/remote-jobs/remote-solutions-delivery-manager-benchling-1136937) |
-| Engineer Estimator | Crystalia Glass LLC | Bishkek, Bishkek, Bishkek City | [→](https://remoteOK.com/remote-jobs/remote-engineer-estimator-crystalia-glass-llc-1136878) |
 | Don't see what you're looking for? (Go to Market) | Doitintl | Remote Anywhere in the World | [→](https://job-boards.greenhouse.io/doitintl/jobs/6254730003) |
 | Senior Product Marketing Manager  | Canonical | Home based - EMEA | [→](https://job-boards.greenhouse.io/canonical/jobs/7601064) |
 | Technical Product Marketing Manager - Cybersecurity | Canonical | Home based - EMEA | [→](https://job-boards.greenhouse.io/canonical/jobs/6793868) |
-| Director, EMEA Sales Operations | Temporal Technologies |  | [→](https://www.arbeitnow.co.uk/jobs/companies/temporal-technologies/director-emea-sales-operations-london-35294) |
-| Senior Business Value Consultant | wizinc |  | [→](https://www.arbeitnow.fr/jobs/companies/wizinc/senior-business-value-consultant-paris-295262) |
+| Senior Product Marketing Manager  / Germany / Remote | grafanalabs |  | [→](https://www.arbeitnow.com/jobs/companies/grafanalabs/senior-product-marketing-manager-germany-remote-306734) |
+| Principal Technical Marketing Engineer  / Germany / Remote | grafanalabs |  | [→](https://www.arbeitnow.com/jobs/companies/grafanalabs/principal-technical-marketing-engineer-germany-remote-89618) |
+| GTM Enablement - Global Onboarding & Operations | ElevenLabs |  | [→](https://www.arbeitnow.com/jobs/companies/elevenlabs/remote-gtm-enablement-global-onboarding-operations-355228) |
+| GTM Enablement - Partner Program | ElevenLabs |  | [→](https://www.arbeitnow.com/jobs/companies/elevenlabs/remote-gtm-enablement-partner-program-57458) |
+| GTM Systems Lead | Granola |  | [→](https://www.arbeitnow.co.uk/jobs/companies/granola/gtm-systems-lead-old-street-142487) |
+| Senior Product Marketing Manager  / UK / Remote | grafanalabs |  | [→](https://www.arbeitnow.co.uk/jobs/companies/grafanalabs/senior-product-marketing-manager-uk-remote-109523) |
+| Principal Technical Marketing Engineer  / UK / Remote | grafanalabs |  | [→](https://www.arbeitnow.co.uk/jobs/companies/grafanalabs/principal-technical-marketing-engineer-uk-remote-443727) |
+| GTM Engineer - Growth | Gorgias |  | [→](https://www.arbeitnow.fr/jobs/companies/gorgias/gtm-engineer-growth-paris-22627) |
+| Product Marketing Lead | Orakl Oncology |  | [→](https://www.arbeitnow.fr/jobs/companies/orakl-oncology/product-marketing-lead-villejuif-192763) |
 | Manager, GTM Analytics | Zapier | Remote | [→](https://jobs.ashbyhq.com/zapier/7dd68291-3696-4fd0-a5d0-24ab73d22fff) |
 | Sr. Product Marketing Manager, Enterprise | Zapier | Remote | [→](https://jobs.ashbyhq.com/zapier/1e5d20ae-d2ce-4924-9957-73a8c7c17654) |
 | Senior Product Marketing Manager - New Products | Ramp | Remote | [→](https://jobs.ashbyhq.com/ramp/cdc3cb5a-8c6d-4820-86cf-5f9daa2b41fc) |
 | Senior/Lead Recruiter / GTM | Ramp | Remote | [→](https://jobs.ashbyhq.com/ramp/72ba7873-254f-45dc-9e7b-595c9d1f8acf) |
 | Senior Recruiter / GTM Expansion | Ramp | Remote | [→](https://jobs.ashbyhq.com/ramp/f99558f9-639c-4f36-81af-2d0910703560) |
-| GTM Business Systems Engineer, Post Sales | Ramp | Remote | [→](https://jobs.ashbyhq.com/ramp/696bc715-794c-4a0c-967d-d7f8b637b392) |
 | GTM Business Systems Engineer, Quote-to-Cash | Ramp | Remote | [→](https://jobs.ashbyhq.com/ramp/6310f1b3-1ae2-476c-b4ce-affe530ede26) |
-| GTM Senior Business Systems Analyst, Pre-Sales | Ramp | Remote | [→](https://jobs.ashbyhq.com/ramp/aa433e44-f095-484b-a46a-a330583d84b0) |
+| GTM Senior Business Systems Analyst, Marketing & Pre-Sales | Ramp | Remote | [→](https://jobs.ashbyhq.com/ramp/aa433e44-f095-484b-a46a-a330583d84b0) |
 | Associate GTM Recruiter | Ramp | Remote | [→](https://jobs.ashbyhq.com/ramp/a85afad0-8051-4333-ae89-0f82321dea87) |
 | Lead Product Marketing Manager - Verticals | Ramp | Remote | [→](https://jobs.ashbyhq.com/ramp/73fd7b0f-ee20-4a83-8765-0ce4663f2d41) |
 | Senior Manager, GTM Systems | Merge | Remote | [→](https://jobs.ashbyhq.com/merge/118095f8-dc4b-41dd-84bd-f72229097162) |
@@ -400,49 +404,35 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | Demand Generation Manager | Artera 2 | Santa Barbara, California | [→](https://jobs.lever.co/artera-2/e67156f3-5d47-4470-9040-bc34896f71bd) |
 | Senior Marketing Technology (Customer Data & Marketing Analytics) | Amarbank | Jakarta | [→](https://jobs.lever.co/amarbank/0f2205ff-7f62-4bc9-9152-164f1a77ccb4) |
 | B2B Demand Generation Leader | Airslate | United States | [→](https://jobs.lever.co/airslate/9a4add3b-1bbc-453d-94da-502113da3c53) |
-| Principal Performance Marketing Specialist | Airalo | United Kingdom | [→](https://jobs.lever.co/airalo/ab1c3bca-3745-4646-a9a0-b25b072fb593) |
 | Performance Marketing Manager | Aircall | Seattle Office | [→](https://jobs.lever.co/aircall/5f5e229b-7cfb-4426-9e34-e95988364bc9) |
-| Post-Sales Solutions Architect & Growth Lead | Databricks Inc. | Leigh Creek, Moorabool Area | [→](https://www.adzuna.com.au/details/5939007452?utm_medium=api&utm_source=1aa7baa7) |
-| Head of Growth Marketing - Remote, Equity & Growth Leader | Jobgether | Australia | [→](https://www.adzuna.com.au/details/5938995571?utm_medium=api&utm_source=1aa7baa7) |
-| Performance Growth Director – Paid Media & AI Innovation | Accenture Australia | Leigh Creek, Moorabool Area | [→](https://www.adzuna.com.au/details/5938995481?utm_medium=api&utm_source=1aa7baa7) |
-| Growth Marketing Manager, B2C | Digital Science | UK | [→](https://www.adzuna.co.uk/jobs/details/5939046765?utm_medium=api&utm_source=1aa7baa7) |
-| Co-Brand Program Growth Manager | Alviere | United States | [→](https://himalayas.app/companies/alviere/jobs/co-brand-program-growth-manager-6515069265?utm_source=api) |
-| Digital Growth Leader | CliftonLarsonAllen | Nashville, Davidson County | [→](https://www.adzuna.com/details/5939108447?utm_medium=api&utm_source=1aa7baa7) |
-| Growth Marketer | Vendasta | Corman Park, Saskatoon | [→](https://www.adzuna.ca/details/5939038369?utm_medium=api&utm_source=1aa7baa7) |
+| Strategy & Growth, Mgr | AdventHealth | US | [→](https://www.adzuna.com/details/5940303997?utm_medium=api&utm_source=1aa7baa7) |
+| Growth Marketing Manager | Mongodb | United States | [→](https://www.mongodb.com/careers/job/?gh_jid=8265960) |
+| Director, Lifecycle Marketing | Braze | San Francisco | [→](https://job-boards.greenhouse.io/braze/jobs/8240667) |
+| Lifecycle Marketing Senior Specialist | Braze | São Paulo | [→](https://job-boards.greenhouse.io/braze/jobs/8096677) |
 | Lifecycle Marketing Analyst, Prospect | Braze | São Paulo | [→](https://job-boards.greenhouse.io/braze/jobs/8105611) |
 | Money Management Demand Generation Manager, Americas | Stripe | South San Francisco HQ, Seattl | [→](https://stripe.com/jobs/search?gh_jid=8187278) |
 | Lifecycle Marketing Manager, Capital | Stripe | Remote, US | [→](https://stripe.com/jobs/search?gh_jid=8082149) |
 | Director, Performance Marketing | Ethoslife | Remote US | [→](https://job-boards.greenhouse.io/ethoslife/jobs/8615032002) |
-| Growth Marketing Strategy & Planning Manager | Fivetran | USA - New York | [→](https://www.fivetran.com/careers/job?gh_jid=8014680003) |
+| Growth Marketing Strategy & Planning Manager | Fivetran | Denver, Colorado, United State | [→](https://www.fivetran.com/careers/job?gh_jid=8009202003) |
 | Growth Marketing Manager, Greater China | Stripe | Singapore | [→](https://stripe.com/jobs/search?gh_jid=8078168) |
 | Performance Marketing Manager  | Vercel | Hybrid - San Francisco, New Yo | [→](https://job-boards.greenhouse.io/vercel/jobs/6011904004) |
 | International Growth Marketing Manager (Contract) | Launchdarkly | India | [→](https://job-boards.greenhouse.io/launchdarkly/jobs/8037959003) |
 | Demand Generation Manager | Commercetools | Boston, Massachusetts, United  | [→](https://job-boards.greenhouse.io/commercetools/jobs/7800075003) |
 | Director, Demand Generation | Commercetools | Boston, Massachusetts, United  | [→](https://job-boards.greenhouse.io/commercetools/jobs/8034373003) |
-| Growth Marketing Manager | Mongodb | United States | [→](https://www.mongodb.com/careers/job/?gh_jid=8265960) |
 | Head of Demand Generation, North America | Adyen | New York; San Francisco | [→](https://job-boards.greenhouse.io/adyen/jobs/8265553) |
 | Growth Marketing Lead | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5444769008) |
 | Agentic Operator, Growth Marketing | Circleci | Remote (USA) | [→](http://www.circleci.com/careers/jobs/8801094002/?gh_jid=8801094002) |
 | Principal Demand Generation Manager, Campaign Development | Databricks | United States | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8407917002) |
 | Principal Growth Marketing Manager - SEO/GEO | Datadog | New York, New York, USA; San F | [→](https://careers.datadoghq.com/detail/8180681/?gh_jid=8180681) |
-| Director, Lifecycle Marketing | Braze | San Francisco | [→](https://job-boards.greenhouse.io/braze/jobs/8240667) |
-| Lifecycle Marketing Senior Specialist | Braze | São Paulo | [→](https://job-boards.greenhouse.io/braze/jobs/8096677) |
 | Senior Growth Product Manager AI Native | Magic Eden | Melbourne | [→](https://remoteOK.com/remote-jobs/remote-senior-growth-product-manager-ai-native-magic-eden-1137414) |
 | Executive Assistant, Growth Marketing | Figma | San Francisco, CA | [→](https://boards.greenhouse.io/figma/jobs/6199185004?gh_jid=6199185004) |
 | Senior Growth Marketing Manager, Lifecycle | Ethoslife | Remote US | [→](https://job-boards.greenhouse.io/ethoslife/jobs/8581438002) |
 | Senior Growth Marketing Analyst | Launchdarkly | Remote - US | [→](https://job-boards.greenhouse.io/launchdarkly/jobs/7992914003) |
-| Performance Marketing Specialist, Mobile | Blockchain | London | [→](https://job-boards.greenhouse.io/blockchain/jobs/8026116) |
+| Performance Marketing Specialist, Mobile | Blockchain | Singapore | [→](https://job-boards.greenhouse.io/blockchain/jobs/8147304) |
 | Head of Growth, Scheme Compliance | Adyen | New York; San Francisco | [→](https://job-boards.greenhouse.io/adyen/jobs/8114423) |
 | Head of Growth & Operations | OpenBase LLC | Remote | [→](https://weworkremotely.com/remote-jobs/openbase-llc-head-of-growth-operations) |
 | Growth Marketer - Part Time | Civic Shout | Anywhere Remote only | [→](https://jobs.exitfive.com/job/2555835-growth-marketer-part-time-civic-shout) |
-| Senior Performance Marketing Manager (all genders) – D2C Beauty | Maniko Nails GmbH |  | [→](https://www.arbeitnow.com/jobs/companies/maniko-nails-gmbh/remote-senior-performance-marketing-manager-all-genders-d2c-beauty-berlin-44558) |
-| Performance Marketing Manager (m/w/d) | Cyrus Digital GmbH |  | [→](https://www.arbeitnow.com/jobs/companies/cyrus-digital-gmbh/performance-marketing-manager-munich-326888) |
-| Junior Performance Marketing Manager | Cyrus Digital GmbH |  | [→](https://www.arbeitnow.com/jobs/companies/cyrus-digital-gmbh/junior-performance-marketing-manager-munich-326771) |
-| Junior Performance Marketing Manager (m/w/d) | Cyrus Digital GmbH |  | [→](https://www.arbeitnow.com/jobs/companies/cyrus-digital-gmbh/junior-performance-marketing-manager-munich-263442) |
-| Sr. Business Consultant - Performance Marketing (w/m/d) | Smarketer Group |  | [→](https://www.arbeitnow.com/jobs/companies/smarketer-group/sr-business-consultant-performance-marketing-kassel-47798) |
-| Head of Demand Generation | N8N |  | [→](https://www.arbeitnow.com/jobs/companies/n8n/head-of-demand-generation-berlin-63168) |
-| Lifecycle Marketing Manager | Alma31 |  | [→](https://www.arbeitnow.fr/jobs/companies/alma31/lifecycle-marketing-manager-paris-paris-7610) |
-| Content & Social Growth Manager:in (80–100 %) | bluu |  | [→](https://www.arbeitnow.ch/jobs/companies/bluu/content-social-growth-managerin-80-100-zurich-184989) |
+| Senior Growth Marketing Manager | Cell Labs |  | [→](https://www.arbeitnow.com/jobs/companies/cell-labs/senior-growth-marketing-manager-berlin-225493) |
 | Performance Marketing Manager | Ramp | Remote | [→](https://jobs.ashbyhq.com/ramp/f4545aaa-c98b-4134-b250-f12dc46ad6a8) |
 
 ## 👔 VP Marketing
@@ -454,27 +444,19 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 | VP, Brand Strategy (DTC) | Avalerehealth | Remote (US) | [→](https://jobs.lever.co/avalerehealth/b4d2f2d6-025e-477a-80fd-f41c206663e9) |
 | Chief Medical Officer (CMO) | Artera | Remote-US | [→](https://jobs.lever.co/artera/4c3d64fe-c475-41cb-9bf8-6d65666a9ced) |
 | Senior Influencer Marketing Executive (Beauty) | Anotherco | Ciudad de México | [→](https://jobs.lever.co/anotherco/c00dcefb-0998-4ae2-af5e-ffe33ed3d128) |
-| Head of Marketing & Digital Campaigns (Growth) | VMCH | Leigh Creek, Moorabool Area | [→](https://www.adzuna.com.au/details/5938995709?utm_medium=api&utm_source=1aa7baa7) |
-| Head of Marketing, Campaigns and Digital | VMCH | Leigh Creek, Moorabool Area | [→](https://www.adzuna.com.au/details/5938995598?utm_medium=api&utm_source=1aa7baa7) |
-| Head of Brand & Marketing - Cyber Security | Infotrust | Leigh Creek, Moorabool Area | [→](https://www.adzuna.com.au/details/5938995558?utm_medium=api&utm_source=1aa7baa7) |
-| Freelance Social Media & Marketing Executive | StudioXAG | London, UK | [→](https://www.adzuna.co.uk/jobs/details/5939062483?utm_medium=api&utm_source=1aa7baa7) |
-| Senior Digital Marketing Executive | Barnardos | London, UK | [→](https://www.adzuna.co.uk/jobs/details/5939056324?utm_medium=api&utm_source=1aa7baa7) |
-| Marketing Lead Solid Tumors, Germany | BeiGene | Germany | [→](https://himalayas.app/companies/beonemedicines/jobs/marketing-lead-solid-tumors-germany?utm_source=api) |
-| Sales and Marketing Director | Memory Care Community | Glenview, Cook County | [→](https://www.adzuna.com/details/5939107069?utm_medium=api&utm_source=1aa7baa7) |
-| Marketing Director | Avir at Waco | Hewitt, McLennan County | [→](https://www.adzuna.com/details/5939106948?utm_medium=api&utm_source=1aa7baa7) |
-| Admissions & Marketing Director | The Lodge at Mills River Health & Rehabi | Mills River, Henderson County | [→](https://www.adzuna.com/details/5939106923?utm_medium=api&utm_source=1aa7baa7) |
-| Partner Marketing Leader, Alliances & Channel | Stripe | Seattle or San Francisco | [→](https://stripe.com/jobs/search?gh_jid=8257500) |
-| SaaS Platform and AI Partner Marketing Lead | Stripe | San Francisco, New York, Seatt | [→](https://stripe.com/jobs/search?gh_jid=8248507) |
-| Integrated Marketing Lead, Cross Product | Stripe | Remote US | [→](https://stripe.com/jobs/search?gh_jid=8187572) |
-| Scale Partner Marketing Lead | Stripe | San Francisco, Seattle, New Yo | [→](https://stripe.com/jobs/search?gh_jid=8175627) |
+| Marketing Executive | BRC Recruitment | Hampshire, South East England | [→](https://www.adzuna.co.uk/jobs/details/5940274091?utm_medium=api&utm_source=1aa7baa7) |
+| CMOA Construction Manager | Mead & Hunt, Inc. | United States | [→](https://himalayas.app/companies/mead-hunt-inc/jobs/cmoa-construction-manager?utm_source=api) |
 | Marketing Lead | Mongodb | Gurugram | [→](https://www.mongodb.com/careers/job/?gh_jid=8170634) |
 | Digital Marketing Lead, Programmatic & Media | Braze | São Paulo | [→](https://job-boards.greenhouse.io/braze/jobs/8301722) |
+| Senior Director, Marketing | Braze | Tokyo | [→](https://job-boards.greenhouse.io/braze/jobs/8212960) |
+| Partner Marketing Leader, Alliances & Channel | Stripe | Seattle or San Francisco | [→](https://stripe.com/jobs/search?gh_jid=8257500) |
+| SaaS Platform and AI Partner Marketing Lead | Stripe | San Francisco, New York, Seatt | [→](https://stripe.com/jobs/search?gh_jid=8248507) |
+| Scale Partner Marketing Lead | Stripe | San Francisco, Seattle, New Yo | [→](https://stripe.com/jobs/search?gh_jid=8175627) |
 | Partner Marketing Lead, Resellers | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5451134008) |
 | Field Marketing Lead, Cybersecurity  | Anthropic | San Francisco, CA / New York C | [→](https://job-boards.greenhouse.io/anthropic/jobs/5444773008) |
 | Chief of Staff to the CMO | Databricks | San Francisco, California | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8788190002) |
 | Head of Marketing - Japan | Databricks | Tokyo, Japan | [→](https://databricks.com/company/careers/open-positions/job?gh_jid=8493722002) |
-| Senior Director, Marketing | Braze | Tokyo | [→](https://job-boards.greenhouse.io/braze/jobs/8212960) |
-| Head of Brand | Make | Prague, Czechia | [→](https://www.make.com/en/careers-detail?gh_jid=7799520003) |
+| Head of Brand | Make | Madrid, Spain | [→](https://www.make.com/en/careers-detail?gh_jid=7799522003) |
 | Field Marketing Lead, Public Sector | Anthropic | San Francisco, CA / Washington | [→](https://job-boards.greenhouse.io/anthropic/jobs/5344577008) |
 | Digital Marketing Lead, APAC | Adyen | Singapore | [→](https://job-boards.greenhouse.io/adyen/jobs/7590451) |
 | Integrated Marketing Lead, UCAN Programming & Industry | Pinterest | Remote | [→](https://weworkremotely.com/remote-jobs/pinterest-integrated-marketing-lead-ucan-programming-industry) |
@@ -490,6 +472,15 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
+| Portfolio Community Manager I - Sacramento | Actionlife | Sacramento, CA | [→](https://jobs.lever.co/actionlife/768dd51d-5c17-4724-a064-245cfcbe8ae2) |
+| Portfolio Community Manager - San Diego | Actionlife | San Diego, CA | [→](https://jobs.lever.co/actionlife/bcd1e7f0-a77d-4c4d-82c2-2cb341399c53) |
+| Join Our Team! HOA Community Manager - Texas | Actionlife | Austin, TX | [→](https://jobs.lever.co/actionlife/d67ef2e5-18ea-4a73-a953-a3724271c2c1) |
+| Community Manager (HOA) / Opportunities Throughout California | Actionlife | Los Angeles, CA | [→](https://jobs.lever.co/actionlife/d2b8fb8a-c25a-4e61-9aae-d904164d151d) |
+| Family, Career and Community Leaders of America (FCCLA) Advisor - Head | Burnsville-Eagan-Savage School District | US | [→](https://www.adzuna.com/details/5940307694?utm_medium=api&utm_source=1aa7baa7) |
+| *Assistant Community Manager* | Brookside Properties | Indianapolis, Marion County | [→](https://www.adzuna.com/details/5940305860?utm_medium=api&utm_source=1aa7baa7) |
+| Community Director - Lease Up | Axis Residential | Missoula, Missoula County | [→](https://www.adzuna.com/details/5940305677?utm_medium=api&utm_source=1aa7baa7) |
+| Community Manager II Night Manager - Alta Mira Family and Senior Living, Hayward | Eden Housing | Mount Eden, Alameda County | [→](https://www.adzuna.com/details/5940305478?utm_medium=api&utm_source=1aa7baa7) |
+| Community Manager (BTR) - Aldeia Cypress | Greystar Management Services | Houston, Harris County | [→](https://www.adzuna.com/details/5940305419?utm_medium=api&utm_source=1aa7baa7) |
 | Community Manager, Experiential Marketing | Vercel | Hybrid - San Francisco | [→](https://job-boards.greenhouse.io/vercel/jobs/6231540004) |
 | Community Operations Specialist | Stripe | Dublin | [→](https://stripe.com/jobs/search?gh_jid=8257185) |
 | Community Engagement Manager, Data Centers (Indiana & Kentucky) | Anthropic | Remote-Friendly, United States | [→](https://job-boards.greenhouse.io/anthropic/jobs/5454535008) |
