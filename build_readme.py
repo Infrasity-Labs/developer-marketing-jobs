@@ -77,6 +77,16 @@ def load_all_jobs():
         except Exception as e:
             print(f"✗ Error loading {json_file}: {e}")
     
+    # Hand-curated roles that no fetcher picks up yet
+    manual_file = Path('manual_jobs.json')
+    if manual_file.exists():
+        try:
+            manual = json.loads(manual_file.read_text(encoding='utf-8'))
+            all_jobs.extend(manual)
+            print(f"✓ Loaded {len(manual)} jobs from manual_jobs.json")
+        except Exception as e:
+            print(f"✗ Error loading manual_jobs.json: {e}")
+
     return all_jobs, yc_jobs
 
 def main():
