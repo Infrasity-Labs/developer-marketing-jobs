@@ -125,6 +125,7 @@ If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
+| Developer Marketer - Sales | Posthog | San Francisco, CA | [→](https://jobs.ashbyhq.com/posthog/82ef4227-e7a6-4e59-a128-2b3333951e21) |
 | Senior Director, Global Sports & Partnership Marketing | Arcteryx.Com | North Vancouver, BC (Corporate | [→](https://jobs.lever.co/arcteryx.com/4463f5df-9f29-4609-9935-a925b90ff726) |
 | Senior Content Manager | Airslate | Israel | [→](https://jobs.lever.co/airslate/65b92dec-8594-4b9e-afb0-59d79450f1ca) |
 | Senior Manager, Global Brand Programs | Arcteryx.Com | North Vancouver, BC (Corporate | [→](https://jobs.lever.co/arcteryx.com/64c82cff-277f-432b-b3ad-4c032306da71) |

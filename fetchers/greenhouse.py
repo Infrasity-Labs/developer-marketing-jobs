@@ -6,7 +6,7 @@ COMPANIES = [
     # Developer Tools & Infrastructure
     "vercel", "netlify", "stripe", "mongodb", "twilio", "gitlab", "elastic",
     "cloudflare", "databricks", "temporal", "algolia", "sentry", "figma",
-    "canonical", "devrev", "fellow",
+    "canonical", "devrev", "fellow", "idme", "consensys",
 
     # DevOps & Cloud
     "datadog", "newrelic", "pagerduty", "launchdarkly", "circleci",
