@@ -12,6 +12,9 @@ def fetch():
         "product marketing",
         "growth marketing",
         "developer marketer",
+        "developer marketing manager",
+        "technical marketer",
+        "devtools marketing",
         "community manager",
     ]
     
