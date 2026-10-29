@@ -8,6 +8,7 @@ def fetch():
         "devrel",
         "technical writer",
         "content marketing",
+        "developer marketer",
     ]
     
     for keyword in keywords:
