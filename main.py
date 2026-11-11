@@ -396,6 +396,28 @@ CATEGORIES = [
             "t-shaped marketer",
         ],
     },
+    {
+        "label": "🔍 SEO / GEO / AEO",
+        "whole_word": True,
+        "keywords": [
+            "seo",
+            "seo manager",
+            "seo specialist",
+            "seo strategist",
+            "seo executive",
+            "seo expert",
+            "seo & aio manager",
+            "seo/aeo manager",
+            "aeo",
+            "aio manager",
+            "geo specialist",
+            "geo strategist",
+            "answer engine optimization",
+            "generative engine optimization",
+            "ai search optimization",
+            "search engine optimization",
+        ],
+    },
 
 
 ]
@@ -415,7 +437,12 @@ def categorize(job, cats=None):
     
     text = _norm(job["title"] + " " + " ".join(job.get("tags", [])))
     for cat in cats:
-        if any(_norm(kw) in text for kw in cat["keywords"]):
+        if cat.get("whole_word"):
+            # Short keywords like "seo" must not match inside "Seoul"
+            if any(re.search(r"(?<![a-z0-9])" + re.escape(_norm(kw)) + r"(?![a-z0-9])", text)
+                   for kw in cat["keywords"]):
+                return cat["label"]
+        elif any(_norm(kw) in text for kw in cat["keywords"]):
             return cat["label"]
     return None
 

@@ -15,6 +15,9 @@ def fetch():
         "developer marketing manager",
         "technical marketer",
         "devtools marketing",
+        "seo manager",
+        "seo specialist",
+        "aeo",
         "community manager",
     ]
     
