@@ -2,7 +2,7 @@ import requests
 
 COMPANIES = [
     "retool", "zapier", "loom", "deel", "canva", "clipboard-health",
-    "ramp", "merge", "vanta", "watershed", "anthropic", "posthog",
+    "ramp", "merge", "vanta", "watershed", "anthropic", "posthog", "1password",
 ]
 
 def fetch():

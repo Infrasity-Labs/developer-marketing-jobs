@@ -100,6 +100,8 @@ CATEGORIES = [
             "technical documentation lead",
             "technical editor",
             "technical writer",
+            "content developer",
+            "staff content developer",
         ],
     },
     {
