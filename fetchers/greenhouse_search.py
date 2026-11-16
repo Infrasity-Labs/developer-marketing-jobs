@@ -15,6 +15,7 @@ def fetch():
         "seo manager",
         "seo specialist",
         "aeo",
+        "content developer",
     ]
     
     for keyword in keywords:
