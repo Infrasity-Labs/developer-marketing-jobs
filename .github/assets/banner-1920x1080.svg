@@ -18,6 +18,9 @@
     <style>
       .title { font: 600 112px Georgia, 'Times New Roman', serif; letter-spacing: -1px; }
       .sub { font: 400 52px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #b9c2ff; letter-spacing: 0.8px; }
+      .num { font: 600 68px Georgia, 'Times New Roman', serif; fill: #ffffff; letter-spacing: -1px; }
+      .lbl { font: 500 24px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #b9c2ff; letter-spacing: 2.2px; text-transform: uppercase; }
+      .live { font: 500 26px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #dfe4ff; letter-spacing: 1px; }
       .role { font: 600 40px -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #ffffff; letter-spacing: 2.4px; }
     </style>
   </defs>
@@ -56,6 +59,27 @@
     <text x="960" y="720" text-anchor="middle" class="role" opacity="0"><animate attributeName="opacity" dur="18.0s" repeatCount="indefinite" keyTimes="0;0.5;0.52;0.6467;0.6667;1" values="0.00;0.00;1.00;1.00;0.00;0.00"/>Product Marketing</text>
     <text x="960" y="720" text-anchor="middle" class="role" opacity="0"><animate attributeName="opacity" dur="18.0s" repeatCount="indefinite" keyTimes="0;0.6667;0.6867;0.8133;0.8333;1" values="0.00;0.00;1.00;1.00;0.00;0.00"/>Head of Growth · VP Marketing</text>
     <text x="960" y="720" text-anchor="middle" class="role" opacity="0"><animate attributeName="opacity" dur="18.0s" repeatCount="indefinite" keyTimes="0;0.8333;0.8533;0.98;1.0" values="0.00;0.00;1.00;1.00;0.00"/>Community</text>
+    <!-- LIVE:START -->
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.0s" dur="0.9s" fill="freeze"/>
+      <rect x="290" y="800" width="420" height="150" rx="28" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.22" stroke-width="2"/>
+      <text x="500" y="876" text-anchor="middle" class="num">725</text>
+      <text x="500" y="918" text-anchor="middle" class="lbl">Open roles</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.25s" dur="0.9s" fill="freeze"/>
+      <rect x="750" y="800" width="420" height="150" rx="28" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.22" stroke-width="2"/>
+      <text x="960" y="876" text-anchor="middle" class="num">+71</text>
+      <text x="960" y="918" text-anchor="middle" class="lbl">Added last run</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.5s" dur="0.9s" fill="freeze"/>
+      <rect x="1210" y="800" width="420" height="150" rx="28" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.22" stroke-width="2"/>
+      <text x="1420" y="876" text-anchor="middle" class="num">5 + 14</text>
+      <text x="1420" y="918" text-anchor="middle" class="lbl">ATS + job boards</text>
+    </g>
+    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.8s" dur="0.9s" fill="freeze"/>
+      <circle cx="730" cy="995" r="8" fill="#3dffa0"><animate attributeName="opacity" values="1;0.25;1" dur="2s" repeatCount="indefinite"/></circle>
+      <text x="978" y="1004" text-anchor="middle" class="live">Updated 20 Nov 2026, 15:24 UTC</text>
+    </g>
+    <!-- LIVE:END -->
     <rect x="-500" y="1040" width="500" height="4" rx="2" fill="#ffffff" opacity="0.5">
       <animate attributeName="x" values="-500;1920" dur="5s" repeatCount="indefinite"/>
     </rect>
