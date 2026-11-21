@@ -23,25 +23,61 @@ def job_urls(readme_text):
         return set()
     return set(JOB_URL_RE.findall(readme_text[start:end]))
 
-def update_stats(total, added):
-    """Rewrite the stats block between STATS markers (below the banner)."""
-    path = Path(README_PATH)
-    text = path.read_text(encoding="utf-8")
-    s, e = "<!-- STATS:START -->", "<!-- STATS:END -->"
+def _slug(heading):
+    """GitHub-style anchor for a heading (emoji dropped, spaces to hyphens)."""
+    text = re.sub(r"[^\w\- ]", "", heading.lower(), flags=re.UNICODE)
+    return text.replace(" ", "-")
+
+def build_toc(jobs_text):
+    """Linked table of contents with per-category counts."""
+    lines = []
+    section = None
+    count = 0
+    def flush():
+        if section:
+            lines.append(f"| [{section}](#{_slug(section)}) | {count} |")
+    for line in jobs_text.splitlines():
+        if line.startswith("## "):
+            flush()
+            section, count = line[3:].strip(), 0
+        elif section and line.startswith("| ") and not line.startswith(("| Role", "| ---")):
+            count += 1
+    flush()
+    if not lines:
+        return ""
+    return "\n".join(["| Category | Open roles |", "|----------|-----------:|"] + lines)
+
+def _replace_block(text, name, body):
+    s, e = f"<!-- {name}:START -->", f"<!-- {name}:END -->"
     si, ei = text.find(s), text.find(e)
     if si == -1 or ei == -1:
-        print("⚠️ STATS markers not found in README.md, skipping stats")
-        return
+        print(f"⚠️ {name} markers not found in README.md, skipping")
+        return text
+    return text[:si + len(s)] + body + text[ei:]
+
+def update_stats(total, added):
+    """Rewrite the STATS and TOC blocks of the README."""
+    path = Path(README_PATH)
+    text = path.read_text(encoding="utf-8")
     now = datetime.now(timezone.utc)
     when = now.strftime("%d %b %Y, %H:%M UTC")
-    block = (
+    stats = (
         f"\n<p align=\"center\">\n"
+        f"  <img alt=\"Open roles\" src=\"https://img.shields.io/badge/open%20roles-{total}-brightgreen?style=for-the-badge\">\n"
+        f"  <img alt=\"Added in last run\" src=\"https://img.shields.io/badge/added%20last%20run-%2B{added}-blue?style=for-the-badge\">\n"
+        f"</p>\n\n"
+        f"<p align=\"center\">\n"
         f"  <b>{total:,}</b> open roles tracked &nbsp;·&nbsp; "
         f"<b>+{added:,}</b> added in the last run &nbsp;·&nbsp; "
         f"last updated <b>{when}</b>\n"
         f"</p>\n"
     )
-    path.write_text(text[:si + len(s)] + block + text[ei:], encoding="utf-8")
+    text = _replace_block(text, "STATS", stats)
+    js, je = text.find("<!-- JOBS:START -->"), text.find("<!-- JOBS:END -->")
+    if js != -1 and je != -1:
+        toc = build_toc(text[js:je])
+        text = _replace_block(text, "TOC", f"\n{toc}\n" if toc else "\n")
+    path.write_text(text, encoding="utf-8")
     print(f"📈 Stats: total={total}, added={added}, run={when}")
 
 def load_all_jobs():

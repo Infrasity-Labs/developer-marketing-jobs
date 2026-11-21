@@ -7,3 +7,7 @@ __pycache__/
 # Debug output from fetcher development (e.g. Playwright page dumps)
 debug_*.html
 debug_*.png
+# Local job artifacts and caches
+artifacts/
+*_jobs.json
+!manual_jobs.json

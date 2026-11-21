@@ -1,37 +1,68 @@
-﻿# Developer Marketing Jobs
-![Jobs](https://img.shields.io/badge/🧑‍💻_Jobs-Updated_Daily-brightgreen?style=for-the-badge)
-![Free](https://img.shields.io/badge/💸_Access-100%25_Free-blue?style=for-the-badge)
-![No Signup](https://img.shields.io/badge/🔓_No_Signup-Required-orange?style=for-the-badge)
-![Powered By](https://img.shields.io/badge/⚡_Powered_By-GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-<br><br>
+<h1 align="center">Developer Marketing Jobs</h1>
 
 <p align="center">
   <img width="100%" alt="Developer Marketing Jobs" src="./.github/assets/banner-1920x1080.svg" />
 </p>
 
+<p align="center">
+  <b>Every open DevRel, technical writing, developer marketing, growth and community role at devtool companies, in one place.</b><br>
+  Pulled straight from company ATS feeds and niche job boards. Refreshed every night. Free, no signup.
+</p>
+
+<p align="center">
+  <a href="https://github.com/Infrasity-Labs/developer-marketing-jobs/actions/workflows/update-jobs.yml"><img alt="Update Jobs workflow" src="https://img.shields.io/github/actions/workflow/status/Infrasity-Labs/developer-marketing-jobs/update-jobs.yml?label=nightly%20update&logo=githubactions&logoColor=white"></a>
+  <a href="https://github.com/Infrasity-Labs/developer-marketing-jobs/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/Infrasity-Labs/developer-marketing-jobs?label=last%20update"></a>
+  <img alt="ATS platforms" src="https://img.shields.io/badge/ATS%20platforms-5-7B6BFF">
+  <img alt="Job boards" src="https://img.shields.io/badge/job%20boards-14%2B-7B6BFF">
+  <a href="https://github.com/Infrasity-Labs/developer-marketing-jobs/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/Infrasity-Labs/developer-marketing-jobs?style=flat"></a>
+  <a href="./LICENSE"><img alt="License: MIT" src="https://img.shields.io/github/license/Infrasity-Labs/developer-marketing-jobs"></a>
+  <a href="./CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen"></a>
+  <a href="https://infrasity.com"><img alt="Maintained by Infrasity" src="https://img.shields.io/badge/maintained%20by-Infrasity-7B6BFF"></a>
+</p>
+
 <!-- STATS:START -->
+<p align="center">
+  <img alt="Open roles" src="https://img.shields.io/badge/open%20roles-725-brightgreen?style=for-the-badge">
+  <img alt="Added in last run" src="https://img.shields.io/badge/added%20last%20run-%2B71-blue?style=for-the-badge">
+</p>
+
 <p align="center">
   <b>725</b> open roles tracked &nbsp;·&nbsp; <b>+71</b> added in the last run &nbsp;·&nbsp; last updated <b>20 Nov 2026, 15:24 UTC</b>
 </p>
 <!-- STATS:END -->
 
-**Every open Developer Advocate DevRel, technical writing, developer marketing, community, and docs role at devtool companies — in one place.**
-
-Curated nightly. Pulled directly from company ATS feeds. No reposts, no aggregator noise.
-
-[![Updated daily](https://img.shields.io/badge/updated-daily-brightgreen)](#)
-[![Jobs tracked](https://img.shields.io/badge/jobs-tracked%20daily-7B6BFF)](#)
-[![Maintained by Infrasity](https://img.shields.io/badge/maintained%20by-Infrasity-7B6BFF)](https://infrasity.com)
+<!-- TOC:START -->
+| Category | Open roles |
+|----------|-----------:|
+| [🎤 Developer Advocate / DevRel](#-developer-advocate--devrel) | 52 |
+| [✍️ Technical Writing & Documentation](#-technical-writing--documentation) | 49 |
+| [📣 Developer Marketing](#-developer-marketing) | 107 |
+| [📦 Product Marketing](#-product-marketing) | 257 |
+| [📈 Head of Growth](#-head-of-growth) | 135 |
+| [👔 VP Marketing](#-vp-marketing) | 63 |
+| [👥 Community](#-community) | 31 |
+| [🧩 Senior Full Stack Marketing Manager](#-senior-full-stack-marketing-manager) | 1 |
+| [🔍 SEO / GEO / AEO](#-seo--geo--aeo) | 30 |
+| [🚀 Y Combinator Jobs](#-y-combinator-jobs) | 0 |
+<!-- TOC:END -->
 
 ---
 
 ## Why this exists
 
-DevRel and technical writing roles are scattered across LinkedIn, careers pages, niche newsletters, and Slack channels. Finding them takes hours. We pull them directly from each company's ATS every night so you don't have to.
+DevRel and technical writing roles are scattered across LinkedIn, careers pages, niche newsletters and Slack channels, and finding them takes hours. This repo pulls them directly from each company's applicant tracking system (ATS) every night, so you don't have to.
 
-If you're hiring, you can submit roles by [opening an issue](#submit-a-role).
+- **Source-first.** Links go to the company's own posting where one exists, not a reposted copy.
+- **Role-focused.** Keyword-matched against DevRel, docs, developer marketing, product marketing, growth, community and SEO/GEO titles.
+- **Fresh.** Postings older than 90 days are dropped and duplicates are merged.
 
----
+## Where the jobs come from
+
+| Type | Sources |
+|------|---------|
+| **ATS platforms (5)** | [Greenhouse](https://www.greenhouse.com) · [Lever](https://www.lever.co) · [Ashby](https://www.ashbyhq.com) · [Workable](https://www.workable.com) · [Y Combinator](https://www.ycombinator.com/jobs) (Work at a Startup) |
+| **Job boards (14)** | RemoteOK · Remotive · Adzuna · Arbeitnow · Jobicy · Himalayas · We Work Remotely · The Muse · DevRelJobs · DevRelJob · TheMinCave · DevToolJobs · ExitFive · Superpath |
+| **Hand-curated** | Roles from LinkedIn and elsewhere, added by hand in [`manual_jobs.json`](./manual_jobs.json) |
 
 <!-- JOBS:START -->
 
@@ -813,38 +844,29 @@ _No categorized YC jobs found in the last 90 days._
 
 ---
 
-**Showing the freshest 100 jobs across all categories.**
-
----
-
 ## How it works
 
-This repo runs a nightly script that:
+A [scheduled GitHub Actions workflow](./.github/workflows/update-jobs.yml) runs every day at 06:00 UTC:
 
-1. Reads company ATS feeds (Greenhouse, Lever, Ashby, Workable)
-2. Filters by role keywords (DevRel, advocate, technical writer, community, developer marketing, docs)
-3. Rebuilds this README with fresh jobs every day
+1. **Fetch** jobs in parallel from every ATS and job board listed above.
+2. **Filter** by role keywords and drop anything older than 90 days.
+3. **Dedupe** the same role seen on multiple sources.
+4. **Rebuild** the tables above and commit the result.
 
-**Sources:** Greenhouse · Lever · Ashby · RemoteOK · Remotive · Arbeitnow · Adzuna
-
-**No scraping. No reposts. No LinkedIn dust.**
-
----
+Don't edit the tables between the `JOBS` markers by hand, because the next run overwrites them. To add a role manually, edit `manual_jobs.json`.
 
 ## Submit a role
 
-Hiring for a devtool DevRel, content, or developer marketing role? [Open an issue](https://github.com/YOUR_USERNAME/YOUR_REPO/issues/new) with the company name and ATS link.
+Hiring, or spotted a role we're missing?
 
----
+- [Submit a job](https://github.com/Infrasity-Labs/developer-marketing-jobs/issues/new?template=job_submission.yml)
+- [Request a company or ATS board](https://github.com/Infrasity-Labs/developer-marketing-jobs/issues/new?template=company_request.yml)
+- [Report a bug or a bad listing](https://github.com/Infrasity-Labs/developer-marketing-jobs/issues/new?template=bug_report.yml)
+
+Want to improve the fetchers or add a source? See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## About
 
-Maintained by **[Infrasity](https://infrasity.com)** — a developer marketing agency working with DevTools and B2B SaaS companies.
+Maintained by **[Infrasity](https://infrasity.com)**, a developer marketing agency working with DevTools and B2B SaaS companies. We do this in public because we live in this space.
 
-We do this in public because we live in this space — every role here is one we'd consider hiring for ourselves.
-
-[infrasity.com](https://infrasity.com) · [LinkedIn](https://linkedin.com/company/infrasity)
-
----
-
-*Last updated automatically via GitHub Actions.*
+[Website](https://infrasity.com) · [LinkedIn](https://linkedin.com/company/infrasity) · [License](./LICENSE) · [Code of Conduct](./CODE_OF_CONDUCT.md) · [Security](./SECURITY.md)
