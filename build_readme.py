@@ -55,43 +55,6 @@ def _replace_block(text, name, body):
         return text
     return text[:si + len(s)] + body + text[ei:]
 
-BANNER_PATH = Path(".github/assets/banner-1920x1080.svg")
-
-def update_banner(total, added, when):
-    """Write the live stat cards into the banner SVG between LIVE markers."""
-    if not BANNER_PATH.exists():
-        return
-    svg = BANNER_PATH.read_text(encoding="utf-8")
-    s, e = "<!-- LIVE:START -->", "<!-- LIVE:END -->"
-    si, ei = svg.find(s), svg.find(e)
-    if si == -1 or ei == -1:
-        print("⚠️ LIVE markers not found in banner SVG, skipping")
-        return
-    cards = [(f"{total:,}", "Open roles"), (f"+{added:,}", "Added last run"), ("5 + 14", "ATS + job boards")]
-    w, gap, y, h = 420, 40, 800, 150
-    x0 = (1920 - (3 * w + 2 * gap)) // 2
-    out = []
-    for i, (num, label) in enumerate(cards):
-        x = x0 + i * (w + gap)
-        cx = x + w // 2
-        out.append(
-            f'    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="{1.0 + i * 0.25}s" dur="0.9s" fill="freeze"/>\n'
-            f'      <rect x="{x}" y="{y}" width="{w}" height="{h}" rx="28" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.22" stroke-width="2"/>\n'
-            f'      <text x="{cx}" y="{y + 76}" text-anchor="middle" class="num">{num}</text>\n'
-            f'      <text x="{cx}" y="{y + 118}" text-anchor="middle" class="lbl">{label}</text>\n'
-            f'    </g>'
-        )
-    stamp = f"Updated {when}"
-    tx = 960 + 18
-    out.append(
-        f'    <g opacity="0"><animate attributeName="opacity" from="0" to="1" begin="1.8s" dur="0.9s" fill="freeze"/>\n'
-        f'      <circle cx="{tx - int(len(stamp) * 7.4) - 26}" cy="995" r="8" fill="#3dffa0">'
-        f'<animate attributeName="opacity" values="1;0.25;1" dur="2s" repeatCount="indefinite"/></circle>\n'
-        f'      <text x="{tx}" y="1004" text-anchor="middle" class="live">{stamp}</text>\n'
-        f'    </g>'
-    )
-    BANNER_PATH.write_text(svg[:si + len(s)] + "\n" + "\n".join(out) + "\n    " + svg[ei:], encoding="utf-8")
-
 def update_stats(total, added):
     """Rewrite the STATS and TOC blocks of the README."""
     path = Path(README_PATH)
@@ -110,7 +73,6 @@ def update_stats(total, added):
         f"</p>\n"
     )
     text = _replace_block(text, "STATS", stats)
-    update_banner(total, added, now.strftime("%d %b %Y, %H:%M UTC"))
     js, je = text.find("<!-- JOBS:START -->"), text.find("<!-- JOBS:END -->")
     if js != -1 and je != -1:
         toc = build_toc(text[js:je])
