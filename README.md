@@ -1,7 +1,7 @@
 <h1 align="center">Developer Marketing Jobs</h1>
 
 <p align="center">
-  <img width="100%" alt="Developer Marketing Jobs" src="./.github/assets/banner-1920x1080.svg" />
+  <img width="100%" alt="Developer Marketing Jobs" src="./.github/assets/banner.svg" />
 </p>
 
 <p align="center">

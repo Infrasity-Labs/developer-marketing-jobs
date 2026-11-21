@@ -28,6 +28,20 @@ def _slug(heading):
     text = re.sub(r"[^\w\- ]", "", heading.lower(), flags=re.UNICODE)
     return text.replace(" ", "-")
 
+def category_counts(jobs_text):
+    """[(heading, role_count)] for every ## section of the JOBS block."""
+    rows, section, count = [], None, 0
+    for line in jobs_text.splitlines():
+        if line.startswith("## "):
+            if section:
+                rows.append((section, count))
+            section, count = line[3:].strip(), 0
+        elif section and line.startswith("| ") and not line.startswith(("| Role", "| ---")):
+            count += 1
+    if section:
+        rows.append((section, count))
+    return rows
+
 def build_toc(jobs_text):
     """Linked table of contents with per-category counts."""
     lines = []
@@ -77,6 +91,8 @@ def update_stats(total, added):
     if js != -1 and je != -1:
         toc = build_toc(text[js:je])
         text = _replace_block(text, "TOC", f"\n{toc}\n" if toc else "\n")
+        import banner
+        banner.write(total, added, when, category_counts(text[js:je]))
     path.write_text(text, encoding="utf-8")
     print(f"📈 Stats: total={total}, added={added}, run={when}")
 
