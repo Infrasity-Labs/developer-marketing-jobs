@@ -34,16 +34,16 @@
 <!-- TOC:START -->
 | Category | Open roles |
 |----------|-----------:|
-| [🎤 Developer Advocate / DevRel](#-developer-advocate--devrel) | 52 |
-| [✍️ Technical Writing & Documentation](#-technical-writing--documentation) | 49 |
-| [📣 Developer Marketing](#-developer-marketing) | 107 |
-| [📦 Product Marketing](#-product-marketing) | 257 |
-| [📈 Head of Growth](#-head-of-growth) | 135 |
-| [👔 VP Marketing](#-vp-marketing) | 63 |
-| [👥 Community](#-community) | 31 |
-| [🧩 Senior Full Stack Marketing Manager](#-senior-full-stack-marketing-manager) | 1 |
-| [🔍 SEO / GEO / AEO](#-seo--geo--aeo) | 30 |
-| [🚀 Y Combinator Jobs](#-y-combinator-jobs) | 0 |
+| [Developer Advocate / DevRel](#developer-advocate--devrel) | 52 |
+| [Technical Writing & Documentation](#technical-writing--documentation) | 49 |
+| [Developer Marketing](#developer-marketing) | 107 |
+| [Product Marketing](#product-marketing) | 257 |
+| [Growth & Demand Generation](#growth--demand-generation) | 135 |
+| [Marketing Leadership](#marketing-leadership) | 63 |
+| [Community](#community) | 31 |
+| [Full Stack Marketing](#full-stack-marketing) | 1 |
+| [SEO / GEO / AEO](#seo--geo--aeo) | 30 |
+| [Y Combinator Startups](#y-combinator-startups) | 0 |
 <!-- TOC:END -->
 
 ---
@@ -66,7 +66,9 @@ DevRel and technical writing roles are scattered across LinkedIn, careers pages,
 
 <!-- JOBS:START -->
 
-## 🎤 Developer Advocate / DevRel
+## Developer Advocate / DevRel
+
+_Advocates, evangelists and developer-experience engineers who help developers adopt a product through talks, sample code, content and community feedback._
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
@@ -123,7 +125,9 @@ DevRel and technical writing roles are scattered across LinkedIn, careers pages,
 | Senior Developer Marketing Manager, Social & Content | 1password | Remote | [→](https://jobs.ashbyhq.com/1password/6d3c1adb-7100-4a28-9f3f-11af3427f71d) |
 | Senior Developer Marketing Manager, Lifecycle & Growth | 1password | Remote | [→](https://jobs.ashbyhq.com/1password/2925531c-43d3-4999-8537-c156762434a9) |
 
-## ✍️ Technical Writing & Documentation
+## Technical Writing & Documentation
+
+_Technical writers, docs engineers and information architects who own documentation, API references and developer guides._
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
@@ -177,7 +181,9 @@ DevRel and technical writing roles are scattered across LinkedIn, careers pages,
 | Technical Content Manager·OpenLoop | 📣 | Unknown | [→](https://jobs.superpath.co) |
 | Head of Technical Content & Editorial·Arize AI | 🗣️ | Unknown | [→](https://jobs.superpath.co) |
 
-## 📣 Developer Marketing
+## Developer Marketing
+
+_Marketers who reach a technical audience: content, campaigns, lifecycle and growth aimed at developers._
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
@@ -289,7 +295,9 @@ DevRel and technical writing roles are scattered across LinkedIn, careers pages,
 | Content Marketing Manager·PEX | 🔎 | Unknown | [→](https://jobs.superpath.co) |
 | Senior Content Marketing Manager·Fleetio | Superpath © 2026 · Built for content mar | Unknown | [→](https://jobs.superpath.co) |
 
-## 📦 Product Marketing
+## Product Marketing
+
+_Positioning, messaging and launch roles that connect a product to its market and its buyers._
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
@@ -551,7 +559,9 @@ DevRel and technical writing roles are scattered across LinkedIn, careers pages,
 | Senior Staff GTM Communications Manager | 1password | Remote | [→](https://jobs.ashbyhq.com/1password/6dd97f24-9dcd-45dc-8d00-dfeff5971453) |
 | Senior GTM Program Manager | 1password | Remote | [→](https://jobs.ashbyhq.com/1password/89f1ecd1-0bcd-4cbf-aaf9-337e0c0568e1) |
 
-## 📈 Head of Growth
+## Growth & Demand Generation
+
+_Roles that own acquisition, demand generation and pipeline, from growth leads to directors._
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
@@ -691,7 +701,9 @@ DevRel and technical writing roles are scattered across LinkedIn, careers pages,
 | Organic Growth Manager (SEO & AI Search)·Cosuno | 🗣️ | Unknown | [→](https://jobs.superpath.co) |
 | Head of Growth | Postscript | Remote | [→](https://weworkremotely.com/remote-jobs/postscript-head-of-growth) |
 
-## 👔 VP Marketing
+## Marketing Leadership
+
+_Senior leadership that runs the marketing function: VP, CMO, director and head-of roles._
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
@@ -759,7 +771,9 @@ DevRel and technical writing roles are scattered across LinkedIn, careers pages,
 | Humbly Confident Marketing Lead·ChiroCat | ✍️ | Unknown | [→](https://jobs.superpath.co) |
 | Head of Brand and Editorial·Arc Institute | 🗣️ | Unknown | [→](https://jobs.superpath.co) |
 
-## 👥 Community
+## Community
+
+_Roles that build and run developer and user communities: forums, Discord and Slack, events and open-source programs._
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
@@ -795,13 +809,17 @@ DevRel and technical writing roles are scattered across LinkedIn, careers pages,
 | Community Engagement Manager, Data Centres (Australia) | Anthropic | Sydney, Australia / Remote-Fri | [→](https://job-boards.greenhouse.io/anthropic/jobs/5391999008) |
 | Head of Community, EMEA | OpenAI | 1 week ago | [→](https://www.devreljobs.com/jobs/head-of-community-emea-openai-1142) |
 
-## 🧩 Senior Full Stack Marketing Manager
+## Full Stack Marketing
+
+_Generalist marketers who cover content, demand gen and lifecycle in a single role, common at early-stage startups._
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
 | Marketing Generalist, BitGo Labs (Contract) | Bitgo | Palo Alto, California, United  | [→](https://job-boards.greenhouse.io/bitgo/jobs/8853156002) |
 
-## 🔍 SEO / GEO / AEO
+## SEO / GEO / AEO
+
+_Search, generative-engine (GEO) and answer-engine (AEO) optimization, focused on being found by search engines and AI assistants._
 
 | Role | Company | Location | Apply |
 |------|---------|----------|-------|
@@ -836,7 +854,9 @@ DevRel and technical writing roles are scattered across LinkedIn, careers pages,
 | SEO/GEO Team Lead·Siege Media | ✍️ | Unknown | [→](https://jobs.superpath.co) |
 | Senior Manager, SEO/AEO (AI Search)·Single Grain | 📣 | Unknown | [→](https://jobs.superpath.co) |
 
-## 🚀 Y Combinator Jobs
+## Y Combinator Startups
+
+_Open roles at Y Combinator-backed startups, grouped by the same categories._
 
 _No categorized YC jobs found in the last 90 days._
 

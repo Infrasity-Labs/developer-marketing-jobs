@@ -28,7 +28,8 @@ from fetchers import (
 # --- CONFIG ---
 CATEGORIES = [
     {
-        "label": "🎤 Developer Advocate / DevRel",
+        "label": "Developer Advocate / DevRel",
+        "description": "Advocates, evangelists and developer-experience engineers who help developers adopt a product through talks, sample code, content and community feedback.",
         "keywords": [
             "api evangelist",
             "community evangelist",
@@ -68,7 +69,8 @@ CATEGORIES = [
         ],
     },
     {
-        "label": "✍️ Technical Writing & Documentation",
+        "label": "Technical Writing & Documentation",
+        "description": "Technical writers, docs engineers and information architects who own documentation, API references and developer guides.",
         "keywords": [
             "api documentation writer",
             "api writer",
@@ -105,7 +107,8 @@ CATEGORIES = [
         ],
     },
     {
-        "label": "📣 Developer Marketing",
+        "label": "Developer Marketing",
+        "description": "Marketers who reach a technical audience: content, campaigns, lifecycle and growth aimed at developers.",
         "keywords": [
             "api marketing manager",
             "brand marketing",
@@ -158,7 +161,8 @@ CATEGORIES = [
         ],
     },
     {
-        "label": "📦 Product Marketing",
+        "label": "Product Marketing",
+        "description": "Positioning, messaging and launch roles that connect a product to its market and its buyers.",
         "keywords": [
             "competitive intelligence manager",
             "director of product marketing",
@@ -203,7 +207,8 @@ CATEGORIES = [
         ],
     },
     {
-        "label": "📈 Head of Growth",
+        "label": "Growth & Demand Generation",
+        "description": "Roles that own acquisition, demand generation and pipeline, from growth leads to directors.",
         "keywords": [
             "acquisition marketing manager",
             "business growth manager",
@@ -273,7 +278,8 @@ CATEGORIES = [
         ],
     },
     {
-        "label": "👔 VP Marketing",
+        "label": "Marketing Leadership",
+        "description": "Senior leadership that runs the marketing function: VP, CMO, director and head-of roles.",
         "keywords": [
             "brand marketing director",
             "brand marketing lead",
@@ -316,7 +322,8 @@ CATEGORIES = [
         ],
     },
     {
-        "label": "👥 Community",
+        "label": "Community",
+        "description": "Roles that build and run developer and user communities: forums, Discord and Slack, events and open-source programs.",
         "keywords": [
             "ambassador program manager",
             "community & content",
@@ -363,7 +370,8 @@ CATEGORIES = [
         ],
     },
     {
-        "label": "🧩 Senior Full Stack Marketing Manager",
+        "label": "Full Stack Marketing",
+        "description": "Generalist marketers who cover content, demand gen and lifecycle in a single role, common at early-stage startups.",
         "keywords": [
             "full stack content marketer",
             "full stack demand generation",
@@ -399,7 +407,8 @@ CATEGORIES = [
         ],
     },
     {
-        "label": "🔍 SEO / GEO / AEO",
+        "label": "SEO / GEO / AEO",
+        "description": "Search, generative-engine (GEO) and answer-engine (AEO) optimization, focused on being found by search engines and AI assistants.",
         "whole_word": True,
         "keywords": [
             "seo",
@@ -542,13 +551,16 @@ def build_sections(jobs, yc_jobs, active_categories=None):
         cat_jobs = buckets[label]
         
         sections.append(f"## {label}\n")
+        if cat.get("description"):
+            sections.append(f"_{cat['description']}_\n")
         sections.append(format_table(cat_jobs))
         
         if cat_jobs:
             total += len(cat_jobs[:MAX_JOBS_PER_CATEGORY])
     
     # Add YC jobs section with categories
-    sections.append(f"## 🚀 Y Combinator Jobs\n")
+    sections.append("## Y Combinator Startups\n")
+    sections.append("_Open roles at Y Combinator-backed startups, grouped by the same categories._\n")
     
     yc_total = 0
     for cat in CATEGORIES:
