@@ -1,53 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="412" viewBox="0 0 1280 412" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="260" viewBox="0 0 1280 260" role="img" aria-labelledby="t d">
   <title id="t">Developer Marketing Jobs</title>
   <desc id="d">725 open developer marketing, DevRel and technical writing roles, updated 20 Nov 2026, 15:24 UTC.</desc>
-  <defs>
-    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#1b1f2b"/></pattern>
-    <clipPath id="c"><rect width="1280" height="412" rx="16"/></clipPath>
-  </defs>
-  <g clip-path="url(#c)">
-    <rect width="1280" height="412" fill="#0c0e14"/>
-    <rect width="1280" height="412" fill="url(#dots)"/>
-    <rect x="0" y="0" width="6" height="412" fill="#7b6bff"/>
-    <circle cx="60" cy="58" r="5" fill="#3ddc97"><animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/></circle>
-    <text x="76" y="63" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" letter-spacing="1" fill="#8b93a7">LIVE · UPDATED 20 NOV 2026, 15:24 UTC</text>
-    <text x="56" y="140" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="56" font-weight="700" letter-spacing="-1.5" fill="#f4f5f8">Developer Marketing Jobs</text>
-    <text x="56" y="182" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#9aa1b4">DevRel, docs, developer marketing, growth and community roles, pulled nightly from company ATS feeds.</text>
-    <text x="56" y="256" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="46" font-weight="700" fill="#f4f5f8">725</text>
-    <text x="56" y="282" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.4" fill="#7a8194">OPEN ROLES</text>
-    <text x="286" y="256" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="46" font-weight="700" fill="#3ddc97">+71</text>
-    <text x="286" y="282" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.4" fill="#7a8194">ADDED LAST RUN</text>
-    <text x="516" y="256" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="46" font-weight="700" fill="#f4f5f8">5</text>
-    <text x="516" y="282" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.4" fill="#7a8194">ATS PLATFORMS</text>
-    <text x="746" y="256" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="46" font-weight="700" fill="#f4f5f8">14</text>
-    <text x="746" y="282" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.4" fill="#7a8194">JOB BOARDS</text>
-    <rect x="56.0" y="314" width="0" height="10" rx="2" fill="#7b6bff" fill-opacity="0.64"><animate attributeName="width" from="0" to="82.1" begin="0.00s" dur="0.7s" fill="freeze"/></rect>
-    <rect x="141.1" y="314" width="0" height="10" rx="2" fill="#7b6bff" fill-opacity="0.55"><animate attributeName="width" from="0" to="77.3" begin="0.15s" dur="0.7s" fill="freeze"/></rect>
-    <rect x="221.4" y="314" width="0" height="10" rx="2" fill="#7b6bff" fill-opacity="0.82"><animate attributeName="width" from="0" to="168.8" begin="0.30s" dur="0.7s" fill="freeze"/></rect>
-    <rect x="393.2" y="314" width="0" height="10" rx="2" fill="#7b6bff" fill-opacity="1.00"><animate attributeName="width" from="0" to="405.5" begin="0.45s" dur="0.7s" fill="freeze"/></rect>
-    <rect x="801.7" y="314" width="0" height="10" rx="2" fill="#7b6bff" fill-opacity="0.91"><animate attributeName="width" from="0" to="213.0" begin="0.60s" dur="0.7s" fill="freeze"/></rect>
-    <rect x="1017.8" y="314" width="0" height="10" rx="2" fill="#7b6bff" fill-opacity="0.73"><animate attributeName="width" from="0" to="99.4" begin="0.75s" dur="0.7s" fill="freeze"/></rect>
-    <rect x="1120.2" y="314" width="0" height="10" rx="2" fill="#7b6bff" fill-opacity="0.46"><animate attributeName="width" from="0" to="48.9" begin="0.90s" dur="0.7s" fill="freeze"/></rect>
-    <rect x="1172.1" y="314" width="0" height="10" rx="2" fill="#7b6bff" fill-opacity="0.30"><animate attributeName="width" from="0" to="3.0" begin="1.05s" dur="0.7s" fill="freeze"/></rect>
-    <rect x="1178.1" y="314" width="0" height="10" rx="2" fill="#7b6bff" fill-opacity="0.37"><animate attributeName="width" from="0" to="47.3" begin="1.20s" dur="0.7s" fill="freeze"/></rect>
-    <rect x="56.0" y="340" width="9" height="9" rx="2" fill="#7b6bff" fill-opacity="0.64"/>
-    <text x="72.0" y="349" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#b4bacb">DevRel <tspan fill="#6c7488">52</tspan></text>
-    <rect x="289.6" y="340" width="9" height="9" rx="2" fill="#7b6bff" fill-opacity="0.55"/>
-    <text x="305.6" y="349" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#b4bacb">Docs <tspan fill="#6c7488">49</tspan></text>
-    <rect x="523.2" y="340" width="9" height="9" rx="2" fill="#7b6bff" fill-opacity="0.82"/>
-    <text x="539.2" y="349" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#b4bacb">Dev Marketing <tspan fill="#6c7488">107</tspan></text>
-    <rect x="756.8" y="340" width="9" height="9" rx="2" fill="#7b6bff" fill-opacity="1.00"/>
-    <text x="772.8" y="349" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#b4bacb">Product Mktg <tspan fill="#6c7488">257</tspan></text>
-    <rect x="990.4" y="340" width="9" height="9" rx="2" fill="#7b6bff" fill-opacity="0.91"/>
-    <text x="1006.4" y="349" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#b4bacb">Growth <tspan fill="#6c7488">135</tspan></text>
-    <rect x="56.0" y="366" width="9" height="9" rx="2" fill="#7b6bff" fill-opacity="0.73"/>
-    <text x="72.0" y="375" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#b4bacb">VP Marketing <tspan fill="#6c7488">63</tspan></text>
-    <rect x="289.6" y="366" width="9" height="9" rx="2" fill="#7b6bff" fill-opacity="0.46"/>
-    <text x="305.6" y="375" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#b4bacb">Community <tspan fill="#6c7488">31</tspan></text>
-    <rect x="523.2" y="366" width="9" height="9" rx="2" fill="#7b6bff" fill-opacity="0.30"/>
-    <text x="539.2" y="375" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#b4bacb">Full Stack <tspan fill="#6c7488">1</tspan></text>
-    <rect x="756.8" y="366" width="9" height="9" rx="2" fill="#7b6bff" fill-opacity="0.37"/>
-    <text x="772.8" y="375" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#b4bacb">SEO / GEO <tspan fill="#6c7488">30</tspan></text>
-  </g>
-  <rect x="0.5" y="0.5" width="1279" height="411" rx="16" fill="none" stroke="#242938"/>
+  <rect width="1280" height="260" rx="14" fill="#1f2023"/>
+  <rect x="0.5" y="0.5" width="1279" height="259" rx="14" fill="none" stroke="#33353a"/>
+  <text x="64" y="112" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-1.5" fill="#ececee">Developer Marketing Jobs</text>
+  <text x="64" y="156" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#9a9ca3">DevRel, docs, developer marketing, growth and community roles, pulled nightly from company ATS feeds.</text>
+  <text x="64" y="208" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#6f7178">725 open roles   ·   +71 added last run   ·   updated 20 Nov 2026, 15:24 UTC</text>
 </svg>
