@@ -72,7 +72,9 @@ python -c "from fetchers import greenhouse; jobs = greenhouse.fetch(); print(len
 ```text
 .
 ├── main.py                 # Role categories, keyword matching, dedupe, README rendering
-├── build_readme.py         # CI entry point: loads fetcher artifacts, rebuilds README sections
+├── build_readme.py         # CI entry point: loads fetcher artifacts, rebuilds the README and graphics
+├── report.py               # Builds the README body (tables, "Show more" blocks) and chart statistics
+├── readme_assets.py        # Draws the banner, per-role bars, charts and pipeline SVGs (light + dark)
 ├── fetchers/               # One module per source (ATS platform or job board), each exposes fetch()
 ├── skills/                 # Optional Claude-powered keyword expansion
 ├── manual_jobs.json        # Hand-curated roles no fetcher picks up yet
@@ -84,7 +86,7 @@ python -c "from fetchers import greenhouse; jobs = greenhouse.fetch(); print(len
 
 ### How the README is generated
 
-Everything between `<!-- JOBS:START -->` and `<!-- JOBS:END -->` is rewritten by the nightly workflow, as are the `STATS` and `TOC` blocks near the top. Edit the rest of `README.md` freely, but never hand-edit those blocks.
+Everything between `<!-- JOBS:START -->` and `<!-- JOBS:END -->` is rewritten by the nightly workflow, and every SVG in `.github/assets/` is regenerated with it. Edit the rest of `README.md` freely, but never hand-edit the generated parts. Roles that were not in the previous run get a NEW tag, and each section shows 8 roles with the rest behind "Show more".
 
 ### Adding a Source
 
