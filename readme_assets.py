@@ -8,6 +8,8 @@ All numbers come from the stats dict built by report.py on every nightly run.
 from pathlib import Path
 from xml.sax.saxutils import escape
 
+import hero_banner
+
 ASSET_DIR = Path(".github/assets")
 REPO_SLUG = "infrasity-labs / developer-marketing-jobs"
 
@@ -197,6 +199,8 @@ def _write(name, text):
 def write_all(s):
     """Write every graphic. `s` is the stats dict from report.build_report."""
     scale = max((cat["count"] for cat in s["cats"]), default=1) or 1
+    _write("hero.svg", hero_banner.render("jobs", ("Find your next", "marketing role"),
+           f"{s['total']:,} open roles from {s['ats']} ATS platforms and {s['boards']} boards", f"{s['total']:,} open roles"))
     for theme, c in THEMES.items():
         _write(f"banner-{theme}.svg", banner(s, c))
         _write(f"top-companies-{theme}.svg", top_companies(s, c))
