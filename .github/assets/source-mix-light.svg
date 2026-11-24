@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="150" viewBox="0 0 1280 150" role="img" aria-label="Where listings come from">
 <rect x="0.5" y="0.5" width="1279" height="149" rx="14" fill="#f6f8fa" stroke="#d1d9e0"/>
 <text x="28" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#1f2328" font-weight="650">Where today's listings come from</text>
-<rect x="28.0" y="70" width="759.2" height="22" rx="4" fill="#6a5af0" fill-opacity="1.0"/>
+<rect x="28.0" y="70" width="753.6" height="22" rx="4" fill="#6a5af0" fill-opacity="1.0"/>
 <rect x="28.0" y="114" width="12" height="12" rx="3" fill="#6a5af0" fill-opacity="1.0"/>
-<text x="48.0" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">ATS feeds  472 · 62%</text>
-<rect x="789.2" y="70" width="265.4" height="22" rx="4" fill="#6a5af0" fill-opacity="0.72"/>
+<text x="48.0" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">ATS feeds  445 · 62%</text>
+<rect x="783.6" y="70" width="262.5" height="22" rx="4" fill="#6a5af0" fill-opacity="0.72"/>
 <rect x="230.0" y="114" width="12" height="12" rx="3" fill="#6a5af0" fill-opacity="0.72"/>
-<text x="250.0" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">Job boards  165 · 22%</text>
-<rect x="1056.6" y="70" width="149.6" height="22" rx="4" fill="#6a5af0" fill-opacity="0.48"/>
+<text x="250.0" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">Job boards  155 · 22%</text>
+<rect x="1048.2" y="70" width="155.8" height="22" rx="4" fill="#6a5af0" fill-opacity="0.48"/>
 <rect x="439.3" y="114" width="12" height="12" rx="3" fill="#6a5af0" fill-opacity="0.48"/>
-<text x="459.3" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">Company careers sites  93 · 12%</text>
-<rect x="1208.2" y="70" width="41.8" height="22" rx="4" fill="#6a5af0" fill-opacity="0.28"/>
+<text x="459.3" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">Company careers sites  92 · 13%</text>
+<rect x="1206.0" y="70" width="44.0" height="22" rx="4" fill="#6a5af0" fill-opacity="0.28"/>
 <rect x="721.6" y="114" width="12" height="12" rx="3" fill="#6a5af0" fill-opacity="0.28"/>
-<text x="741.6" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">Hand-curated  26 · 3%</text>
+<text x="741.6" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">Hand-curated  26 · 4%</text>
 </svg>
