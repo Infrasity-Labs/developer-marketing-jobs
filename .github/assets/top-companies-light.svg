@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="620" height="460" viewBox="0 0 620 460" role="img" aria-label="Who is hiring most">
 <rect x="0.5" y="0.5" width="619" height="459" rx="14" fill="#f6f8fa" stroke="#d1d9e0"/>
 <text x="28" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" fill="#1f2328" font-weight="650">Who is hiring most</text>
-<text x="28" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#59636e">Open roles per company, top 10 of 387</text>
+<text x="28" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#59636e">Open roles per company, top 10 of 369</text>
 <text x="28" y="109" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">Anthropic</text>
 <rect x="190" y="97" width="360" height="16" rx="4" fill="#6a5af0"/>
 <text x="558" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#59636e" font-weight="600" style="font-variant-numeric:tabular-nums">35</text>
@@ -20,13 +20,13 @@
 <text x="28" y="279" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">Datadog</text>
 <rect x="190" y="267" width="113" height="16" rx="4" fill="#6a5af0"/>
 <text x="311" y="280" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#59636e" font-weight="600" style="font-variant-numeric:tabular-nums">11</text>
-<text x="28" y="313" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">Ramp</text>
+<text x="28" y="313" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">1password</text>
 <rect x="190" y="301" width="103" height="16" rx="4" fill="#6a5af0"/>
 <text x="301" y="314" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#59636e" font-weight="600" style="font-variant-numeric:tabular-nums">10</text>
-<text x="28" y="347" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">Fivetran</text>
-<rect x="190" y="335" width="93" height="16" rx="4" fill="#6a5af0"/>
-<text x="291" y="348" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#59636e" font-weight="600" style="font-variant-numeric:tabular-nums">9</text>
-<text x="28" y="381" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">1password</text>
+<text x="28" y="347" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">Ramp</text>
+<rect x="190" y="335" width="103" height="16" rx="4" fill="#6a5af0"/>
+<text x="301" y="348" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#59636e" font-weight="600" style="font-variant-numeric:tabular-nums">10</text>
+<text x="28" y="381" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">Fivetran</text>
 <rect x="190" y="369" width="93" height="16" rx="4" fill="#6a5af0"/>
 <text x="291" y="382" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" fill="#59636e" font-weight="600" style="font-variant-numeric:tabular-nums">9</text>
 <text x="28" y="415" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#1f2328">Getwingapp</text>
